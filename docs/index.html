@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Cait Harrigan</title>
+
+<script src="site_libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+<!-- favicon -->
+<link rel="shortcut icon" href="files/frog.png">
+
+<!-- fonts -->
+
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet"> 
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="files/style.css" type="text/css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" type="text/css" />
+<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html#top">Cait Harrigan</a>
+    </div>
+  <div id="navbar" class="navbar-collapse collapse">
+    <ul class="nav navbar-nav"></ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="index.html#contact">Contact</a>
+        </li>
+        <li>
+          <a href="index.html#publications">Publications</a>
+        </li>
+        <li>
+          <a href="index.html#teaching">Teaching</a>
+        </li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+
+</div>
+
+
+<div class="printHider">
+<p><span class="printTitle">Cait Harrigan, MSc.</span><br />
+<i class="fas fa-envelope"></i>   cait.harrigan<i class="fas fa-at fa-xs"></i>mail.utoronto.ca        
+<i class="fab fa-github"></i>   <a href="https://github.com/harrig12/">harrig12</a>        
+<i class="fab fa-linkedin-in"></i>   <a href="https://www.linkedin.com/in/cait-harrigan/">linkedin.com/in/cait-harrigan/</a></p>
+</div>
+<div id="contact" class="section level2 invisible">
+<h2>Contact</h2>
+</div>
+<div class="row">
+<div class="col-md-6">
+<p>I am a graduate student at the University of Toronto supervised by <a href="http://www.morrislab.ca/">Quaid Morris</a> and <a href="https://www.camlab.ca/">Kieran Campbell</a>, and a graduate affiliate at the <a href="https://vectorinstitute.ai/">Vector Institute</a>. I did my undergraduate studies at the University of Toronto, in Computational Biology and Statistics. My thesis work pertains to cancer genomics, and modelling the evolutionary constraints that underlie how mutation events occur in DNA. I’m passionate about <a href="https://en.wikipedia.org/wiki/Open_science">open science</a>, and promoting great mentorship in the sciences.</p>
+</div>
+<div class="col-md-6">
+<div class="col-6 grid-item">
+<div class="info-box">
+<table>
+<thead>
+<tr class="header">
+<th align="center">
+Center
+</th>
+<th align="left">
+Left
+</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">
+<i class="fas fa-map-marker-alt"></i>
+</td>
+<td align="left">
+Department of Computer Science,<br />
+University of Toronto
+</td>
+</tr>
+<tr class="even">
+<td align="center">
+<i class="fas fa-envelope"></i>
+</td>
+<td align="left">
+cait.harrigan<i class="fas fa-at fa-sm"></i>mail.utoronto.ca
+</td>
+</tr>
+<tr class="odd">
+<td align="center">
+<i class="ai ai-orcid ai-1x"></i>
+</td>
+<td align="left">
+<a href="https://orcid.org/0000-0002-9243-9648">ORCID</a>
+</td>
+</tr>
+<tr class="even">
+<td align="center">
+<i class="fab fa-github"></i>
+</td>
+<td align="left">
+<a href="https://github.com/harrig12/">harrig12</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div id="education" class="section level2 nohead">
+<h2>Education</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+when
+</th>
+<th style="text-align:left;">
+what
+</th>
+<th style="text-align:right;">
+where
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;width: 12em; ">
+Jan 2021 — present
+</td>
+<td style="text-align:left;width: 20em; width: 35em; ">
+PhD in Computer Science, supervised by <a href="http://www.morrislab.ca/">Quaid Morris</a> and <a href="https://www.camlab.ca/">Kieran Campbell</a>
+</td>
+<td style="text-align:right;font-style: italic;">
+University of Toronto
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 12em; ">
+Sep 2019 — Mar 2021
+</td>
+<td style="text-align:left;width: 20em; width: 35em; ">
+MSc in Computer Science, supervised by <a href="http://www.morrislab.ca/">Quaid Morris</a>
+</td>
+<td style="text-align:right;font-style: italic;">
+University of Toronto
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 12em; ">
+Sep 2015 — Jun 2019
+</td>
+<td style="text-align:left;width: 20em; width: 35em; ">
+Honours BSc. in Bioinformatics and Computational Biology
+</td>
+<td style="text-align:right;font-style: italic;">
+University of Toronto
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="publications" class="section level2 nohead">
+<h2>Publications</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+entry
+</th>
+<th style="text-align:left;">
+paperLink
+</th>
+<th style="text-align:left;">
+codeLink
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<strong>Caitlin F Harrigan</strong>, Gabriella Morgenshtern, Anna Goldenberg, and Fanny Chevalier. <em>Considerations for Visualizing Uncertainty in Clinical Machine Learning Models</em>. Workshop: Realizing AI in Healthcare: Challenges Appearing in the Wild, CHI 2021 Online Virtual Conference (originally Yokohama, Japan), May. 2021.
+</td>
+<td style="text-align:left;min-width: 4em; ">
+<span style="     border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: var(--hl-col) !important;font-size: 1.2em;"><a href="http://francisconunes.me/RealizingAIinHealthcareWS/papers/Harrigan2021.pdf">paper</a></span>
+</td>
+<td style="text-align:left;min-width: 4em; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<strong>Caitlin F Harrigan</strong>, Yulia Rubanova, Quaid Morris, and Alina Selega. “TrackSigFreq : subclonal reconstructions based on mutation signatures and allele frequencies”. In: <em>Pacific Symposium on Biocomputing</em> 25 (2020), pp. 238-249.
+</td>
+<td style="text-align:left;min-width: 4em; ">
+<span style="     border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: var(--hl-col) !important;font-size: 1.2em;"><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6905203/">paper</a></span>
+</td>
+<td style="text-align:left;min-width: 4em; ">
+<span style="     border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: var(--hl-col) !important;font-size: 1.2em;"><a href="https://github.com/morrislab/TrackSigFreq">code</a></span>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Yulia Rubanova, Ruian Shi, <strong>Caitlin F Harrigan</strong>, Roujia Li, Jeff Wintersinger, Nil Sahin, Amit Deshwar, and Quaid Morris. “Reconstructing evolutionary trajectories of mutation signature activities in cancer using TrackSig”. En. In: <em>Nature Communications</em> 11.1 (Feb. 2020). Number: 1 Publisher: Nature Publishing Group, pp. 1-12.
+</td>
+<td style="text-align:left;min-width: 4em; ">
+<span style="     border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: var(--hl-col) !important;font-size: 1.2em;"><a href="https://www.nature.com/articles/s41467-020-14352-7">paper</a></span>
+</td>
+<td style="text-align:left;min-width: 4em; ">
+<span style="     border-radius: 4px; padding-right: 4px; padding-left: 4px; background-color: var(--hl-col) !important;font-size: 1.2em;"><a href="https://github.com/morrislab/TrackSig">code</a></span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="talks-posters" class="section level2 nohead">
+<h2>Talks &amp; Posters</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+when
+</th>
+<th style="text-align:left;">
+what
+</th>
+<th style="text-align:right;">
+where
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;width: 6em; ">
+Jan 2020
+</td>
+<td style="text-align:left;width: 20em; width: 42em; ">
+TrackSigFreq: subclonal reconstructions based on mutation signatures and allele frequencies<br><a href="https://psb.stanford.edu/previous/psb20/">Pacific Symposium on Biocomputing (PSB) 2020</a>
+</td>
+<td style="text-align:right;font-style: italic;">
+Oral Presentation, Poster
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; ">
+Dec 2019
+</td>
+<td style="text-align:left;width: 20em; width: 42em; ">
+TrackSigFreq: subclonal reconstructions based on mutation signatures and allele frequencies<br><a href="https://sites.google.com/cs.washington.edu/mlcb">Machine Learning in Computational Biology (MLCB) 2019</a>
+</td>
+<td style="text-align:right;font-style: italic;">
+Poster
+</td>
+</tr>
+</tbody>
+</table>
+<!--
+
+
+## Work experience {.nohead}
+
+
+
+## Service {.nohead}
+
+
+
+## Grants & Awards {.nohead}
+
+
+
+ 
+## Memberships & Affiliations {.nohead}
+
+
+
+-->
+</div>
+<div id="teaching" class="section level2 nohead">
+<h2>Teaching</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+when
+</th>
+<th style="text-align:left;">
+what
+</th>
+<th style="text-align:right;">
+where
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;width: 6em; ">
+Fall 2021
+</td>
+<td style="text-align:left;width: 20em; width: 40em; ">
+Teaching Assistant, CSC197: What, Who, How: Privacy in the Age of Big Data Collection
+</td>
+<td style="text-align:right;font-style: italic;">
+University of Toronto
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; ">
+Winter 2021
+</td>
+<td style="text-align:left;width: 20em; width: 40em; ">
+Teaching Assistant, STA4273: Minimzing Expectations
+</td>
+<td style="text-align:right;font-style: italic;">
+University of Toronto
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; ">
+Fall 2020
+</td>
+<td style="text-align:left;width: 20em; width: 40em; ">
+Teaching Assistant, CSC197: What, Who, How: Privacy in the Age of Big Data Collection
+</td>
+<td style="text-align:right;font-style: italic;">
+University of Toronto
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; ">
+Winter 2020
+</td>
+<td style="text-align:left;width: 20em; width: 40em; ">
+Teaching Assistant, JSC270: Data Science I
+</td>
+<td style="text-align:right;font-style: italic;">
+University of Toronto
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; ">
+Jan 2020
+</td>
+<td style="text-align:left;width: 20em; width: 40em; ">
+R for bioinformatics workshop facilitator
+</td>
+<td style="text-align:right;font-style: italic;">
+Global Society for Genetics and Genome Biology
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; ">
+Fall 2019
+</td>
+<td style="text-align:left;width: 20em; width: 40em; ">
+Teaching Assistant, CSC373: Algorithm Design, Analysis &amp; Complexity
+</td>
+<td style="text-align:right;font-style: italic;">
+University of Toronto
+</td>
+</tr>
+</tbody>
+</table>
+<!--
+
+## Supervisory activities {.nohead}
+
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> when </th>
+   <th style="text-align:left;"> what </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;min-width: 9em; "> May 2021 --- <br>present </td>
+   <td style="text-align:left;"> <span class="work-title">Caitlin Timmons</span><br> <i>The Sloan Kettering Institute</i> </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;min-width: 9em; "> May 2020 --- <br>Nov 2020 </td>
+   <td style="text-align:left;"> <span class="work-title">Haritha Lakshmanan</span><br> <i>The Sloan Kettering Institute</i><br class="work-break">I supervised a high school student to conduct a summer research project on discovering mutations predictive of survival in breast cancer patients. Guided experimental approach, and introduced advanced concepts in machine learning and genetics. </td>
+  </tr>
+</tbody>
+</table>
+
+## Mentoring {.nohead}
+
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> when </th>
+   <th style="text-align:left;"> what </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;min-width: 9em; "> Sep 2020 --- <br>Nov 2020 </td>
+   <td style="text-align:left;"> <span class="work-title">Mentor</span><br> <i>ProjectX UofT</i><br class="work-break">ProjectX is a two month long machine learning research competition. As a mentor, I worked with a group of 4 students to refine their research proposal, offer advice and guidance on their project design and execution. The team I worked with was awarded X medal in the final evaluation. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;min-width: 9em; "> Aug 2020 --- <br>Oct 2020 </td>
+   <td style="text-align:left;"> <span class="work-title">Mentor</span><br> <i>Her Code Camp</i><br class="work-break">Her Code Camp is a free computer science camp for senior high school students in the greater toronto area who identify as a woman, non-binary, or transgender. Over 3 weeks, mentors guide the development of a project in python, and cultivate curiosity in computer science. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;min-width: 9em; "> Oct 2018 --- <br>May 2019 </td>
+   <td style="text-align:left;"> <span class="work-title">Mentor</span><br> <i>Mentorship Program, Department of Statistics, University of Toronto</i><br class="work-break">Communicated online and in person with a group of 12 mentees, who were first year undergraduate students in the Statistics Department. Focus on community building and guiding transition into university life, in particular for new international students. </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;min-width: 9em; "> Sep 2016 --- <br>May 2019 </td>
+   <td style="text-align:left;"> <span class="work-title">Mentor</span><br> <i>SPROUT Peer Mentorship Program, New College, University of Toronto</i><br class="work-break">Met bi-weekly one-on-one with first year undergraduate mentees. Focus on guiding the transition to university life, and promoting healthy life and study habits. </td>
+  </tr>
+</tbody>
+</table>
+
+
+## Personal skills & volunteering {.nohead}
+
+
+
+-->
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
