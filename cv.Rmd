@@ -4,6 +4,7 @@ title: "Cait Harrigan, MSc."
 description: <a href="print_cv" class="cv_button" onClick="window.print()">Print this CV</a>
 output:
   distill::distill_article:
+    output_file: 'docs/cv/index.html'
     css: ["files/cv.css",
           "https://use.fontawesome.com/releases/v5.7.2/css/all.css",
           "https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"]

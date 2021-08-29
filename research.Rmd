@@ -1,6 +1,7 @@
 ---
 site: distill::distill_website
-title: Projects
+title: Research
+description: project briefings
 listing:
   posts:
     - tracksig

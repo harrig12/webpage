@@ -33,11 +33,15 @@ Workflow for creating a new blog post:
 1. copy template directory
 2. edit title and date in `index.Rmd` of the new directory, and set `draft = false`
 3. run `distill::rename_post_dir('_posts/CopyOfTemplate')` on the new folder
+4. remember to knit the post before rendering site
 
 Plans for future posts:
 
 + How to be a good grad student
 + How to find undergraduate research opportunities (at UofT)
++ How to write a reference letter for yourself
++ Grant writing advice (with samples)
+  + OGS
 + How to be a computational biologist
 + Reproducibility crisis
 + Advice a postdoc gave me

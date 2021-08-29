@@ -1,9 +1,9 @@
 ---
-title: "Things to know when appling to gradschools"
+title: "Gradschool secrets"
 description: |
-  Some things I've learned about how to pick a graduate program, and what professors are looking for in prospective students. 
+  Things to know when appling to gradschools: how to pick a graduate program, and what professors are looking for in prospective students. 
 preview: preview.png
-date: 08-29-2016
+date: 08-29-2021
 categories:
   - gradschool
   - learned the hard way
@@ -18,12 +18,7 @@ draft: false
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-
-# Learn more about creating blogs with Distill at:
-# https://rstudio.github.io/distill/blog.html
-
 ```
-
 
 Pretty much every student-academic website I see has some version of this blog post. There are two things that I think drive this fact.
 

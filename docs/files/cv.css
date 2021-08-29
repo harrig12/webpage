@@ -43,7 +43,7 @@ d-article ol{
 /* hide link destinations when printing */ 
 @media print {
   
-  #TOC, d-title,
+  #TOC, d-title, .printOnly,
   .d-contents.d-contents-float{display: none;}
   a[href]:after {content: none;}
   d-article {

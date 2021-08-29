@@ -1,11 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
   <url>
+    <loc>https://caitharrigan.ca/about.html</loc>
+    <lastmod>2021-08-29T14:14:32-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://caitharrigan.ca/blog.html</loc>
+    <lastmod>2021-08-29T14:14:32-04:00</lastmod>
+  </url>
+  <url>
     <loc>https://caitharrigan.ca/cv.html</loc>
-    <lastmod>2021-08-29T14:08:57-04:00</lastmod>
+    <lastmod>2021-08-29T14:43:53-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://caitharrigan.ca/</loc>
+    <lastmod>2021-08-29T14:29:12-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://caitharrigan.ca/research.html</loc>
+    <lastmod>2021-08-29T15:19:30-04:00</lastmod>
+  </url>
+  <url>
+    <loc>https://caitharrigan.ca/posts/tracksig/</loc>
+    <lastmod>2021-08-29T16:10:13-04:00</lastmod>
   </url>
   <url>
     <loc>https://caitharrigan.ca/posts/2016-08-29-gradschool-secrets/</loc>
-    <lastmod>2021-08-29T13:19:48-04:00</lastmod>
+    <lastmod>2021-08-29T15:18:17-04:00</lastmod>
   </url>
 </urlset>

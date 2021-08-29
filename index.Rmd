@@ -17,7 +17,7 @@ output:
           "https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"]
 ---
 
-I'm a graduate student in Computer Science at the University of Toronto. I have a background in computational biology and statistics, and in my research I use machine learning to understand cancer evolution. 
+I'm a graduate student in Computer Science at the University of Toronto. I have a background in computational biology and statistics, and I use machine learning to understand cancer evolution. 
 
 I like coffee and frogs `r emo::ji('coffee')` `r emo::ji('frog')` `r emo::ji('sun')`
 

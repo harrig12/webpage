@@ -1,0 +1,58 @@
+---
+title: "TrackSig"
+description: |
+  In: Nature Communications, February 2020
+preview: preview.png
+date: 12-12-2019
+categories:
+  - cancer evolution
+  - mutational signatures
+  - machine learning
+output: 
+  distill::distill_article:
+    self_contained: false
+    toc: false
+creative_commons: CC BY-NC
+repository_url: https://github.com/harig12/caitharrigan.ca
+draft: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{css echo=F}
+a.button{
+  display:inline;
+  padding:0.35em 1.2em;
+  border:0.1em solid #0F2E3D;
+  margin: 1.2em 0em 0em 0.3em;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:400;
+  color: #0F2E3D;
+  text-align:center;
+  transition: all 0.2s;
+}
+
+a.button:hover{
+ color:#FFFFFF;
+ background-color:#0F2E3D;
+}
+```
+
+<center>
+  <a href="https://doi.org/10.1038/s41467-020-14352-7" class="button">paper</a>
+  <a href="https://doi.org/10.1038/s41467-020-14352-7" class="button">code</a>
+</center>
+
+# Big Ideas:
+
+* Subclonal evolution can be detected by examining mutational processes
+
+
+# Citation
+
+Yulia Rubanova, Ruian Shi, __Caitlin F Harrigan__, Roujia Li, Jeff Wintersinger, Nil Sahin, Amit Deshwar, and Quaid Morris. "Reconstructing evolutionary trajectories of mutation signature activities in cancer using TrackSig". En. In: Nature Communications 11.1 (Feb. 2020). Number: 1 Publisher: Nature Publishing Group, pp. 1-12. 

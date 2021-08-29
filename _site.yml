@@ -4,10 +4,10 @@ output_dir: "docs"
 navbar:
   search: false
   right:
-    - text: "Projects"
-      href: projects.html
+    - text: "Research"
+      href: research.html
     - text: "Blog"
-      href: blog_listing.html
+      href: blog.html
     - text: "CV"
       href: cv.html
     - icon: fab fa-github
