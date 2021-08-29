@@ -10,10 +10,10 @@
       "mutational signatures",
       "machine learning"
     ],
-    "contents": "\r\n\r\n\r\na.button{\r\n  display:inline;\r\n  padding:0.35em 1.2em;\r\n  border:0.1em solid #0F2E3D;\r\n  margin: 1.2em 0em 0em 0.3em;\r\n  border-radius: 0.25rem;\r\n  box-sizing: border-box;\r\n  text-decoration:none;\r\n  font-family: 'Open Sans', sans-serif;\r\n  font-weight:400;\r\n  color: #0F2E3D;\r\n  text-align:center;\r\n  transition: all 0.2s;\r\n}\r\n\r\na.button:hover{\r\n color:#FFFFFF;\r\n background-color:#0F2E3D;\r\n}\r\n\r\n\r\npaper code\r\n\r\nBig Ideas:\r\nSubclonal evolution can be detected by examining mutational processes\r\nCitation\r\nYulia Rubanova, Ruian Shi, Caitlin F Harrigan, Roujia Li, Jeff Wintersinger, Nil Sahin, Amit Deshwar, and Quaid Morris. “Reconstructing evolutionary trajectories of mutation signature activities in cancer using TrackSig”. En. In: Nature Communications 11.1 (Feb. 2020). Number: 1 Publisher: Nature Publishing Group, pp. 1-12.\r\n\r\n\r\n\r\n",
+    "contents": "\r\n\r\n\r\na.button{\r\n  display:inline;\r\n  padding:0.35em 1.2em;\r\n  border:0.1em solid #0F2E3D;\r\n  margin: 1.2em 0em 0em 0.3em;\r\n  border-radius: 0.25rem;\r\n  box-sizing: border-box;\r\n  text-decoration:none;\r\n  font-family: 'Open Sans', sans-serif;\r\n  font-weight:400;\r\n  color: #0F2E3D;\r\n  text-align:center;\r\n  transition: all 0.2s;\r\n}\r\n\r\na.button:hover{\r\n color:#FFFFFF;\r\n background-color:#0F2E3D;\r\n}\r\n\r\n\r\npaper code\r\n\r\n\r\nKey Ideas:\r\nOrder mutations by pseudotime: every cell contains all the mutations of its ancestors\r\nSubclonal evolution can be observed by detecting changes in mutational processes\r\nCitation\r\nYulia Rubanova, Ruian Shi, Caitlin F Harrigan, Roujia Li, Jeff Wintersinger, Nil Sahin, Amit Deshwar, and Quaid Morris. “Reconstructing evolutionary trajectories of mutation signature activities in cancer using TrackSig”. En. In: Nature Communications 11.1 (Feb. 2020). Number: 1 Publisher: Nature Publishing Group, pp. 1-12.\r\n\r\n\r\n\r\n",
     "preview": "posts/tracksig/preview.png",
-    "last_modified": "2021-08-29T16:10:13-04:00",
-    "input_file": "index.knit.md",
+    "last_modified": "2021-08-29T16:17:42-04:00",
+    "input_file": {},
     "preview_width": 1050,
     "preview_height": 600
   },
