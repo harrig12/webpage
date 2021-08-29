@@ -1,0 +1,255 @@
+---
+site: distill::distill_website
+title: "Cait Harrigan, MSc."
+description: <a href="print_cv" class="cv_button" onClick="window.print()">Print this CV</a>
+output:
+  distill::distill_article:
+    css: ["files/cv.css",
+          "https://use.fontawesome.com/releases/v5.7.2/css/all.css",
+          "https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"]
+    toc: true
+    includes:
+      in_header: "files/header.html"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+options(knitr.kable.NA = '')
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(bibtex)
+library(RefManageR)
+
+```
+
+```{r tables, include=FALSE}
+# bibliography items 
+publications <- "files/pubs.bib"
+
+googlesheets4::gs4_auth()
+cv_entries <- googlesheets4::read_sheet("1JKlSIuDrfC1wa4V1zf4Si_Tu34upiBEn1DlvFfDeFh0", col_types = "c")
+cv_entries <- subset(cv_entries, show == T)
+
+# formatting positions with descriptions
+longEntry <- function(data, showDesc = F){
+  data %>%
+  mutate(what = str_c("<span class='work-title'>", 
+                      what, "</span><br> <i>", where, "</i>")) %>%
+  mutate(what = ifelse(!is.na(description) & showDesc == T, 
+                       str_c(what, "<br class='work-break'>", description), what)) %>%
+  mutate(when = gsub(when, pattern = " --- ", replacement = " --- <br>")) %>%
+  select(when, what) %>%
+  kable(escape = F) %>%
+  column_spec(1, width_min = "9em") 
+}
+
+# formatting for one-liners
+shortEntry <- function(data, wide_date = T){
+  data %>%
+    select(when, what, where) %>% 
+    kable(format = "html", align = "llr", escape = F) %>%
+    column_spec(3, italic = T) %>%
+    column_spec(2, width = "20em") %>%
+    column_spec(1, width = ifelse(wide_date, "11em", "6em") )
+}
+
+bestOf <- function(l){
+  # return the first non-na argument
+  #print(head(data.frame(l)))
+  r <- apply(data.frame(l), FUN = function(x){x[which(!is.na(x))][[1]]}, MAR = 1)
+  return(r)
+}
+
+# general formatting
+cv_entries <- arrange(cv_entries, desc(pmax(year_end, year_begin, na.rm = T)), desc(year_begin), desc(month_begin)) 
+stopifnot(all(!is.na(cv_entries$year_begin)))
+cv_entries <- cv_entries %>%  
+  mutate(month_begin = month.abb[as.numeric(month_begin)]) %>%
+  mutate(month_end = month.abb[as.numeric(month_end)]) %>%
+  mutate(when = bestOf(list(str_c(month_begin, " ", year_begin, " --- ", month_end, " ", year_end),
+                            str_c(month_begin, " ", year_begin, " --- ", year_end),
+                            str_c(year_begin, " --- ", year_end),
+                            str_c(month_begin, " ", year_begin),
+                            year_begin)))
+```
+
+<div id=cv_print_header>
+<p style="font-size: 15pt; text-align: center; font-weight:300; padding-bottom: 5pt;">Cait Harrigan, MSc.<p>
+<p style="text-align:center; font-weight:400">
+cait.harrigan<i class="fas fa-at" style="font-size: 5pt"></i>mail.utoronto.ca
+&emsp;|&emsp;
+View this CV online at [caitharrigan.ca/cv](caitharrigan.ca/cv.html)
+<p>
+</div>
+
+I am a graduate student at the University of Toronto supervised by [Quaid Morris](http://www.morrislab.ca/) and [Kieran Campbell](https://www.camlab.ca/), and a graduate affiliate at the [Vector Institute](https://vectorinstitute.ai/). I did my undergraduate studies at the University of Toronto, in Computational Biology and Statistics. My thesis work pertains to cancer genomics, and modelling the evolutionary constraints that underlie how mutation events occur in DNA. I'm passionate about open science, and promoting great mentorship in the sciences. 
+
+## Memberships & Affiliations 
+
+```{r affiliations}
+cv_entries %>% 
+  filter(type == "affiliation_and_membership") %>% 
+  shortEntry() %>%
+  column_spec(2, "9em")
+```
+
+
+## Education 
+
+```{r education}
+cv_entries %>% 
+  filter(type == 'education') %>% 
+  shortEntry() %>%
+  column_spec(2, "35em")
+```
+
+
+## Publications 
+
+```{r publications}
+snatchPrint <- function(bib){
+  # extract data from bibentry
+  refsList <- capture.output(PrintBibliography(bib))
+    
+  # add delim, and split entries
+  refsList[which(nchar(refsList) == 0)] <- "<DELIM>"
+  
+  paste0(refsList, collapse = " ") %>% 
+    strsplit(split = "<DELIM>") %>%
+    unlist() -> entries
+  
+  # bold my name
+  entries <- gsub("Harrigan, Caitlin F", "__Harrigan, Caitlin F__", fixed = T, entries)
+  entries <- gsub("Caitlin F Harrigan", "__Caitlin F Harrigan__", fixed = T, entries)
+  entries <- gsub("Harrigan, Caitlin", "__Harrigan, Caitlin__", fixed = T, entries)
+  entries <- gsub("Caitlin Harrigan", "__Caitlin Harrigan__", fixed = T, entries)
+  
+  # remove numeric if necessary
+  entries <- gsub('\\[', '', entries)
+  entries <- gsub('\\]', '.', entries)
+
+  return(entries)
+
+}
+
+makePubTable <- function(bib){
+  # reverse these to match date order of refs
+  tibble(entry = snatchPrint(bib),
+         paperLink = rev(unlist(bib$url)), 
+         codeLink = rev(unlist(bib$annote))) %>%
+    mutate(paperLink = str_c("[paper]", "(", paperLink, ")")) %>%
+    mutate(paperLink = cell_spec(paperLink, background = "var(--hl-col)",
+                            font_size = "1.2em")) %>%
+    mutate(codeLink = ifelse(codeLink == 'NULL', '', codeLink)) %>%
+    mutate(codeLink = case_when(codeLink != '' ~ str_c("[code]", "(", codeLink, ")"))) %>%
+    mutate(codeLink = case_when(codeLink != '' ~ cell_spec(codeLink, background = "var(--hl-col)",
+                                                           font_size = "1.2em"))) %>%
+    kable(escape = F) %>%
+    column_spec(2:3, width_min = "4em")
+    
+}
+
+oops <- BibOptions(bib.style = "numeric", match.author = "exact", 
+                   sorting = 'ydnt', max.names = 99, first.inits = FALSE, 
+                   style = "text", no.print.fields = c("doi","url","urldate", "issn"))
+
+
+refs <- ReadBib(publications) 
+NoCite(refs)
+
+
+refs %>% 
+  snatchPrint() %>%
+  kable() 
+
+```
+
+
+## Talks & Posters 
+
+```{r talks}
+# research dissemination
+cv_entries %>% 
+  filter(type == 'talks_and_posters') %>% 
+  #mutate(what = str_c("<i>", what, "</i>")) %>%
+  mutate(what = str_c(what, "<br>", where), where = description) %>%
+  shortEntry(wide_date = F) %>%
+  column_spec(2, "42em")
+```
+
+
+## Service 
+```{r service}
+cv_entries %>% 
+  filter(type == 'service') %>% 
+  shortEntry(wide_date = F) 
+```
+
+## Grants & Awards 
+
+```{r awards}
+cv_entries %>% 
+  filter(type == 'grants_and_awards') %>% 
+  mutate(when = bestOf(
+            list(str_c(year_begin, " --- ", year_end),
+                       year_begin
+                 )
+         )) %>%
+  shortEntry() %>%
+  column_spec(1, "8em") %>%
+  column_spec(2, "27em")
+```
+
+
+## Work experience 
+```{r workexp}
+cv_entries %>% 
+  filter(type == 'work') %>% 
+  shortEntry(wide_date = T)
+```
+
+## Supervisory activities 
+
+```{r supervision}
+cv_entries %>% 
+  filter(type == 'supervision') %>% 
+  #longEntry(showDesc = T) 
+  shortEntry(wide_date = T)
+```
+
+
+## Teaching
+
+<em style="font-size:0.8em">Unless otherwise noted, school is University of Toronto</em> 
+
+```{r teaching}
+cv_entries %>% 
+  filter(type == 'teaching') %>% 
+  mutate(when = str_c(bestOf(list(day_begin,month_begin)), " ", year_begin)) %>%
+  shortEntry() %>%
+  column_spec(1, "6.5em") %>%
+  column_spec(2, "30em")
+```
+
+<br class='printOnly'>
+<br class='printOnly'>
+
+## Mentoring {.pagebreak}
+
+```{r mentoring}
+cv_entries %>% 
+  filter(type == "mentorship") %>% 
+  longEntry(showDesc = T)
+```
+
+
+## Personal skills & volunteering 
+
+```{r volunteering}
+cv_entries %>%
+  filter(type == 'volunteering' | type == 'participation') %>%
+  longEntry(showDesc = T)
+```
+
+

@@ -1,0 +1,88 @@
+---
+title: "Things to know when appling to gradschools"
+description: |
+  Some things I've learned about how to pick a graduate program, and what professors are looking for in prospective students. 
+preview: preview.png
+date: 08-29-2016
+categories:
+  - gradschool
+  - learned the hard way
+output: 
+  distill::distill_article:
+    self_contained: false
+    toc: true
+creative_commons: CC BY-NC
+repository_url: https://github.com/harig12/caitharrigan.ca
+draft: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating blogs with Distill at:
+# https://rstudio.github.io/distill/blog.html
+
+```
+
+
+Pretty much every student-academic website I see has some version of this blog post. There are two things that I think drive this fact.
+
+1. Many academic website themes include a blog section, which makes people feel like they should write something in it. Gradstudents write what they know, and what they know is gradschool. 
+2. We're still reeling from the application process. It's confusing, and varies wildly from school-to-school, or even between departments at the same school. Most undergrads have a nebulous understanding of what the people reading their application are looking for, and the process can be heavily influenced by having existing relationships with professors in program. 
+
+To me, this second remark is glaring. It points to an accessibility issue for prospective students that don't have gradstudents or professors they can reach out to to get advice on applying ^[Feel free to reach out to *me* for advice, I am happy to be your gradschool friend] . Now that applying to gradschool is in my rearview mirror, I know a bunch of secrets that I will with you. 
+
+## Disclaimer  
+To remark \#1: I'm writing what I know. What I've learned may only be applicable to the Canadian university experience (although I suspect much of it could be extended to the US). This advice is in general aimed towards students applying to research-based graduate programs. However, my opinions come from my personal experiences and may be particular to my career path. Take away what is useful, and leave the rest!
+
+The views expressed here are my own, and not endorsed by any organizations that I am affiliated with.
+
+## How to pick a program
+
+### Graduate programs are not like undergrad
+
+The rules are different, the culture is different
+Believe in yourself. Gradschool is different from undergrad abecause the bar is lower to get in. 
+
+### Masters to PhD vs direct entry
+
+### Entry pool vs assigned supervisor
+
+## How to pick a lab
+
+### Read past work
+Do this to find out what kinds of projects the prof can support. 
+### Talk to current students
+What classes did they take? What are the strengths and weaknesses of the prof? What is the lab culture like? Who do they talk to when they're stuck? How independently do they work? How often do they meet with the prof and how hands on are they? What does the prof do to support them outside of their research? 
+
+Think about who else is in the lab. What senior students will be available to mentor you? <mentorship in sciences article>  + postdocs are important article
+### Interview the professor
+Your prof is not your boss. THey are an advisor and mentor and will inevitable shape you into they kind of researcher that they are. THinnk about whether their style is somehting you want to model. THinka about the attributes that they exhibit that you might pick up on and they habits/values they will instill on you. 
+#### Lab direction
+#### What do you do to foster good lab culture?
+####
+
+## Things that will make your application stronger
+### Have a relationship with a current faculty memeber
+#### Cold email
+informational interview, have some portforlio to show off/talk about
+#### Work with them over the summer
+#### Go to conferences
+
+
+I went to grad school at the same institute that I did my undergrad at. My background is This post is 
+
+I had a really rich set of opportunities available to me as an undergraduate
+
+UofT is big. getting reference letters is hard. 
+
+The views expressed here are my own, and not endorsed by any organizations that I am affiliated with. 
+
+
+
+## How to mitigate the accessibility issue
+
+
+
+
+

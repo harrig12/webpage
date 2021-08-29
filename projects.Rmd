@@ -1,0 +1,11 @@
+---
+site: distill::distill_website
+title: Projects
+listing:
+  posts:
+    - tracksig
+    - tracksigfreq
+    - galiwatch
+    - damuta
+    - template
+---

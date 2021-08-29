@@ -1,0 +1,129 @@
+
+table{
+  width: 100%;
+}
+
+thead{display: none;}
+
+d-article h2{
+  border-bottom: none;
+  padding: 0em;
+  margin-bottom: 0.2em;
+  margin-top: 0.5em;
+}
+
+d-article p,
+d-article table, 
+d-article table td{
+  border-bottom: none;
+  padding: 0em;
+  margin-bottom: 0em;
+  margin-top: 0.2em;
+  margin-left: 0.5em;
+  vertical-align: top;
+  text-align: left;
+  line-height: 1.5;
+}
+
+d-article ol{
+  padding: 0.1em;
+  margin-left: 0.8em;
+  margin-bottom: 0.2em;
+}
+
+#cv_print_header { display: none; }
+
+/* to force a pagebreak in pdf with <div class="pagebreak"></div> */
+/* doesn't work with CSS-gird */
+.pagebreak { page-break-before: always; } 
+
+
+/* ------- PRINT exclusive options --------- */
+/* see https://www.jotform.com/blog/css-perfect-print-stylesheet-98272/ */
+/* hide link destinations when printing */ 
+@media print {
+  
+  #TOC, d-title,
+  .d-contents.d-contents-float{display: none;}
+  a[href]:after {content: none;}
+  d-article {
+    border-top: none;
+    padding-top: 0em;
+  }
+  
+  /* create header for printed version of CV */
+  #cv_print_header { 
+    display: inline-block; 
+    margin: auto;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  
+  body,
+  d-article p,
+  d-article table, 
+  d-article table td {
+    font-family: 'Roboto', sans-serif;
+    font-size: 8pt;
+    line-height: 10.5pt;
+    margin-bottom: 2pt;
+  }
+
+  
+  h2, d-article h2 {
+    margin-top: 2pt;
+    margin-bottom: 0pt;
+    font-size: 6pt;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-variant-caps: small-caps;
+  }
+
+  #content,#page {
+    width: 100%; 
+    margin: 0; 
+    float: none;
+  }
+  /** Setting margins */       
+  @page { margin: 1.2cm }
+  
+}
+
+
+
+@media screen  {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-column-gap: 65px;
+  }
+
+  a.cv_button{
+ display:inline-block;
+ padding:0.35em 1.2em;
+ border:0.1em solid #0F2E3D;
+ margin: 1.2em 0em 0em 0.3em;
+ border-radius: 0.25rem;
+ box-sizing: border-box;
+ text-decoration:none;
+ font-family: 'Open Sans', sans-serif;
+ font-weight:400;
+ color:#0F2E3D;
+ text-align:center;
+ transition: all 0.2s;
+}
+
+  a.cv_button:hover{
+ color:#FFFFFF;
+ background-color:#0F2E3D;
+}
+}

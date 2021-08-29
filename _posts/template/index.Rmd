@@ -1,0 +1,54 @@
+---
+title: "Template Post"
+description: |
+  Test post for messing around with formatting
+preview: preview.png
+date: 11-08-2016
+categories:
+  - gradschool
+  - research
+  - side project
+  - cancer evolution
+  - machine learning
+output: 
+  distill::distill_article:
+    self_contained: false
+    toc: true
+creative_commons: CC BY-NC
+repository_url: https://github.com/harig12/caitharrigan.ca
+draft: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating blogs with Distill at:
+# https://rstudio.github.io/distill/blog.html
+
+```
+
+
+Workflow for creating a new blog post:
+
+1. copy template directory
+2. edit title and date in `index.Rmd` of the new directory, and set `draft = false`
+3. run `distill::rename_post_dir('_posts/CopyOfTemplate')` on the new folder
+
+Plans for future posts:
+
++ How to be a good grad student
++ How to find undergraduate research opportunities (at UofT)
++ How to be a computational biologist
++ Reproducibility crisis
++ Advice a postdoc gave me
+  + Hannes' golden post
++ Teaching toolbox
+  + transplant the personal notes I've taken
++ Mentors & Sponsors
+  + Mentor mapping
++ Data privacy, data ownership
+  + https://www.washingtonpost.com/technology/2019/04/10/tracking-your-pregnancy-an-app-may-be-more-public-than-you-think/ 
++ That twitter thread about mitigating accessibility issue in applying to labs
+
+
+

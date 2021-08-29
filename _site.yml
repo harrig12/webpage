@@ -1,0 +1,17 @@
+name: "distill"
+title: "Cait Harrigan"
+output_dir: "docs"
+navbar:
+  search: false
+  right:
+    - text: "Projects"
+      href: projects.html
+    - text: "Blog"
+      href: blog_listing.html
+    - text: "CV"
+      href: cv.html
+    - icon: fab fa-github
+      href: https://github.com/harrig12
+base_url: https://caitharrigan.ca
+source_url: https://github.com/harrig12/caitharrigan.ca
+output: distill::distill_article
