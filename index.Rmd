@@ -1,7 +1,7 @@
 ---
 title: "Hi, I'm Cait"
 site: distill::distill_website
-image: "files/BWface.jpg"
+image: "files/face.jpg"
 links:
   - label: <i class="ai ai-google-scholar ai-2x" style="font-size:2rem"></i>
     url: "mailto:email@email.com"

@@ -1,9 +1,9 @@
 ---
-title: "TrackSig"
+title: "TrackSigFreq"
 description: |
-  In: Nature Communications, February 2020
+  In: Pacific Symposium on Biocomputing, January 2020
 preview: preview.png
-date: 12-12-2019
+date: 05-02-2020
 categories:
   - cancer evolution
   - machine learning
@@ -44,8 +44,8 @@ a.button:hover{
 ```
 
 <center>
-  <a href="https://doi.org/10.1038/s41467-020-14352-7" class="button">paper</a>
-  <a href="https://github.com/morrislab/TrackSigFreq">code</a>
+  <a href="https://doi.org/10.1142/9789811215636_0022" class="button">paper</a>
+  <a href="https://github.com/morrislab/TrackSigFreq" class="button">code</a>
 </center>
 
 <br>
@@ -53,10 +53,9 @@ a.button:hover{
 
 # Key Ideas:
 
-* Order mutations by pseudotime: every cell contains all the mutations of its ancestors
-* Subclonal evolution can be observed by detecting changes in mutational processes
-
+* Both variant allele frequency (VAF) and mutational signatures are useful for identifying subclonal cell populations
+* TrackSig is easily extensible to account for VAF when detecting subclonal evolution
 
 # Citation
 
-Yulia Rubanova, Ruian Shi, __Caitlin F Harrigan__, Roujia Li, Jeff Wintersinger, Nil Sahin, Amit Deshwar, and Quaid Morris. "Reconstructing evolutionary trajectories of mutation signature activities in cancer using TrackSig". En. In: Nature Communications 11.1 (Feb. 2020). Number: 1 Publisher: Nature Publishing Group, pp. 1-12. 
+__Caitlin F Harrigan__, Yulia Rubanova, Quaid Morris, and Alina Selega. "TrackSigFreq : subclonal reconstructions based on mutation signatures and allele frequencies". In: Pacific Symposium on Biocomputing 25 (2020), pp. 238-249. 

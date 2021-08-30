@@ -4,9 +4,10 @@ title: Research
 description: project briefings
 listing:
   posts:
-    - tracksig
-    - tracksigfreq
-    - galiwatch
     - damuta
+    - tracksigfreq
+    - tracksig
+    - galiwatch
+    
     - template
 ---

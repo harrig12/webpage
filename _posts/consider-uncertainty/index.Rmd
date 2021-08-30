@@ -1,13 +1,12 @@
 ---
-title: "TrackSig"
+title: "Considerations for Visualizing Uncertainty"
 description: |
-  In: Nature Communications, February 2020
+  Workshop paper presented at CHI 2021
 preview: preview.png
-date: 12-12-2019
+date: 01-05-2021
 categories:
-  - cancer evolution
-  - machine learning
-  - peer reviewed
+  - data viz
+  - clinical ml
 output: 
   distill::distill_article:
     self_contained: false
@@ -45,7 +44,6 @@ a.button:hover{
 
 <center>
   <a href="https://doi.org/10.1038/s41467-020-14352-7" class="button">paper</a>
-  <a href="https://github.com/morrislab/TrackSigFreq">code</a>
 </center>
 
 <br>
@@ -53,10 +51,10 @@ a.button:hover{
 
 # Key Ideas:
 
-* Order mutations by pseudotime: every cell contains all the mutations of its ancestors
-* Subclonal evolution can be observed by detecting changes in mutational processes
+* Displaying uncertainty when visualizing a model output increases trust in the prediction
+* Clinicians are a unique user group because they interpret predictions by examining raw features alongside model output
 
 
 # Citation
 
-Yulia Rubanova, Ruian Shi, __Caitlin F Harrigan__, Roujia Li, Jeff Wintersinger, Nil Sahin, Amit Deshwar, and Quaid Morris. "Reconstructing evolutionary trajectories of mutation signature activities in cancer using TrackSig". En. In: Nature Communications 11.1 (Feb. 2020). Number: 1 Publisher: Nature Publishing Group, pp. 1-12. 
+__Caitlin F Harrigan__, Gabriella Morgenshtern, Anna Goldenberg, and Fanny Chevalier. Considerations for Visualizing Uncertainty in Clinical Machine Learning Models. Workshop: Realizing AI in Healthcare: Challenges Appearing in the Wild, CHI 2021 Online Virtual Conference (originally Yokohama, Japan), May. 2021. 
