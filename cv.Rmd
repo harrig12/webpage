@@ -4,7 +4,6 @@ title: "Cait Harrigan, MSc."
 description: <a href="print_cv" class="cv_button" onClick="window.print()">Print this CV</a>
 output:
   distill::distill_article:
-    output_file: 'docs/cv/index.html'
     css: ["files/cv.css",
           "https://use.fontawesome.com/releases/v5.7.2/css/all.css",
           "https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"]
@@ -35,14 +34,13 @@ cv_entries <- subset(cv_entries, show == T)
 # formatting positions with descriptions
 longEntry <- function(data, showDesc = F){
   data %>%
-  mutate(what = str_c("<span class='work-title'>", 
-                      what, "</span><br> <i>", where, "</i>")) %>%
+  mutate(what = str_c("__",what, "__, ", where)) %>%
   mutate(what = ifelse(!is.na(description) & showDesc == T, 
                        str_c(what, "<br class='work-break'>", description), what)) %>%
-  mutate(when = gsub(when, pattern = " --- ", replacement = " --- <br>")) %>%
+  #mutate(when = gsub(when, pattern = " --- ", replacement = " --- <br>")) %>%
   select(when, what) %>%
   kable(escape = F) %>%
-  column_spec(1, width_min = "9em") 
+  column_spec(1, width = "11em") 
 }
 
 # formatting for one-liners
@@ -105,6 +103,12 @@ cv_entries %>%
   column_spec(2, "35em")
 ```
 
+## Work experience 
+```{r workexp}
+cv_entries %>% 
+  filter(type == 'work') %>% 
+  shortEntry(wide_date = T)
+```
 
 ## Publications 
 
@@ -173,11 +177,12 @@ refs %>%
 # research dissemination
 cv_entries %>% 
   filter(type == 'talks_and_posters') %>% 
-  #mutate(what = str_c("<i>", what, "</i>")) %>%
+  mutate(what = str_c("__", what, "__")) %>%
   mutate(what = str_c(what, "<br>", where), where = description) %>%
   shortEntry(wide_date = F) %>%
   column_spec(2, "42em")
 ```
+
 
 
 ## Service 
@@ -197,17 +202,11 @@ cv_entries %>%
                        year_begin
                  )
          )) %>%
-  shortEntry() %>%
-  column_spec(1, "8em") %>%
-  column_spec(2, "27em")
-```
-
-
-## Work experience 
-```{r workexp}
-cv_entries %>% 
-  filter(type == 'work') %>% 
-  shortEntry(wide_date = T)
+  longEntry(showDesc = T) %>%
+  column_spec(1, "8em") 
+  #shortEntry() %>%
+  #column_spec(1, "8em") %>%
+  #column_spec(2, "27em")
 ```
 
 ## Supervisory activities 
@@ -216,7 +215,8 @@ cv_entries %>%
 cv_entries %>% 
   filter(type == 'supervision') %>% 
   #longEntry(showDesc = T) 
-  shortEntry(wide_date = T)
+  shortEntry(wide_date = T) %>%
+  column_spec(2, "12em")
 ```
 
 
@@ -233,9 +233,6 @@ cv_entries %>%
   column_spec(2, "30em")
 ```
 
-<br class='printOnly'>
-<br class='printOnly'>
-
 ## Mentoring {.pagebreak}
 
 ```{r mentoring}
@@ -245,11 +242,12 @@ cv_entries %>%
 ```
 
 
-## Personal skills & volunteering 
+## Event organization & volunteering 
 
 ```{r volunteering}
 cv_entries %>%
-  filter(type == 'volunteering' | type == 'participation') %>%
+  filter(type == 'volunteering' | type == 'event_org') %>%
+  #shortEntry()
   longEntry(showDesc = T)
 ```
 

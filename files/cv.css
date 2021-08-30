@@ -35,15 +35,15 @@ d-article ol{
 
 /* to force a pagebreak in pdf with <div class="pagebreak"></div> */
 /* doesn't work with CSS-gird */
-.pagebreak { page-break-before: always; } 
-
+.pagebreak {page-break-before: always; } 
+.printOnly {display: none;}
 
 /* ------- PRINT exclusive options --------- */
 /* see https://www.jotform.com/blog/css-perfect-print-stylesheet-98272/ */
 /* hide link destinations when printing */ 
 @media print {
   
-  #TOC, d-title, .printOnly,
+  #TOC, d-title,
   .d-contents.d-contents-float{display: none;}
   a[href]:after {content: none;}
   d-article {

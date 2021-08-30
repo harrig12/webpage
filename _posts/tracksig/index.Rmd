@@ -3,17 +3,14 @@ title: "TrackSig"
 description: |
   In: Nature Communications, February 2020
 preview: preview.png
-date: 12-12-2019
+date: 02-27-2020
 categories:
   - cancer evolution
   - machine learning
   - peer reviewed
 output: 
   distill::distill_article:
-    self_contained: false
     toc: false
-creative_commons: CC BY-NC
-repository_url: https://github.com/harig12/caitharrigan.ca
 draft: false
 ---
 
@@ -32,6 +29,7 @@ a.button{
   text-decoration:none;
   font-family: 'Open Sans', sans-serif;
   font-weight:400;
+  font-size: 1.3em;
   color: #0F2E3D;
   text-align:center;
   transition: all 0.2s;
@@ -45,7 +43,7 @@ a.button:hover{
 
 <center>
   <a href="https://doi.org/10.1038/s41467-020-14352-7" class="button">paper</a>
-  <a href="https://github.com/morrislab/TrackSigFreq">code</a>
+  <a href="https://github.com/morrislab/TrackSigFreq" class="button">code</a>
 </center>
 
 <br>

@@ -1,19 +1,16 @@
 ---
 title: "TrackSigFreq"
 description: |
-  In: Pacific Symposium on Biocomputing, January 2020
+  In: Proceedings of the Pacific Symposium on Biocomputing, January 2020
 preview: preview.png
-date: 05-02-2020
+date: 03-02-2020
 categories:
   - cancer evolution
   - machine learning
   - peer reviewed
 output: 
   distill::distill_article:
-    self_contained: false
     toc: false
-creative_commons: CC BY-NC
-repository_url: https://github.com/harig12/caitharrigan.ca
 draft: false
 ---
 
@@ -32,6 +29,7 @@ a.button{
   text-decoration:none;
   font-family: 'Open Sans', sans-serif;
   font-weight:400;
+  font-size: 1.3em;
   color: #0F2E3D;
   text-align:center;
   transition: all 0.2s;
@@ -54,7 +52,7 @@ a.button:hover{
 # Key Ideas:
 
 * Both variant allele frequency (VAF) and mutational signatures are useful for identifying subclonal cell populations
-* TrackSig is easily extensible to account for VAF when detecting subclonal evolution
+* [TrackSig](caitharrigan.ca/posts/tracksig) is easily extensible to account for VAF when detecting subclonal evolution
 
 # Citation
 

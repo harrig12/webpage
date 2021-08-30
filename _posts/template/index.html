@@ -95,6 +95,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--  https://schema.org/Article -->
   <meta property="article:published" itemprop="datePublished" content="2016-11-08"/>
   <meta property="article:created" itemprop="dateCreated" content="2016-11-08"/>
+  <meta name="article:author" content="Cait Harrigan"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="Template Post"/>
@@ -111,7 +112,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","date","categories","output","creative_commons","repository_url","draft"]}},"value":[{"type":"character","attributes":{},"value":["Template Post"]},{"type":"character","attributes":{},"value":["Test post for messing around with formatting\n"]},{"type":"character","attributes":{},"value":["preview.png"]},{"type":"character","attributes":{},"value":["11-08-2016"]},{"type":"character","attributes":{},"value":["gradschool","research","side project","cancer evolution","machine learning"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"character","attributes":{},"value":["CC BY-NC"]},{"type":"character","attributes":{},"value":["https://github.com/harig12/caitharrigan.ca"]},{"type":"logical","attributes":{},"value":[true]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","preview","date","author","categories","output","repository_url","creative_commons","draft"]}},"value":[{"type":"character","attributes":{},"value":["Template Post"]},{"type":"character","attributes":{},"value":["Test post for messing around with formatting\n"]},{"type":"character","attributes":{},"value":["preview.png"]},{"type":"character","attributes":{},"value":["11-08-2016"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name"]}},"value":[{"type":"character","attributes":{},"value":["Cait Harrigan"]}]}]},{"type":"character","attributes":{},"value":["gradschool","research","side project","cancer evolution","machine learning"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]}]}]},{"type":"character","attributes":{},"value":["https://github.com/harrig12/caitharrigan.ca"]},{"type":"character","attributes":{},"value":["CC BY-NC"]},{"type":"logical","attributes":{},"value":[true]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
@@ -1455,7 +1456,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Template Post","description":"Test post for messing around with formatting","authors":[],"publishedDate":"2016-11-08T00:00:00.000-05:00"}
+{"title":"Template Post","description":"Test post for messing around with formatting","authors":[{"author":"Cait Harrigan","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2016-11-08T00:00:00.000-05:00","citationText":"Harrigan, 2016"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1478,6 +1479,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p><p>Test post for messing around with formatting</p></p>
 </div>
 
+<div class="d-byline">
+  
+  Cait Harrigan
+  
+<br/>11-08-2016
+</div>
 
 <div class="d-article">
 <p>Workflow for creating a new blog post:</p>
@@ -1485,14 +1492,36 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <li>copy template directory</li>
 <li>edit title and date in <code>index.Rmd</code> of the new directory, and set <code>draft = false</code></li>
 <li>run <code>distill::rename_post_dir('_posts/CopyOfTemplate')</code> on the new folder</li>
+<li>remember to knit the post before rendering site</li>
 </ol>
 <p>Plans for future posts:</p>
 <ul>
 <li>How to be a good grad student</li>
 <li>How to find undergraduate research opportunities (at UofT)</li>
+<li>How to write a reference letter for yourself</li>
+<li>Grant writing advice (with samples)
+<ul>
+<li>OGS</li>
+</ul></li>
 <li>How to be a computational biologist</li>
 <li>Reproducibility crisis</li>
-<li>Advice a postdoc gave me</li>
+<li>Advice a postdoc gave me
+<ul>
+<li>Hannes’ golden post</li>
+</ul></li>
+<li>Teaching toolbox
+<ul>
+<li>transplant the personal notes I’ve taken</li>
+</ul></li>
+<li>Mentors &amp; Sponsors
+<ul>
+<li>Mentor mapping</li>
+</ul></li>
+<li>Data privacy, data ownership
+<ul>
+<li><a href="https://www.washingtonpost.com/technology/2019/04/10/tracking-your-pregnancy-an-app-may-be-more-public-than-you-think/" class="uri">https://www.washingtonpost.com/technology/2019/04/10/tracking-your-pregnancy-an-app-may-be-more-public-than-you-think/</a></li>
+</ul></li>
+<li>That twitter thread about mitigating accessibility issue in applying to labs</li>
 </ul>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
@@ -1508,9 +1537,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_appendices-->
 <div class="appendix-bottom">
 <h3 id="updates-and-corrections">Corrections</h3>
-<p>If you see mistakes or want to suggest changes, please <a href="https://github.com/harig12/caitharrigan.ca/issues/new">create an issue</a> on the source repository.</p>
+<p>If you see mistakes or want to suggest changes, please <a href="https://github.com/harrig12/caitharrigan.ca/issues/new">create an issue</a> on the source repository.</p>
 <h3 id="reuse">Reuse</h3>
-<p>Text and figures are licensed under Creative Commons Attribution <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>. Source code is available at <a href="https://github.com/harig12/caitharrigan.ca">https://github.com/harig12/caitharrigan.ca</a>, unless otherwise noted. The figures that have been reused from other sources don't fall under this license and can be recognized by a note in their caption: "Figure from ...".</p>
+<p>Text and figures are licensed under Creative Commons Attribution <a rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>. Source code is available at <a href="https://github.com/harrig12/caitharrigan.ca">https://github.com/harrig12/caitharrigan.ca</a>, unless otherwise noted. The figures that have been reused from other sources don't fall under this license and can be recognized by a note in their caption: "Figure from ...".</p>
 </div>
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->

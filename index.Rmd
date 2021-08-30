@@ -3,24 +3,24 @@ title: "Hi, I'm Cait"
 site: distill::distill_website
 image: "files/face.jpg"
 links:
-  - label: <i class="ai ai-google-scholar ai-2x" style="font-size:2rem"></i>
-    url: "mailto:email@email.com"
-  - label: <i class="fab fa-linkedin-in" style="font-size:2rem"></i>
-    url: "https://linkedin.com/"
+  #- label: <i class="ai ai-google-scholar ai-2x" style="font-size:2rem"></i>
+  #  url: "mailto:email@email.com"
   - label: <i class="fab fa-github" style="font-size:2rem"></i>
-    url: "https://github.com/"
+    url: "https://github.com/harrig12"
+  - label: <i class="fab fa-linkedin-in" style="font-size:2rem"></i>
+    url: "https://linkedin.com/in/cait-harrigan"
   - label: <i class="far fa-envelope" style="font-size:2rem"></i>
-    url: "mailto:email@email.com"
+    url: "mailto:cait(dot)harrigan(at)mail.utoronto.ca"
+
 output:
   postcards::trestles:
     css: ["files/intro.css",
           "https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"]
 ---
 
+
 I'm a graduate student in Computer Science at the University of Toronto. I have a background in computational biology and statistics, and I use machine learning to understand cancer evolution. 
 
-I like coffee and frogs `r emo::ji('coffee')` `r emo::ji('frog')` `r emo::ji('sun')`
+I like to drink coffee, do math, and think about frogs `r emo::ji('coffee')` `r emo::ji('frog')` `r emo::ji('sun')`
 
-# Research
 
-1. lorem ipsum 

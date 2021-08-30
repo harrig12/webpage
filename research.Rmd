@@ -5,9 +5,7 @@ description: project briefings
 listing:
   posts:
     - damuta
+    - consider-uncertainty
     - tracksigfreq
     - tracksig
-    - galiwatch
-    
-    - template
 ---

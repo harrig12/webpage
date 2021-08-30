@@ -1,13 +1,12 @@
 thead{display: none;}
 
-body{
-    width:100%;
-    overflow-x:hidden;
-    overflow-y:hidden;
+.d-flex.flex-column.col.px-5.align-items-center.align-self-center.mh-100{
+  overflow-y: auto !important;
 }
 
 body {
   background-color: #FFFFFF;
+  font-size: 1.2rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
   text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;

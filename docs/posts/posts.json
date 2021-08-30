@@ -1,35 +1,73 @@
 [
   {
+    "path": "posts/2021-04-04-how-to-be-a-good-grad-student/",
+    "title": "How to be a good grad student",
+    "description": "What makes for a truly excellent grad student? I surveyed my mentors, here's what they had to say.",
+    "author": [
+      {
+        "name": "Cait Harrigan",
+        "url": {}
+      }
+    ],
+    "date": "2021-05-04",
+    "categories": [
+      "gradschool"
+    ],
+    "contents": "\r\nOver the last year, I have been asking various people this question:\r\n\r\nWhat makes for a truly excellent grad student?\r\n\r\nI highly recommend you put this question to the people in your life that you work with, and admire. So far, I’ve recieved thoughtful answers, but the question often seems to takes people by surprise. This is funny to me because it makes me think that although a lot of grad students seem to be concerned with getting feedback on “am I doing a good job?” they aren’t asking for help on how to do a good job. Here are some of my favourite responses from the people I asked:\r\n\r\nObviously you can substitute “grad student” with whatever your position is. I think this is a valuable question for getting perspective on what skills and behaviours you should be investing your time into.\r\nThey read a lot. They survey the field and have a good understanding of what’s out there and how their work fits within the context of the research landscape, and how their work is driving the field forward.\r\nThey are someone who focuses on what the big-picture impact of their project is, and thinks about the ultimate results and their significance.\r\nThey are a good communicator. They can write clearly, and they can explain their ideas.\r\nThey know how to make use of their advisor. Often, there are things that an advisor knows a simple answer to, that students don’t find out about just because they didn’t ask.\r\n\r\n\r\n\r\n",
+    "preview": "posts/2021-04-04-how-to-be-a-good-grad-student/preview.jpg",
+    "last_modified": "2021-08-30T16:40:39-04:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/consider-uncertainty/",
     "title": "Considerations for Visualizing Uncertainty",
     "description": "Workshop paper presented at CHI 2021",
     "author": [],
-    "date": "2021-01-05",
+    "date": "2021-05-01",
     "categories": [
       "data viz",
       "clinical ml"
     ],
-    "contents": "\r\n\r\n\r\na.button{\r\n  display:inline;\r\n  padding:0.35em 1.2em;\r\n  border:0.1em solid #0F2E3D;\r\n  margin: 1.2em 0em 0em 0.3em;\r\n  border-radius: 0.25rem;\r\n  box-sizing: border-box;\r\n  text-decoration:none;\r\n  font-family: 'Open Sans', sans-serif;\r\n  font-weight:400;\r\n  color: #0F2E3D;\r\n  text-align:center;\r\n  transition: all 0.2s;\r\n}\r\n\r\na.button:hover{\r\n color:#FFFFFF;\r\n background-color:#0F2E3D;\r\n}\r\n\r\n\r\npaper\r\n\r\n\r\nKey Ideas:\r\nDisplaying uncertainty when visualizing a model output increases trust in the prediction\r\nClinicians are a unique user group because they interpret predictions by examining raw features alongside model output\r\nCitation\r\nCaitlin F Harrigan, Gabriella Morgenshtern, Anna Goldenberg, and Fanny Chevalier. Considerations for Visualizing Uncertainty in Clinical Machine Learning Models. Workshop: Realizing AI in Healthcare: Challenges Appearing in the Wild, CHI 2021 Online Virtual Conference (originally Yokohama, Japan), May. 2021.\r\n\r\n\r\n\r\n",
+    "contents": "\r\n\r\n\r\na.button{\r\n  display:inline;\r\n  padding:0.35em 1.2em;\r\n  border:0.1em solid #0F2E3D;\r\n  margin: 1.2em 0em 0em 0.3em;\r\n  border-radius: 0.25rem;\r\n  box-sizing: border-box;\r\n  text-decoration:none;\r\n  font-family: 'Open Sans', sans-serif;\r\n  font-weight:400;\r\n  font-size: 1.3em;\r\n  color: #0F2E3D;\r\n  text-align:center;\r\n  transition: all 0.2s;\r\n}\r\n\r\na.button:hover{\r\n color:#FFFFFF;\r\n background-color:#0F2E3D;\r\n}\r\n\r\n\r\npaper\r\n\r\nKey Ideas:\r\nDisplaying uncertainty when visualizing a model output increases trust in the prediction\r\nClinicians are a unique user group because they interpret predictions by examining raw features alongside model output\r\nCitation\r\nCaitlin F Harrigan, Gabriella Morgenshtern, Anna Goldenberg, and Fanny Chevalier. Considerations for Visualizing Uncertainty in Clinical Machine Learning Models. Workshop: Realizing AI in Healthcare: Challenges Appearing in the Wild, CHI 2021 Online Virtual Conference (originally Yokohama, Japan), May. 2021.\r\n\r\n\r\n\r\n",
     "preview": "posts/consider-uncertainty/preview.png",
-    "last_modified": "2021-08-29T23:31:45-04:00",
+    "last_modified": "2021-08-30T16:14:51-04:00",
     "input_file": {},
     "preview_width": 1491,
     "preview_height": 541
   },
   {
+    "path": "posts/2019-08-12-advice-a-postdoc-gave-me/",
+    "title": "Advice a postdoc gave me",
+    "description": "Simple tips for computational biologists",
+    "author": [
+      {
+        "name": "Cait Harrigan",
+        "url": {}
+      }
+    ],
+    "date": "2020-03-21",
+    "categories": [
+      "gradschool"
+    ],
+    "contents": "\r\nThis article got posted in my lab’s slack. It claims the folowing:\r\n\r\nConventional wisdom in the laboratory sciences suggests that PhD students develop their research skills as a function of mentorship from their faculty advisors (i.e., principal investigators; PIs). However, no prior research has identified empirically a relationship between specific PI practices and the development of research skills. Here we show that PIs’ laboratory and mentoring activities do not significantly predict students’ skill development trajectories, but the engagement of postdocs and senior graduate students in laboratory interactions do. These findings support the practice of “cascading mentorship” as differentially effective and identify a critical but previously unrecognized role for postdocs in the graduate training process. They also illustrate both the importance and the feasibility of identifying evidence-based practices in graduate education.\r\n\r\nA postdoc in my lab responded, with their wisdom:\r\nuse tmux\r\nuse Snakemake\r\nuse Pycharm\r\nuse zsh\r\ndon’t use Jupyter Notebooks\r\nuse conda environments\r\nThis list has served me well so far. To add some wisdom of my own:\r\nalways write a readme\r\nuse wandb\r\n\r\n\r\n\r\n",
+    "preview": "posts/2019-08-12-advice-a-postdoc-gave-me/preview.jpg",
+    "last_modified": "2021-08-30T16:40:11-04:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/tracksigfreq/",
     "title": "TrackSigFreq",
-    "description": "In: Pacific Symposium on Biocomputing, January 2020",
+    "description": "In: Proceedings of the Pacific Symposium on Biocomputing, January 2020",
     "author": [],
-    "date": "2020-05-02",
+    "date": "2020-03-02",
     "categories": [
       "cancer evolution",
-      "mutational signatures",
-      "machine learning"
+      "machine learning",
+      "peer reviewed"
     ],
-    "contents": "\r\n\r\n\r\na.button{\r\n  display:inline;\r\n  padding:0.35em 1.2em;\r\n  border:0.1em solid #0F2E3D;\r\n  margin: 1.2em 0em 0em 0.3em;\r\n  border-radius: 0.25rem;\r\n  box-sizing: border-box;\r\n  text-decoration:none;\r\n  font-family: 'Open Sans', sans-serif;\r\n  font-weight:400;\r\n  color: #0F2E3D;\r\n  text-align:center;\r\n  transition: all 0.2s;\r\n}\r\n\r\na.button:hover{\r\n color:#FFFFFF;\r\n background-color:#0F2E3D;\r\n}\r\n\r\n\r\npaper code\r\n\r\n\r\nKey Ideas:\r\nBoth variant allele frequency (VAF) and mutational signatures are useful for identifying subclonal cell populations\r\nTrackSig is easily extensible to account for VAF when detecting subclonal evolution\r\nCitation\r\nCaitlin F Harrigan, Yulia Rubanova, Quaid Morris, and Alina Selega. “TrackSigFreq : subclonal reconstructions based on mutation signatures and allele frequencies”. In: Pacific Symposium on Biocomputing 25 (2020), pp. 238-249.\r\n\r\n\r\n\r\n",
+    "contents": "\r\n\r\n\r\na.button{\r\n  display:inline;\r\n  padding:0.35em 1.2em;\r\n  border:0.1em solid #0F2E3D;\r\n  margin: 1.2em 0em 0em 0.3em;\r\n  border-radius: 0.25rem;\r\n  box-sizing: border-box;\r\n  text-decoration:none;\r\n  font-family: 'Open Sans', sans-serif;\r\n  font-weight:400;\r\n  font-size: 1.3em;\r\n  color: #0F2E3D;\r\n  text-align:center;\r\n  transition: all 0.2s;\r\n}\r\n\r\na.button:hover{\r\n color:#FFFFFF;\r\n background-color:#0F2E3D;\r\n}\r\n\r\n\r\npaper code\r\n\r\n\r\nKey Ideas:\r\nBoth variant allele frequency (VAF) and mutational signatures are useful for identifying subclonal cell populations\r\nTrackSig is easily extensible to account for VAF when detecting subclonal evolution\r\nCitation\r\nCaitlin F Harrigan, Yulia Rubanova, Quaid Morris, and Alina Selega. “TrackSigFreq : subclonal reconstructions based on mutation signatures and allele frequencies”. In: Pacific Symposium on Biocomputing 25 (2020), pp. 238-249.\r\n\r\n\r\n\r\n",
     "preview": "posts/tracksigfreq/preview.png",
-    "last_modified": "2021-08-29T23:13:43-04:00",
+    "last_modified": "2021-08-30T16:13:55-04:00",
     "input_file": {},
     "preview_width": 850,
     "preview_height": 488
@@ -39,34 +77,17 @@
     "title": "TrackSig",
     "description": "In: Nature Communications, February 2020",
     "author": [],
-    "date": "2019-12-12",
+    "date": "2020-02-27",
     "categories": [
       "cancer evolution",
-      "mutational signatures",
-      "machine learning"
+      "machine learning",
+      "peer reviewed"
     ],
-    "contents": "\r\n\r\n\r\na.button{\r\n  display:inline;\r\n  padding:0.35em 1.2em;\r\n  border:0.1em solid #0F2E3D;\r\n  margin: 1.2em 0em 0em 0.3em;\r\n  border-radius: 0.25rem;\r\n  box-sizing: border-box;\r\n  text-decoration:none;\r\n  font-family: 'Open Sans', sans-serif;\r\n  font-weight:400;\r\n  color: #0F2E3D;\r\n  text-align:center;\r\n  transition: all 0.2s;\r\n}\r\n\r\na.button:hover{\r\n color:#FFFFFF;\r\n background-color:#0F2E3D;\r\n}\r\n\r\n\r\npaper code\r\n\r\n\r\nKey Ideas:\r\nOrder mutations by pseudotime: every cell contains all the mutations of its ancestors\r\nSubclonal evolution can be observed by detecting changes in mutational processes\r\nCitation\r\nYulia Rubanova, Ruian Shi, Caitlin F Harrigan, Roujia Li, Jeff Wintersinger, Nil Sahin, Amit Deshwar, and Quaid Morris. “Reconstructing evolutionary trajectories of mutation signature activities in cancer using TrackSig”. En. In: Nature Communications 11.1 (Feb. 2020). Number: 1 Publisher: Nature Publishing Group, pp. 1-12.\r\n\r\n\r\n\r\n",
+    "contents": "\r\n\r\n\r\na.button{\r\n  display:inline;\r\n  padding:0.35em 1.2em;\r\n  border:0.1em solid #0F2E3D;\r\n  margin: 1.2em 0em 0em 0.3em;\r\n  border-radius: 0.25rem;\r\n  box-sizing: border-box;\r\n  text-decoration:none;\r\n  font-family: 'Open Sans', sans-serif;\r\n  font-weight:400;\r\n  font-size: 1.3em;\r\n  color: #0F2E3D;\r\n  text-align:center;\r\n  transition: all 0.2s;\r\n}\r\n\r\na.button:hover{\r\n color:#FFFFFF;\r\n background-color:#0F2E3D;\r\n}\r\n\r\n\r\npaper code\r\n\r\n\r\nKey Ideas:\r\nOrder mutations by pseudotime: every cell contains all the mutations of its ancestors\r\nSubclonal evolution can be observed by detecting changes in mutational processes\r\nCitation\r\nYulia Rubanova, Ruian Shi, Caitlin F Harrigan, Roujia Li, Jeff Wintersinger, Nil Sahin, Amit Deshwar, and Quaid Morris. “Reconstructing evolutionary trajectories of mutation signature activities in cancer using TrackSig”. En. In: Nature Communications 11.1 (Feb. 2020). Number: 1 Publisher: Nature Publishing Group, pp. 1-12.\r\n\r\n\r\n\r\n",
     "preview": "posts/tracksig/preview.png",
-    "last_modified": "2021-08-29T16:17:42-04:00",
+    "last_modified": "2021-08-30T16:14:18-04:00",
     "input_file": {},
     "preview_width": 1612,
     "preview_height": 636
-  },
-  {
-    "path": "posts/2016-08-29-gradschool-secrets/",
-    "title": "Gradschool secrets",
-    "description": "Things to know when appling to gradschools: how to pick a graduate program, and what professors are looking for in prospective students.",
-    "author": [],
-    "date": "2016-08-29",
-    "categories": [
-      "gradschool",
-      "learned the hard way"
-    ],
-    "contents": "\r\n\r\nContents\r\nDisclaimer\r\nHow to pick a program\r\nGraduate programs are not like undergrad\r\nMasters to PhD vs direct entry\r\nEntry pool vs assigned supervisor\r\n\r\nHow to pick a lab\r\nRead past work\r\n\r\nThings that will make your application stronger\r\nHave a relationship with a current faculty memeber\r\n\r\nHow to mitigate the accessibility issue\r\n\r\nPretty much every student-academic website I see has some version of this blog post. There are two things that I think drive this fact.\r\nMany academic website themes include a blog section, which makes people feel like they should write something in it. Gradstudents write what they know, and what they know is gradschool.\r\nWe’re still reeling from the application process. It’s confusing, and varies wildly from school-to-school, or even between departments at the same school. Most undergrads have a nebulous understanding of what the people reading their application are looking for, and the process can be heavily influenced by having existing relationships with professors in program.\r\nTo me, this second remark is glaring. It points to an accessibility issue for prospective students that don’t have gradstudents or professors they can reach out to to get advice on applying 1 . Now that applying to gradschool is in my rearview mirror, I know a bunch of secrets that I will with you.\r\nDisclaimer\r\nTo remark #1: I’m writing what I know. What I’ve learned may only be applicable to the Canadian university experience (although I suspect much of it could be extended to the US). This advice is in general aimed towards students applying to research-based graduate programs. However, my opinions come from my personal experiences and may be particular to my career path. Take away what is useful, and leave the rest!\r\nThe views expressed here are my own, and not endorsed by any organizations that I am affiliated with.\r\nHow to pick a program\r\nGraduate programs are not like undergrad\r\nThe rules are different, the culture is different Believe in yourself. Gradschool is different from undergrad abecause the bar is lower to get in.\r\nMasters to PhD vs direct entry\r\nEntry pool vs assigned supervisor\r\nHow to pick a lab\r\nRead past work\r\nDo this to find out what kinds of projects the prof can support. ### Talk to current students What classes did they take? What are the strengths and weaknesses of the prof? What is the lab culture like? Who do they talk to when they’re stuck? How independently do they work? How often do they meet with the prof and how hands on are they? What does the prof do to support them outside of their research?\r\nThink about who else is in the lab. What senior students will be available to mentor you?  + postdocs are important article ### Interview the professor Your prof is not your boss. THey are an advisor and mentor and will inevitable shape you into they kind of researcher that they are. THinnk about whether their style is somehting you want to model. THinka about the attributes that they exhibit that you might pick up on and they habits/values they will instill on you. #### Lab direction #### What do you do to foster good lab culture? ####\r\nThings that will make your application stronger\r\nHave a relationship with a current faculty memeber\r\nCold email\r\ninformational interview, have some portforlio to show off/talk about #### Work with them over the summer #### Go to conferences\r\nI went to grad school at the same institute that I did my undergrad at. My background is This post is\r\nI had a really rich set of opportunities available to me as an undergraduate\r\nUofT is big. getting reference letters is hard.\r\nThe views expressed here are my own, and not endorsed by any organizations that I am affiliated with.\r\nHow to mitigate the accessibility issue\r\n\r\nFeel free to reach out to me for advice, I am happy to be your gradschool friend↩︎\r\n",
-    "preview": "posts/2016-08-29-gradschool-secrets/preview.png",
-    "last_modified": "2021-08-29T15:18:17-04:00",
-    "input_file": {},
-    "preview_width": 1050,
-    "preview_height": 600
   }
 ]

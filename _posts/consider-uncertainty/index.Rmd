@@ -3,16 +3,13 @@ title: "Considerations for Visualizing Uncertainty"
 description: |
   Workshop paper presented at CHI 2021
 preview: preview.png
-date: 01-05-2021
+date: 05-01-2021
 categories:
   - data viz
   - clinical ml
 output: 
   distill::distill_article:
-    self_contained: false
     toc: false
-creative_commons: CC BY-NC
-repository_url: https://github.com/harig12/caitharrigan.ca
 draft: false
 ---
 
@@ -31,6 +28,7 @@ a.button{
   text-decoration:none;
   font-family: 'Open Sans', sans-serif;
   font-weight:400;
+  font-size: 1.3em;
   color: #0F2E3D;
   text-align:center;
   transition: all 0.2s;
@@ -43,11 +41,8 @@ a.button:hover{
 ```
 
 <center>
-  <a href="https://doi.org/10.1038/s41467-020-14352-7" class="button">paper</a>
+  <a href="Harrigan2021.pdf" class="button">paper</a>
 </center>
-
-<br>
-
 
 # Key Ideas:
 

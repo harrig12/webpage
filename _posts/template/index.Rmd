@@ -4,6 +4,7 @@ description: |
   Test post for messing around with formatting
 preview: preview.png
 date: 11-08-2016
+author: Cait Harrigan
 categories:
   - gradschool
   - research
@@ -14,17 +15,13 @@ output:
   distill::distill_article:
     self_contained: false
     toc: true
+repository_url: https://github.com/harrig12/caitharrigan.ca
 creative_commons: CC BY-NC
-repository_url: https://github.com/harig12/caitharrigan.ca
 draft: true
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-
-# Learn more about creating blogs with Distill at:
-# https://rstudio.github.io/distill/blog.html
-
 ```
 
 
@@ -37,15 +34,13 @@ Workflow for creating a new blog post:
 
 Plans for future posts:
 
-+ How to be a good grad student
++ Creating a data-driven CV
 + How to find undergraduate research opportunities (at UofT)
 + How to write a reference letter for yourself
 + Grant writing advice (with samples)
   + OGS
 + How to be a computational biologist
 + Reproducibility crisis
-+ Advice a postdoc gave me
-  + Hannes' golden post
 + Teaching toolbox
   + transplant the personal notes I've taken
 + Mentors & Sponsors
@@ -53,6 +48,7 @@ Plans for future posts:
 + Data privacy, data ownership
   + https://www.washingtonpost.com/technology/2019/04/10/tracking-your-pregnancy-an-app-may-be-more-public-than-you-think/ 
 + That twitter thread about mitigating accessibility issue in applying to labs
+
 
 
 
