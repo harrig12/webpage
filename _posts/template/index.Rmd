@@ -35,6 +35,7 @@ Workflow for creating a new blog post:
 Plans for future posts:
 
 + Creating a data-driven CV
++ galiwatch
 + How to find undergraduate research opportunities (at UofT)
 + How to write a reference letter for yourself
 + Grant writing advice (with samples)

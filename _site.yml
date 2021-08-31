@@ -6,12 +6,12 @@ navbar:
   right:
     - text: "Research"
       href: research.html
-    - text: "Blog"
-      href: blog.html
+    #- text: "Blog"
+    #  href: blog.html
     - text: "CV"
       href: cv.html
     - icon: fab fa-github
-      href: https://github.com/harrig12
+      href: https://github.com/harrig12/caitharrigan.ca
 collections:
   posts:
     authors: false
