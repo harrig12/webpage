@@ -1,0 +1,32 @@
+---
+title: Galiwatch
+description: |
+  A citizen science project to track the birds and the bees
+preview: preview.jpg
+date: 09-10-2021
+author: Cait Harrigan
+categories:
+  - data viz
+  - side project
+
+output: 
+  distill::distill_article:
+    self_contained: false
+    toc: true
+repository_url: https://github.com/harrig12/caitharrigan.ca
+creative_commons: CC BY-NC
+draft: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+My parents are scientists. This means that since retiring, they've taken up their version of watching the birds in the backyard: conducting an observational study of the birds in the backyard.
+
+They've set up a bunch of sensors, to collect air quality data, weather information, and timelapse images.
+
+I've been helping them out with some data clean up and visualization. 
+
+
+
