@@ -49,7 +49,7 @@ a.button:hover{
 <br>
 
 
-# Key Ideas:
+# Key Ideas
 
 * Both variant allele frequency (VAF) and mutational signatures are useful for identifying subclonal cell populations
 * [TrackSig](caitharrigan.ca/posts/tracksig) is easily extensible to account for VAF when detecting subclonal evolution

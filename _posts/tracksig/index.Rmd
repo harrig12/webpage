@@ -49,7 +49,7 @@ a.button:hover{
 <br>
 
 
-# Key Ideas:
+# Key Ideas
 
 * Order mutations by pseudotime: every cell contains all the mutations of its ancestors
 * Subclonal evolution can be observed by detecting changes in mutational processes

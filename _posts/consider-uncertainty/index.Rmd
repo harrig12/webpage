@@ -44,7 +44,7 @@ a.button:hover{
   <a href="Harrigan2021.pdf" class="button">paper</a>
 </center>
 
-# Key Ideas:
+# Key Ideas
 
 * Displaying uncertainty when visualizing a model output increases trust in the prediction
 * Clinicians are a unique user group because they interpret predictions by examining raw features alongside model output
