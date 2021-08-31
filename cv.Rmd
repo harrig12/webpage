@@ -1,7 +1,7 @@
 ---
 site: distill::distill_website
 title: "Cait Harrigan, MSc."
-description: <a href="print_cv" class="cv_button" onClick="window.print()">Print this CV</a>
+description: <a href="cv.html" class="cv_button" onClick="window.print()">Print this CV</a>
 output:
   distill::distill_article:
     css: ["files/cv.css",
