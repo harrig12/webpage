@@ -1,7 +1,7 @@
 ---
 title: "Hi, I'm Cait"
 site: distill::distill_website
-image: "files/face_BW.jpg"
+image: "files/face_bw.jpg"
 links:
   - label: <i class="ai ai-google-scholar ai-2x" style="font-size:2rem"></i>
     url: "https://scholar.google.ca/citations?user=l4ElMEgAAAAJ&hl=en&oi=sra"
