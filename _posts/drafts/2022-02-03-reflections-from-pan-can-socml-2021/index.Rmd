@@ -1,0 +1,24 @@
+---
+title: Reflections from Pan-Can SOCML 2021
+description: |
+   I had so much fun organizing the Pan-Canadian Self Organizing Conference on Machine Learning! Thanks to all the participants and volunteers `r emo::ji('smile')`
+preview: preview.png
+date: 02-03-2022
+author: Cait Harrigan
+categories:
+  - gradschool
+  - machine learning
+output: 
+  distill::distill_article:
+    self_contained: false
+    toc: true
+repository_url: https://github.com/harrig12/caitharrigan.ca
+creative_commons: CC BY-NC
+draft: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+for bar

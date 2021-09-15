@@ -1,5 +1,44 @@
 [
   {
+    "path": "posts/needs-review/2021-11-08-undergraduate-research-at-uoft/",
+    "title": "Undergraduate research at UofT",
+    "description": "Links to some pretty sweet resources, stuff to know when looking for research positions, and some observations",
+    "author": [
+      {
+        "name": "Cait Harrigan",
+        "url": {}
+      }
+    ],
+    "date": "2021-11-08",
+    "categories": [
+      "soap box"
+    ],
+    "contents": "\r\n\r\nContents\r\nResources for undergraduate research\r\nResearch comes in many shapes and sizes\r\nChoose a lab\r\nCold contacting\r\nDon’t work for free!\r\nWhat to expect in the research environment\r\nHow important is it to publish in undergrad?\r\n\r\nResources for undergraduate research\r\nBefore I launch into my own thoughts, I must promote some of the excellent advice that others have compiled. This is a small selection of my personal favourites, but many of them link out to even more resources. This list is aimed primarily at students interested in computational biology & ML - and the rest of the post will follow suit.\r\nRUCS and their fabulous Undergraduate Research Guide\r\nThe BCBSU hosts and annual information session on research courses BCB330 & BCB430\r\nTips on finding a supervisor from the BCB program\r\nProject X machine learning research competition\r\nResearch comes in many shapes and sizes\r\nAs usual, I will apply the disclaimer that I am only speaking from my own experience, and it’s been a while since I was doing undergraduate research myself, so no guarantees that things are the same as they once were.\r\nAs an undergrad, I was in the Bioinformatics and Computational Biology program at UofT, 2015-2019. As part of the requirements for that program, there are two research project courses; BCB330 and BCB430. There are many similar courses offered through a variety of programs, such as ROPs, capstone projects, independent research projects, etc. Most of these are blank-cheque style courses you get credit for by working with a professor in a research capacity.\r\n\r\nOften, you don’t have to be enrolled in a program to take their research course. You can inquire into research offerings in departments such as CSC, STA, MGY, BCH, CSB, and more.\r\nSometimes you can get a paid research position, supported by a USRA grant. It’s a big frustration of mine that I didn’t know about USRA’s until it was too late. These are grants offered by the Canadian government to support and encourage labs to hire undergraduate students for summer research positions. Don’t apply on your own! The proposal expectations are particular, and field-specific. Ask your mentor for help with crafting the application.\r\nChoose a lab\r\nMost departments have a list of faculty, this is a good place to start. Survey the landscape of professors that you might work with by skimming through their google scholar profile. An easy way to find more, similar labs is to click through their co-authors.\r\nFor an interdisciplinary field such as computational biology, I found it useful to look through the faculty pages of multiple departments, various hospital labs, and start-ups that I knew my peers had done research or PEY at.\r\nCold contacting\r\nThere are many resources out there for how to compose the dreaded “cold email”, some that I’ve linked to below. Briefly, here is the anatomy of the cold emails I have sent:\r\nintroduce yourself\r\nexplain what kind of position your looking for\r\nmention one thing in their recent publication record or lab website that made their lab stick out to you\r\ndescribe any relevant past experience you have\r\nask for an interview\r\nattach a cover letter (optional, the email itself may serve as this)\r\nattach your CV\r\nattach your transcripts\r\nAttach your transcripts even if you think they look bad. (I certainly felt this way!) This will increase the likelihood that you hear back and make things go faster. The grades themselves are not usually particularly important, but attaching the transcript is a simple indicator that you understand what this type of email should contain.\r\nProfessors are often very busy, and often bad at responding to emails. Send these emails out in batches, and if you don’t hear back from anyone after about a week, follow up or move on. Radio silence is common, so don’t be discouraged by it.\r\nDon’t work for free!\r\nI’ll say it again: don’t work for free!\r\nThis seems to be more of a problem in the wet-lab world than computational labs, but even so I have seen instances of students being taken advantage of via “unpaid internships” or “laboratory volunteer” positions. For one thing, this is not legal in Canada. Perhaps more significantly, it’s a big red flag that your work is not being valued as it should be. Chances are that there is a more suitable position out there for you that will serve you better, and compensate you fairly.\r\nYou should either get course credit, or a paycheck for your time. (If you can swing it, get both!) Don’t underestimate the value of your contributions as an undergraduate researcher. Potentially getting authorship on a publication is not payment.\r\nWhat to expect in the research environment\r\nI divide labs into two categories: New PI/Old PI. A New PI is someone who has recently started their lab, they are not super established yet, their group is small, they probably don’t have a ton of extra money to spend on paying you. This environment will be good for a course-credit experience, or one where you “bring” your own funding (ex. through a USRA). Although you may be working with a grad student, this PI will probably be more hands-on, and could be directly involved in your project and giving you guidance.\r\nOld PI has seen it all. They are well established, their group is large, and they have lots of high-impact publications. They might have grant money to straight out hire you as an intern. A grad student will be your direct supervisor, and you might not meet with Old PI very frequently.\r\nObviously the New PI/Old PI caricature is not all-encompassing, and every environment will have its own peculiarities, advantages, and disadvantages. In all cases you will most likely have a chance to interact with grad students, and find out what makes them so dang jaded. You will get to attend (often weekly scheduled) group meetings, and possibly be expected to present your work to the lab at group meeting.\r\nIn the most general of terms, the grading for research project courses is relatively lax. Often there is a performance evaluation that your supervisor has to fill out at the end, plus some written or presentation-based deliverable. Many labs mark pretty easy, as long as you fulfill the minimum expectations of showing up and trying hard.\r\nAgain: No guarantees! Your PI may be a tough marker.\r\nHow important is it to publish in undergrad?\r\nDepends on your exact field, but my feeling is: it’s not super important. At the undergraduate level, having a publication is less significant than having refined research skills, and being able to describe the work you have done. Research ability is something that tends to come through in an interview, but less clearly on paper. Depending on what kinds of applications you foresee in your future, a publication may be more or less valuable to you.\r\nOf course, a useful skill to have is experience in publishing and communicating results. The best kind of research experience is one where you learn a lot, and get to contribute to a publication. However, this is not usually guaranteed. If the project as a whole is not yet at a place where you can submit to a conference or journal, something you can do at the end of a research experience to make it go a little further is to submit to an undergraduate journal or poster session. Leave a couple weeks at the end of your research experience for developing a write up or poster, and ask your mentor for input. With an end product that you deliver in someway to an audience, you will gain a lot more out of your experience, and make it much easier to write about on your CV.\r\nSome examples of UofT student journals are: Arbor, JULS, RUCS. There are several undergraduate research conferences and poster competitions run by various departments, often associated with their respective project courses. The ASSU hosts an annual undergraduate research conference. You can apply to have your research appear in similar venues at other institutes, or if you’re particularly ambitious, grab some friends and host your own research day. There are a lot of options for turning course work into an opportunity for research dissemination.\r\nMany academic CVs have a “research dissemination” (or equivalent) section. Regardless of whether it was peer reviewed: a publication, presentation, or poster can be a valuable line for you to add to your CV. I like to this of it as similar to the “projects” section that an industry CV might contain.\r\n\r\n\r\n\r\n",
+    "preview": "posts/needs-review/2021-11-08-undergraduate-research-at-uoft/gerstein interior heritage.jpg",
+    "last_modified": "2021-09-15T14:15:29-04:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2021-09-10-galiwatch/",
+    "title": "Operation Galiwatch",
+    "description": "A citizen science project to monitor pollinators",
+    "author": [
+      {
+        "name": "Cait Harrigan",
+        "url": {}
+      }
+    ],
+    "date": "2021-09-10",
+    "categories": [
+      "data viz",
+      "side project"
+    ],
+    "contents": "\r\nMy parents are scientists. Since retiring, they’ve taken up their version of bird watching in the backyard: conducting an observational study of the birds in the backyard.\r\nThey’ve set up a bunch of sensors to collect air quality data, weather information, and timelapse images. They’re monitoring flower visits of all sorts of pollinators, such as bees and humming birds. If all goes well with the infrared camera, maybe even bats.\r\nI’ve been helping them out with some data analysis and visualizations. I’m putting together a data dashboard, and I set up the Galiwatch website. We’re collaborating with the folks at Biodiversity Galiano and IMERSS to make low-cost, hyperlocal ecosystem and climate monitoring accessible for other citizen scientists!\r\n\r\n\r\n\r\n\r\n",
+    "preview": "posts/2021-09-10-galiwatch/preview.jpg",
+    "last_modified": "2021-09-13T20:27:06-04:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2021-05-04-how-to-be-a-good-grad-student/",
     "title": "How to be a good grad student",
     "description": "What makes for a truly excellent grad student? I surveyed my mentors, here's what they had to say.",
@@ -11,11 +50,12 @@
     ],
     "date": "2021-05-04",
     "categories": [
-      "gradschool"
+      "gradschool",
+      "soap box"
     ],
-    "contents": "\r\nOver the last year, I have been asking various people this question:\r\n\r\nWhat makes for a truly excellent grad student?\r\n\r\nI highly recommend you put this question to the people in your life that you work with, and admire. So far, I’ve recieved thoughtful answers, but the question often seems to takes people by surprise. This is funny to me because it makes me think that although a lot of grad students seem to be concerned with getting feedback on “am I doing a good job?” they aren’t asking for help on how to do a good job. Here are some of my favourite responses from the people I asked:\r\n\r\nObviously you can substitute “grad student” with whatever your position is. I think this is a valuable question for getting perspective on what skills and behaviours you should be investing your time into.\r\nThey read a lot. They survey the field and have a good understanding of what’s out there and how their work fits within the context of the research landscape, and how their work is driving the field forward.\r\nThey are someone who focuses on what the big-picture impact of their project is, and thinks about the ultimate results and their significance.\r\nThey are a good communicator. They can write clearly, and they can explain their ideas.\r\nThey know how to make use of their advisor. Often, there are things that an advisor knows a simple answer to, that students don’t find out about just because they didn’t ask.\r\n\r\n\r\n\r\n",
+    "contents": "\r\nOver the last year, I have been asking various people this question:\r\n\r\nWhat makes for a truly excellent grad student?\r\n\r\nI highly recommend you put this question to the people in your life that you work with, and admire. So far, I’ve recieved thoughtful answers, but the question often seems to takes people by surprise. This is funny to me because it makes me think that although a lot of grad students seem to be concerned with getting feedback on “am I doing a good job?” they aren’t asking for help on how to do a good job.\r\nObviously you can substitute “grad student” with whatever your position is. I think this is a valuable question in general for getting perspective on what skills and behaviours you should be investing your time into.\r\nHere are some of my favourite responses from the people I asked:\r\nThey read a lot. They survey the field and have a good understanding of what’s out there and how their work fits within the context of the research landscape, and how their work is driving the field forward.\r\nThey are someone who focuses on what the big-picture impact of their project is, and thinks about the ultimate results and their significance.\r\nThey are a good communicator. They can write clearly, and they can explain their ideas.\r\nThey know how to make use of their advisor. Often, there are things that an advisor knows a simple answer to, that students don’t find out about just because they didn’t ask.\r\nDid you get a good answer to this question? Create an issue if you’d like to share it, and I’ll add it to my list 🌻\r\n\r\n\r\n\r\n",
     "preview": "posts/2021-05-04-how-to-be-a-good-grad-student/preview.jpg",
-    "last_modified": "2021-08-30T20:50:59-04:00",
+    "last_modified": "2021-09-13T22:10:21-04:00",
     "input_file": {}
   },
   {
@@ -30,7 +70,7 @@
     ],
     "contents": "\r\n\r\n\r\na.button{\r\n  display:inline;\r\n  padding:0.35em 1.2em;\r\n  border:0.1em solid #0F2E3D;\r\n  margin: 1.2em 0em 0em 0.3em;\r\n  border-radius: 0.25rem;\r\n  box-sizing: border-box;\r\n  text-decoration:none;\r\n  font-family: 'Open Sans', sans-serif;\r\n  font-weight:400;\r\n  font-size: 1.3em;\r\n  color: #0F2E3D;\r\n  text-align:center;\r\n  transition: all 0.2s;\r\n}\r\n\r\na.button:hover{\r\n color:#FFFFFF;\r\n background-color:#0F2E3D;\r\n}\r\n\r\n\r\npaper\r\n\r\nKey Ideas\r\nDisplaying uncertainty when visualizing a model output increases trust in the prediction\r\nClinicians are a unique user group because they interpret predictions by examining raw features alongside model output\r\nCitation\r\nCaitlin F Harrigan, Gabriella Morgenshtern, Anna Goldenberg, and Fanny Chevalier. Considerations for Visualizing Uncertainty in Clinical Machine Learning Models. Workshop: Realizing AI in Healthcare: Challenges Appearing in the Wild, CHI 2021 Online Virtual Conference (originally Yokohama, Japan), May. 2021.\r\n\r\n\r\n\r\n",
     "preview": "posts/consider-uncertainty/preview.png",
-    "last_modified": "2021-08-30T20:54:54-04:00",
+    "last_modified": "2021-09-13T20:27:11-04:00",
     "input_file": {},
     "preview_width": 1491,
     "preview_height": 541
@@ -47,11 +87,12 @@
     ],
     "date": "2020-03-21",
     "categories": [
-      "gradschool"
+      "gradschool",
+      "soap box"
     ],
     "contents": "\r\nThis article got posted in my lab’s slack. It claims the folowing:\r\n\r\nConventional wisdom in the laboratory sciences suggests that PhD students develop their research skills as a function of mentorship from their faculty advisors (i.e., principal investigators; PIs). However, no prior research has identified empirically a relationship between specific PI practices and the development of research skills. Here we show that PIs’ laboratory and mentoring activities do not significantly predict students’ skill development trajectories, but the engagement of postdocs and senior graduate students in laboratory interactions do. These findings support the practice of “cascading mentorship” as differentially effective and identify a critical but previously unrecognized role for postdocs in the graduate training process. They also illustrate both the importance and the feasibility of identifying evidence-based practices in graduate education.\r\n\r\nA postdoc in my lab responded, with their wisdom:\r\nuse tmux\r\nuse Snakemake\r\nuse Pycharm\r\nuse zsh\r\ndon’t use Jupyter Notebooks\r\nuse conda environments\r\nThis list has served me well so far. To add some wisdom of my own:\r\nalways write a readme\r\nuse wandb\r\n\r\n\r\n\r\n",
     "preview": "posts/2020-03-21-advice-a-postdoc-gave-me/preview.jpg",
-    "last_modified": "2021-08-30T20:51:05-04:00",
+    "last_modified": "2021-09-15T14:19:46-04:00",
     "input_file": {}
   },
   {
@@ -67,7 +108,7 @@
     ],
     "contents": "\r\n\r\n\r\na.button{\r\n  display:inline;\r\n  padding:0.35em 1.2em;\r\n  border:0.1em solid #0F2E3D;\r\n  margin: 1.2em 0em 0em 0.3em;\r\n  border-radius: 0.25rem;\r\n  box-sizing: border-box;\r\n  text-decoration:none;\r\n  font-family: 'Open Sans', sans-serif;\r\n  font-weight:400;\r\n  font-size: 1.3em;\r\n  color: #0F2E3D;\r\n  text-align:center;\r\n  transition: all 0.2s;\r\n}\r\n\r\na.button:hover{\r\n color:#FFFFFF;\r\n background-color:#0F2E3D;\r\n}\r\n\r\n\r\npaper code\r\n\r\n\r\nKey Ideas\r\nBoth variant allele frequency (VAF) and mutational signatures are useful for identifying subclonal cell populations\r\nTrackSig is easily extensible to account for VAF when detecting subclonal evolution\r\nCitation\r\nCaitlin F Harrigan, Yulia Rubanova, Quaid Morris, and Alina Selega. “TrackSigFreq : subclonal reconstructions based on mutation signatures and allele frequencies”. In: Pacific Symposium on Biocomputing 25 (2020), pp. 238-249.\r\n\r\n\r\n\r\n",
     "preview": "posts/tracksigfreq/preview.png",
-    "last_modified": "2021-08-30T20:54:37-04:00",
+    "last_modified": "2021-09-13T20:27:13-04:00",
     "input_file": {},
     "preview_width": 850,
     "preview_height": 488
@@ -85,7 +126,7 @@
     ],
     "contents": "\r\n\r\n\r\na.button{\r\n  display:inline;\r\n  padding:0.35em 1.2em;\r\n  border:0.1em solid #0F2E3D;\r\n  margin: 1.2em 0em 0em 0.3em;\r\n  border-radius: 0.25rem;\r\n  box-sizing: border-box;\r\n  text-decoration:none;\r\n  font-family: 'Open Sans', sans-serif;\r\n  font-weight:400;\r\n  font-size: 1.3em;\r\n  color: #0F2E3D;\r\n  text-align:center;\r\n  transition: all 0.2s;\r\n}\r\n\r\na.button:hover{\r\n color:#FFFFFF;\r\n background-color:#0F2E3D;\r\n}\r\n\r\n\r\npaper code\r\n\r\n\r\nKey Ideas\r\nOrder mutations by pseudotime: every cell contains all the mutations of its ancestors\r\nSubclonal evolution can be observed by detecting changes in mutational processes\r\nCitation\r\nYulia Rubanova, Ruian Shi, Caitlin F Harrigan, Roujia Li, Jeff Wintersinger, Nil Sahin, Amit Deshwar, and Quaid Morris. “Reconstructing evolutionary trajectories of mutation signature activities in cancer using TrackSig”. En. In: Nature Communications 11.1 (Feb. 2020). Number: 1 Publisher: Nature Publishing Group, pp. 1-12.\r\n\r\n\r\n\r\n",
     "preview": "posts/tracksig/preview.png",
-    "last_modified": "2021-08-30T20:54:27-04:00",
+    "last_modified": "2021-09-13T20:27:13-04:00",
     "input_file": {},
     "preview_width": 1612,
     "preview_height": 636

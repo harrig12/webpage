@@ -1,0 +1,37 @@
+---
+title: Virtual Conferences
+description: |
+  Test post for messing around with formatting
+preview: preview.png
+date: 09-20-2021
+author: Cait Harrigan
+categories:
+  - soap box
+  - research
+  - machine learning
+output: 
+  distill::distill_article:
+    self_contained: false
+    toc: true
+repository_url: https://github.com/harrig12/caitharrigan.ca
+creative_commons: CC BY-NC
+draft: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+As someone relatively new to the world of academic conferences, comparing pre-and post COVID experiences is not so easy for me. I can speak to what I was expecting, and what I found.
+
+I think the ML field in general has been raising questions about how it runs conferences, tactics for ensuring quality peer review processes ,
+
+-   I like OpenReview
+
+-   I like online posters
+
+-   I like zoom poster sessions (really!)
+
+-   I hate zoom oral presentations
+
+-   <https://www.argmin.net/2020/06/22/virtual-conferences/>

@@ -1,32 +1,30 @@
 ---
-title: Galiwatch
+title: Operation Galiwatch
 description: |
-  A citizen science project to track the birds and the bees
+  A citizen science project to monitor pollinators
 preview: preview.jpg
 date: 09-10-2021
 author: Cait Harrigan
 categories:
   - data viz
   - side project
-
 output: 
   distill::distill_article:
     self_contained: false
     toc: true
 repository_url: https://github.com/harrig12/caitharrigan.ca
 creative_commons: CC BY-NC
-draft: true
+draft: false
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-My parents are scientists. This means that since retiring, they've taken up their version of watching the birds in the backyard: conducting an observational study of the birds in the backyard.
+My parents are scientists. Since retiring, they've taken up their version of bird watching in the backyard: conducting an observational study of the birds in the backyard.
 
-They've set up a bunch of sensors, to collect air quality data, weather information, and timelapse images.
+They've set up a bunch of sensors to collect air quality data, weather information, and timelapse images. They're monitoring flower visits of all sorts of pollinators, such as bees and humming birds. If all goes well with the infrared camera, maybe even bats.
 
-I've been helping them out with some data clean up and visualization. 
+I've been helping them out with some data analysis and visualizations. I'm putting together a data dashboard, and I set up the [Galiwatch website](https://galiwatch.ca). We're collaborating with the folks at [Biodiversity Galiano](https://biogaliano.org/) and [IMERSS](https://imerss.org/) to make low-cost, hyperlocal ecosystem and climate monitoring accessible for other citizen scientists!
 
-
-
+![](bee.png){width="30%"} ![](hoverfly.gif){width="30%"} ![](osmia.jpg){width="30%"}
