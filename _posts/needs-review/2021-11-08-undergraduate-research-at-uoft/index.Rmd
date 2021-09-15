@@ -3,7 +3,7 @@ title: Undergraduate research at UofT
 description: |
   Links to some pretty sweet resources, stuff to know when looking for research positions, and some observations
 preview: gerstein interior heritage.jpg
-date: 11-08-2021
+date: 09-08-2021
 author: Cait Harrigan
 categories:
   - soap box
@@ -20,7 +20,7 @@ draft: false
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# Resources for undergraduate research
+# Resources for undergraduate research {#resources}
 
 Before I launch into my own thoughts, I must promote some of the excellent advice that others have compiled. This is a small selection of my personal favourites, but many of them link out to even more resources. This list is aimed primarily at students interested in computational biology & ML - and the rest of the post will follow suit. 
 
@@ -55,9 +55,9 @@ Most departments have a list of faculty, this is a good place to start. Survey t
 
 For an interdisciplinary field such as computational biology, I found it useful to look through the faculty pages of multiple departments, various hospital labs, and start-ups that I knew my peers had done research or PEY at.
 
-# Cold contacting
+ # Cold contacting
 
-There are many resources out there for how to compose the dreaded "cold email", some that I've linked to [below](\#more-resources). Briefly, here is the anatomy of the cold emails I have sent:
+There are many resources out there for how to compose the dreaded "cold email", some that I've [already listed](\#resources). Briefly, here is the anatomy of the cold emails I have sent:
 
 -   introduce yourself
 -   explain what kind of position your looking for
