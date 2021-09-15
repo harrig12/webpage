@@ -92,7 +92,7 @@ d-article ol{
 
 
 
-@media screen  {
+@media screen and (min-width: 1000px){
   .base-grid,
   distill-header,
   d-title,
@@ -127,3 +127,4 @@ d-article ol{
  background-color:#0F2E3D;
 }
 }
+

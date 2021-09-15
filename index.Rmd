@@ -1,10 +1,10 @@
 ---
 title: "Hi, I'm Cait"
 site: distill::distill_website
-image: "files/face.jpg"
+image: "files/face_BW.jpg"
 links:
-  #- label: <i class="ai ai-google-scholar ai-2x" style="font-size:2rem"></i>
-  #  url: "mailto:email@email.com"
+  - label: <i class="ai ai-google-scholar ai-2x" style="font-size:2rem"></i>
+    url: "https://scholar.google.ca/citations?user=l4ElMEgAAAAJ&hl=en&oi=sra"
   - label: <i class="fab fa-github" style="font-size:2rem"></i>
     url: "https://github.com/harrig12"
   - label: <i class="fab fa-linkedin-in" style="font-size:2rem"></i>

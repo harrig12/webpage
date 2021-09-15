@@ -74,17 +74,24 @@ cv_entries <- cv_entries %>%
 ```
 
 <div id=cv_print_header>
-<p style="font-size: 15pt; text-align: center; font-weight:300; padding-bottom: 5pt;">Cait Harrigan, MSc.<p>
-<p style="text-align:center; font-weight:400">
-cait.harrigan<i class="fas fa-at" style="font-size: 5pt"></i>mail.utoronto.ca
-&emsp;|&emsp;
-View this CV online at [caitharrigan.ca/cv](caitharrigan.ca/cv.html)
+
+<p style="font-size: 15pt; text-align: center; font-weight:300; padding-bottom: 5pt;">
+
+Cait Harrigan, MSc.
+
 <p>
+
+<p style="text-align:center; font-weight:400">
+
+cait.harrigan<i class="fas fa-at" style="font-size: 5pt"></i>mail.utoronto.ca  \|  View this CV online at [caitharrigan.ca/cv](caitharrigan.ca/cv.html)
+
+<p>
+
 </div>
 
-I am a graduate student at the University of Toronto supervised by [Quaid Morris](http://www.morrislab.ca/) and [Kieran Campbell](https://www.camlab.ca/), and a graduate affiliate at the [Vector Institute](https://vectorinstitute.ai/). I did my undergraduate studies at the University of Toronto, in Computational Biology and Statistics. My thesis work pertains to cancer genomics, and modelling the evolutionary constraints that underlie how mutation events occur in DNA. I'm passionate about open science, and promoting great mentorship in the sciences. 
+I am a graduate student at the University of Toronto supervised by [Quaid Morris](https://www.morrislab.ca/) and [Kieran Campbell](https://www.camlab.ca/), and a graduate affiliate at the [Vector Institute](https://vectorinstitute.ai/). I did my undergraduate studies at the University of Toronto, in Computational Biology and Statistics. My thesis work pertains to cancer genomics, and modelling the evolutionary constraints that underlie how mutation events occur in DNA. I'm passionate about open science, and promoting great mentorship in the sciences.
 
-## Memberships & Affiliations 
+## Memberships & Affiliations
 
 ```{r affiliations}
 cv_entries %>% 
@@ -93,8 +100,7 @@ cv_entries %>%
   column_spec(2, "9em")
 ```
 
-
-## Education 
+## Education
 
 ```{r education}
 cv_entries %>% 
@@ -103,14 +109,15 @@ cv_entries %>%
   column_spec(2, "35em")
 ```
 
-## Work experience 
+## Work experience
+
 ```{r workexp}
 cv_entries %>% 
   filter(type == 'work') %>% 
   shortEntry(wide_date = T)
 ```
 
-## Publications 
+## Publications
 
 ```{r publications}
 snatchPrint <- function(bib){
@@ -170,8 +177,7 @@ refs %>%
 
 ```
 
-
-## Talks & Posters 
+## Talks & Posters
 
 ```{r talks}
 # research dissemination
@@ -183,16 +189,15 @@ cv_entries %>%
   column_spec(2, "42em")
 ```
 
+## Service
 
-
-## Service 
 ```{r service}
 cv_entries %>% 
   filter(type == 'service') %>% 
   shortEntry(wide_date = F) 
 ```
 
-## Grants & Awards 
+## Grants & Awards
 
 ```{r awards}
 cv_entries %>% 
@@ -209,7 +214,7 @@ cv_entries %>%
   #column_spec(2, "27em")
 ```
 
-## Supervisory activities 
+## Supervisory activities
 
 ```{r supervision}
 cv_entries %>% 
@@ -219,10 +224,9 @@ cv_entries %>%
   column_spec(2, "12em")
 ```
 
-
 ## Teaching
 
-<em style="font-size:0.8em">Unless otherwise noted, school is University of Toronto</em> 
+<em style="font-size:0.8em">Unless otherwise noted, school is University of Toronto</em>
 
 ```{r teaching}
 cv_entries %>% 
@@ -241,8 +245,7 @@ cv_entries %>%
   longEntry(showDesc = T)
 ```
 
-
-## Event organization & volunteering 
+## Event organization & volunteering
 
 ```{r volunteering}
 cv_entries %>%
@@ -250,5 +253,3 @@ cv_entries %>%
   #shortEntry()
   longEntry(showDesc = T)
 ```
-
-
