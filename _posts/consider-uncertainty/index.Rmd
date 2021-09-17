@@ -52,4 +52,6 @@ a.button:hover{
 
 # Citation
 
-__Caitlin F Harrigan__, Gabriella Morgenshtern, Anna Goldenberg, and Fanny Chevalier. "Considerations for Visualizing Uncertainty in Clinical Machine Learning Models". Workshop: Realizing AI in Healthcare: Challenges Appearing in the Wild, CHI 2021 Online Virtual Conference (originally Yokohama, Japan), May. 2021. 
+__Caitlin F Harrigan__\*, Gabriella Morgenshtern\*, Anna Goldenberg, and Fanny Chevalier. "Considerations for Visualizing Uncertainty in Clinical Machine Learning Models". Workshop: Realizing AI in Healthcare: Challenges Appearing in the Wild, CHI 2021 Online Virtual Conference (originally Yokohama, Japan), May. 2021. 
+
+\* Equal contribution
