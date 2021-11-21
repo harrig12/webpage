@@ -23,13 +23,75 @@ library(RefManageR)
 
 ```
 
-```{r tables, include=FALSE}
+```{r pub-setup, include=FALSE}
 # bibliography items 
 publications <- "files/pubs.bib"
+# bibliography items 
+embedURL <- RefManageR:::MakeBibLaTeX()
+# Create modifications for Article, and Misc types
+with(embedURL,{
+  
+     embedURL$fmtJTitle <- function (paper) {
+       title <- paper$title
+       url <- paper$url
+       if (!is.null(title) & !is.null(url)) 
+         if (grepl("[.?!]$", title, useBytes = TRUE)) 
+           paste0("\\dQuote{", paste0("[", collapse(cleanupLatex(title)),
+                                      "](", url, ")"), "}")
+         else paste0("\\dQuote{", paste0("[", collapse(cleanupLatex(title)),
+                                         "](", url, ")"), "}. ")
+       else if (!is.null(title)) 
+         if (grepl("[.?!]$", title, useBytes = TRUE)) 
+           paste0("\\dQuote{", collapse(cleanupLatex(title)), "}")
+         else paste0("\\dQuote{", collapse(cleanupLatex(title)), "}. ")
+  
 
+     }
+     
+     embedURL$formatArticle <- function (paper) {
+       collapse(c(fmtPrefix(paper), fmtBAuthor(paper), fmtJTitle(paper), 
+                  fmtAddOn(paper$titleaddon), fmtLanguage(paper$language), 
+                  fmtTranslator(paper), fmtCommentator(paper$commentator), 
+                  fmtAnnotator(paper$annotator), fmtVersion(paper$version), 
+                  sentenceP(paste0(c(paste0(c(fmtJournal(paper), fmtSeries(paper$series)), 
+                                            collapse = ""), fmtVolume(paper$volume, paper$number), 
+                                     fmtJournDate(paper)), collapse = " "), 
+                            fmtBTitle(paper$issuetitle, paper$issuesubtitle), 
+                            fmtEditor(paper, suffix = NULL, prefix = ". "), 
+                            fmtNote(paper$note, prefix = ". ", suffix = NULL), 
+                            pgs = fmtPages(paper$pages, paper$pagination), 
+                            sep = ""), fmtISSN(paper$issn), fmtDOI(paper$doi), 
+                  fmtEprint(paper), fmtAddendum(paper$addendum), 
+                  fmtPubstate(paper$pubstate)))
+       
+     }
+     
+     embedURL$formatMisc <- function (paper) {
+       collapse(c(fmtPrefix(paper), fmtBAuthor(paper), fmtJTitle(paper), 
+                  fmtAddOn(paper$titleaddon), fmtLanguage(paper$language), 
+                  fmtEditor(paper, !length(paper$author)), fmtHowPublished(paper$howpublished), 
+                  addPeriod(fmtType(paper$type)), fmtVersion(paper$version), 
+                  fmtNote(paper$note), sentence(fmtPublisher(paper$organization, 
+                                                             paper$location, paper$address), 
+                                                fmtDate(attr(paper, "dateobj")), sep = ""), 
+                  fmtDOI(paper$doi), fmtEprint(paper), 
+                  fmtAddendum(paper$addendum), 
+                  fmtPubstate(paper$pubstate)))
+     }
+})
+# Register bibliography
+tools::bibstyle("embedURL", embedURL)
+# Set options
+BibOptions(bib.style = "embedURL", match.author = "exact", 
+                   sorting = 'ydnt', max.names = 99, first.inits = FALSE, 
+                   style = "text", no.print.fields = c("doi","urldate", "issn"))
+```
+
+```{r entries-setup, include=FALSE}
 googlesheets4::gs4_auth()
 cv_entries <- googlesheets4::read_sheet("1JKlSIuDrfC1wa4V1zf4Si_Tu34upiBEn1DlvFfDeFh0", col_types = "c")
 cv_entries <- subset(cv_entries, show == T)
+#cv_entries <- subset(cv_entries, website_show == T)
 
 # formatting positions with descriptions
 longEntry <- function(data, showDesc = F){
@@ -75,17 +137,13 @@ cv_entries <- cv_entries %>%
 
 <div id=cv_print_header>
 
-<p style="font-size: 15pt; text-align: center; font-weight:300; padding-bottom: 5pt;">
-
+<p style="font-size: 15pt; text-align: center; font-weight:300; padding-bottom: 5pt">
 Cait Harrigan, MSc.
-
-<p>
+</p>
 
 <p style="text-align:center; font-weight:400">
-
 cait.harrigan<i class="fas fa-at" style="font-size: 5pt"></i>mail.utoronto.ca  \|  View this CV online at [caitharrigan.ca/cv](caitharrigan.ca/cv.html)
-
-<p>
+</p>
 
 </div>
 
@@ -97,7 +155,7 @@ I am a graduate student at the University of Toronto supervised by [Quaid Morris
 cv_entries %>% 
   filter(type == "affiliation_and_membership") %>% 
   shortEntry() %>%
-  column_spec(2, "9em")
+  column_spec(2, "15em")
 ```
 
 ## Education
@@ -105,8 +163,9 @@ cv_entries %>%
 ```{r education}
 cv_entries %>% 
   filter(type == 'education') %>% 
+  mutate(what = paste0(what, ', ', description)) %>%
   shortEntry() %>%
-  column_spec(2, "35em")
+  column_spec(2, "38em")
 ```
 
 ## Work experience
@@ -120,9 +179,7 @@ cv_entries %>%
 ## Publications
 
 ```{r publications}
-snatchPrint <- function(bib){
-  # extract data from bibentry
-  refsList <- capture.output(PrintBibliography(bib))
+boldName <- function(refsList){
     
   # add delim, and split entries
   refsList[which(nchar(refsList) == 0)] <- "<DELIM>"
@@ -138,12 +195,13 @@ snatchPrint <- function(bib){
   entries <- gsub("Caitlin Harrigan", "__Caitlin Harrigan__", fixed = T, entries)
   
   # remove numeric if necessary
-  entries <- gsub('\\[', '', entries)
-  entries <- gsub('\\]', '.', entries)
+  #entries <- gsub('\\[', '', entries)
+  #entries <- gsub('\\]', '.', entries)
 
   return(entries)
 
 }
+
 
 makePubTable <- function(bib){
   # reverse these to match date order of refs
@@ -162,18 +220,20 @@ makePubTable <- function(bib){
     
 }
 
-oops <- BibOptions(bib.style = "numeric", match.author = "exact", 
-                   sorting = 'ydnt', max.names = 99, first.inits = FALSE, 
-                   style = "text", no.print.fields = c("doi","url","urldate", "issn"))
-
-
 refs <- ReadBib(publications) 
 NoCite(refs)
 
 
 refs %>% 
-  snatchPrint() %>%
-  kable() 
+  # extract data from bibentry
+  PrintBibliography() %>%
+  capture.output() %>%
+  boldName() %>% 
+  tibble() %>%
+  mutate(rn = paste(1:length(refs), ".")) %>%
+  column_to_rownames(var='rn') %>%
+  kable() %>%
+  column_spec(1, width_min = "2em")
 
 ```
 
@@ -183,7 +243,7 @@ refs %>%
 # research dissemination
 cv_entries %>% 
   filter(type == 'talks_and_posters') %>% 
-  mutate(what = str_c("__", what, "__")) %>%
+  mutate(what = str_c("_", what, "_")) %>%
   mutate(what = str_c(what, "<br>", where), where = description) %>%
   shortEntry(wide_date = F) %>%
   column_spec(2, "42em")
@@ -245,7 +305,7 @@ cv_entries %>%
   longEntry(showDesc = T)
 ```
 
-## Event organization & volunteering
+## Event Organization & Volunteering
 
 ```{r volunteering}
 cv_entries %>%

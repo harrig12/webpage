@@ -31,7 +31,7 @@ d-article ol{
   margin-bottom: 0.2em;
 }
 
-#cv_print_header { display: none; }
+#cv_print_header { display: none; } 
 
 /* to force a pagebreak in pdf with <div class="pagebreak"></div> */
 /* doesn't work with CSS-gird */
@@ -74,9 +74,9 @@ d-article ol{
   h2, d-article h2 {
     margin-top: 2pt;
     margin-bottom: 0pt;
-    font-size: 6pt;
+    font-size: 9pt;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+    font-weight: 600;
     font-variant-caps: small-caps;
   }
 
