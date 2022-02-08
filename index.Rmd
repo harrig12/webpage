@@ -23,4 +23,7 @@ I'm a graduate student in Computer Science at the University of Toronto. I have 
 
 I like to drink coffee, and go hiking `r emo::ji('coffee')` `r emo::ji('snow_capped_mountain')` `r emo::ji('sun')`
 
+```{r, include=F}
+pagedown::chrome_print("cv.html")
+```
 

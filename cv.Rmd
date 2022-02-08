@@ -1,15 +1,16 @@
 ---
 site: distill::distill_website
 title: "Cait Harrigan, MSc."
-description: <a href="cv.html" class="cv_button" onClick="window.print()">Print this CV</a>
+description: <a href="cv.pdf" class="cv_button">Print this CV</a>
 output:
   distill::distill_article:
     css: ["files/cv.css",
-          "https://use.fontawesome.com/releases/v5.7.2/css/all.css",
+          "https://use.fontawesome.com/releases/v6.0.0/css/all.css",
           "https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"]
-    toc: true
+    toc: True
     includes:
       in_header: "files/header.html"
+knit: pagedown::chrome_print
 ---
 
 ```{r setup, include=FALSE}
@@ -20,7 +21,6 @@ library(knitr)
 library(kableExtra)
 library(bibtex)
 library(RefManageR)
-
 ```
 
 ```{r pub-setup, include=FALSE}
@@ -84,7 +84,7 @@ tools::bibstyle("embedURL", embedURL)
 # Set options
 BibOptions(bib.style = "embedURL", match.author = "exact", 
                    sorting = 'ydnt', max.names = 99, first.inits = FALSE, 
-                   style = "text", no.print.fields = c("doi","urldate", "issn"))
+                   style = "text", no.print.fields = c("doi","urldate", "issn", "note"))
 ```
 
 ```{r entries-setup, include=FALSE}
@@ -92,6 +92,8 @@ googlesheets4::gs4_auth()
 cv_entries <- googlesheets4::read_sheet("1JKlSIuDrfC1wa4V1zf4Si_Tu34upiBEn1DlvFfDeFh0", col_types = "c")
 cv_entries <- subset(cv_entries, show == T)
 #cv_entries <- subset(cv_entries, website_show == T)
+
+
 
 # formatting positions with descriptions
 longEntry <- function(data, showDesc = F){
@@ -142,7 +144,7 @@ Cait Harrigan, MSc.
 </p>
 
 <p style="text-align:center; font-weight:400">
-cait.harrigan<i class="fas fa-at" style="font-size: 5pt"></i>mail.utoronto.ca  \|  View this CV online at [caitharrigan.ca/cv](caitharrigan.ca/cv.html)
+cait.harrigan@mail.utoronto.ca \| View this CV online at [caitharrigan.ca/cv](caitharrigan.ca/cv.html)
 </p>
 
 </div>
@@ -165,7 +167,7 @@ cv_entries %>%
   filter(type == 'education') %>% 
   mutate(what = paste0(what, ', ', description)) %>%
   shortEntry() %>%
-  column_spec(2, "38em")
+  column_spec(2, "28em")
 ```
 
 ## Work experience
@@ -246,18 +248,12 @@ cv_entries %>%
   mutate(what = str_c("_", what, "_")) %>%
   mutate(what = str_c(what, "<br>", where), where = description) %>%
   shortEntry(wide_date = F) %>%
-  column_spec(2, "42em")
+  column_spec(2, "28em")
 ```
 
-## Service
+<br><br>
 
-```{r service}
-cv_entries %>% 
-  filter(type == 'service') %>% 
-  shortEntry(wide_date = F) 
-```
-
-## Grants & Awards
+## Grants & Awards 
 
 ```{r awards}
 cv_entries %>% 
@@ -267,21 +263,21 @@ cv_entries %>%
                        year_begin
                  )
          )) %>%
-  longEntry(showDesc = T) %>%
+  longEntry(showDesc = F) %>%
   column_spec(1, "8em") 
   #shortEntry() %>%
   #column_spec(1, "8em") %>%
   #column_spec(2, "27em")
 ```
 
-## Supervisory activities
 
-```{r supervision}
+## Service
+
+```{r service}
 cv_entries %>% 
-  filter(type == 'supervision') %>% 
-  #longEntry(showDesc = T) 
-  shortEntry(wide_date = T) %>%
-  column_spec(2, "12em")
+  filter(type == 'service') %>% 
+  shortEntry(wide_date = F) %>%
+  column_spec(2, "15em")
 ```
 
 ## Teaching
@@ -292,24 +288,19 @@ cv_entries %>%
 cv_entries %>% 
   filter(type == 'teaching') %>% 
   mutate(when = str_c(bestOf(list(day_begin,month_begin)), " ", year_begin)) %>%
+  mutate(where = '') %>%
   shortEntry() %>%
   column_spec(1, "6.5em") %>%
-  column_spec(2, "30em")
+  column_spec(2, "42em")
 ```
 
-## Mentoring {.pagebreak}
-
-```{r mentoring}
-cv_entries %>% 
-  filter(type == "mentorship") %>% 
-  longEntry(showDesc = T)
-```
 
 ## Event Organization & Volunteering
 
 ```{r volunteering}
 cv_entries %>%
-  filter(type == 'volunteering' | type == 'event_org') %>%
+  filter(type == 'volunteering' | type == 'event_org' | type =='mentorship') %>%
   #shortEntry()
-  longEntry(showDesc = T)
+  longEntry(showDesc = T) %>%
+  column_spec(1, "6.5em")
 ```
