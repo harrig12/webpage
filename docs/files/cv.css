@@ -31,10 +31,13 @@ d-article ol{
   margin-bottom: 0.2em;
 }
 
-#cv_print_header { display: none; }
+#cv_print_header { display: none; } 
 
 /* to force a pagebreak in pdf with <div class="pagebreak"></div> */
 /* doesn't work with CSS-gird */
+.blocks {
+  break-inside: avoid;
+}
 .pagebreak {page-break-before: always; } 
 .printOnly {display: none;}
 
@@ -56,7 +59,7 @@ d-article ol{
     display: inline-block; 
     margin: auto;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
+    font-family: serif;
   }
   
   
@@ -64,20 +67,20 @@ d-article ol{
   d-article p,
   d-article table, 
   d-article table td {
-    font-family: 'Roboto', sans-serif;
-    font-size: 8pt;
-    line-height: 10.5pt;
-    margin-bottom: 2pt;
+    font-family: serif;
+    font-size: 10pt;
+    line-height: 11.5pt;
+    margin-bottom: 1.75pt;
   }
 
   
   h2, d-article h2 {
     margin-top: 2pt;
     margin-bottom: 0pt;
-    font-size: 6pt;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    font-variant-caps: small-caps;
+    font-size: 9.5pt;
+    font-family: serif;
+    font-weight: 600;
+    font-variant-caps: all-small-caps;
   }
 
   #content,#page {
@@ -89,7 +92,6 @@ d-article ol{
   @page { margin: 1.2cm }
   
 }
-
 
 
 @media screen and (min-width: 1000px){
@@ -104,9 +106,9 @@ d-article ol{
   d-footnote-list,
   d-citation-list,
   distill-footer {
-    grid-column-gap: 65px;
+    grid-column-gap: 60px;
   }
-
+}
   a.cv_button{
  display:inline-block;
  padding:0.35em 1.2em;
