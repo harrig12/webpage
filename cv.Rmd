@@ -144,7 +144,7 @@ Cait Harrigan, MSc.
 </p>
 
 <p style="text-align:center; font-weight:400">
-cait.harrigan@mail.utoronto.ca \| View this CV online at [caitharrigan.ca/cv](caitharrigan.ca/cv.html)
+cait.harrigan@mail.utoronto.ca \| View this CV online at [caitharrigan.ca/cv](https://caitharrigan.ca/cv)
 </p>
 
 </div>
