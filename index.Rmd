@@ -21,7 +21,7 @@ output:
 
 I'm a graduate student in Computer Science at the University of Toronto. I have a background in computational biology and statistics, and I use machine learning to understand cancer evolution. 
 
-I like to drink coffee, and go hiking `r emo::ji('coffee')` `r emo::ji('snow_capped_mountain')` `r emo::ji('sun')`
+I like to drink coffee and go hiking `r emo::ji('coffee')` `r emo::ji('snow_capped_mountain')` `r emo::ji('sun')`
 
 ```{r, include=F}
 pagedown::chrome_print("cv.html")

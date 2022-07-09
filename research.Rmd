@@ -6,7 +6,7 @@ listing:
   posts:
     #- damuta
     #- mtor-rcc
-    #- genometracksig
+    - genometracksig
     - consider-uncertainty
     - tracksigfreq
     - tracksig

@@ -8,6 +8,7 @@ output:
           "https://use.fontawesome.com/releases/v6.0.0/css/all.css",
           "https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"]
     toc: True
+    toc_float: True
     includes:
       in_header: "files/header.html"
 knit: pagedown::chrome_print
@@ -90,8 +91,8 @@ BibOptions(bib.style = "embedURL", match.author = "exact",
 ```{r entries-setup, include=FALSE}
 googlesheets4::gs4_auth()
 cv_entries <- googlesheets4::read_sheet("1JKlSIuDrfC1wa4V1zf4Si_Tu34upiBEn1DlvFfDeFh0", col_types = "c")
-cv_entries <- subset(cv_entries, show == T)
 #cv_entries <- subset(cv_entries, website_show == T)
+cv_entries <- subset(cv_entries, website_show == T)
 
 
 
@@ -149,7 +150,7 @@ cait.harrigan@mail.utoronto.ca \| View this CV online at [caitharrigan.ca/cv](ht
 
 </div>
 
-I am a graduate student at the University of Toronto supervised by [Quaid Morris](https://www.morrislab.ca/) and [Kieran Campbell](https://www.camlab.ca/), and a graduate affiliate at the [Vector Institute](https://vectorinstitute.ai/). I did my undergraduate studies at the University of Toronto, in Computational Biology and Statistics. My thesis work pertains to cancer genomics, and modelling the evolutionary constraints that underlie how mutation events occur in DNA. I'm passionate about open science, and promoting great mentorship in the sciences.
+I am a graduate student at the University of Toronto supervised by [Quaid Morris](https://www.morrislab.ca/) and [Kieran Campbell](https://www.camlab.ca/), and a graduate researcher at the [Vector Institute](https://vectorinstitute.ai/). I did my undergraduate studies at the University of Toronto, in Computational Biology and Statistics. My thesis work pertains to cancer genomics, and modelling the evolutionary constraints that underlie how mutation events occur in DNA. I'm passionate about open science, and promoting great mentorship in the sciences.
 
 ## Memberships & Affiliations
 
@@ -235,7 +236,7 @@ refs %>%
   mutate(rn = paste(1:length(refs), ".")) %>%
   column_to_rownames(var='rn') %>%
   kable() %>%
-  column_spec(1, width_min = "2em")
+  column_spec(1, width_min = "1em")
 
 ```
 
@@ -248,7 +249,7 @@ cv_entries %>%
   mutate(what = str_c("_", what, "_")) %>%
   mutate(what = str_c(what, "<br>", where), where = description) %>%
   shortEntry(wide_date = F) %>%
-  column_spec(2, "28em")
+  column_spec(2, "29em")
 ```
 
 <br><br>
