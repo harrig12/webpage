@@ -4,7 +4,9 @@ title: Research
 description: project briefings
 listing:
   posts:
-    - damuta
+    #- damuta
+    #- mtor-rcc
+    #- genometracksig
     - consider-uncertainty
     - tracksigfreq
     - tracksig
