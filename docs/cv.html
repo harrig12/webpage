@@ -50,16 +50,17 @@ pre.numberSource code > span > a:first-child::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  {   }
+  { color: #00769e; background-color: #f1f3f5; }
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
+code span { color: #00769e; } /* Normal */
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { color: #657422; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
-code span.cf { color: #007ba5; } /* ControlFlow */
+code span.cf { color: #00769e; } /* ControlFlow */
 code span.ch { color: #20794d; } /* Char */
 code span.cn { color: #8f5902; } /* Constant */
 code span.co { color: #5e5e5e; } /* Comment */
@@ -73,17 +74,18 @@ code span.fl { color: #ad0000; } /* Float */
 code span.fu { color: #4758ab; } /* Function */
 code span.im { } /* Import */
 code span.in { color: #5e5e5e; } /* Information */
-code span.kw { color: #007ba5; } /* Keyword */
+code span.kw { color: #00769e; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
-code span.ot { color: #007ba5; } /* Other */
+code span.ot { color: #00769e; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
 code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
+
 
   <!--radix_placeholder_meta_tags-->
   <title>Cait Harrigan: Cait Harrigan, MSc.</title>
@@ -108,7 +110,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["site","title","description","output","knit"]}},"value":[{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["Cait Harrigan, MSc."]},{"type":"character","attributes":{},"value":["<a href=\"cv.pdf\" class=\"cv_button\">Print this CV<\/a>"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["css","toc","includes"]}},"value":[{"type":"character","attributes":{},"value":["files/cv.css","https://use.fontawesome.com/releases/v6.0.0/css/all.css","https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"]},{"type":"logical","attributes":{},"value":[true]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["in_header"]}},"value":[{"type":"character","attributes":{},"value":["files/header.html"]}]}]}]},{"type":"character","attributes":{},"value":["pagedown::chrome_print"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["site","title","description","output","knit"]}},"value":[{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["Cait Harrigan, MSc."]},{"type":"character","attributes":{},"value":["<a href=\"cv.pdf\" class=\"cv_button\">Print this CV<\/a>"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["css","toc","toc_float","includes"]}},"value":[{"type":"character","attributes":{},"value":["files/cv.css","https://use.fontawesome.com/releases/v6.0.0/css/all.css","https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"]},{"type":"logical","attributes":{},"value":[true]},{"type":"logical","attributes":{},"value":[true]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["in_header"]}},"value":[{"type":"character","attributes":{},"value":["files/header.html"]}]}]}]},{"type":"character","attributes":{},"value":["pagedown::chrome_print"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -768,10 +770,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
-  }
-
-  .figure img {
-    width: 100%;
   }
 
   .figure .caption {
@@ -1603,7 +1601,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -1614,6 +1621,31 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           placement: 'bottom-start'
         });
       });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
 
       // clear polling timer
       clearInterval(tid);
@@ -1713,6 +1745,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
       if ($(this).attr('data-layout') !== "l-body") {
         figures.css('width', '100%');
       } else {
@@ -1735,7 +1769,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
-        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
       });
     }
 
@@ -1795,9 +1829,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Raleway:wght@200;400&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"> 
 
-  <link rel="stylesheet" href="files\cv.css" type="text/css"/>
-  <link rel="stylesheet" href="https:\\use.fontawesome.com\releases\v6.0.0\css\all.css" type="text/css"/>
-  <link rel="stylesheet" href="https:\\cdn.rawgit.com\jpswalsh\academicons\master\css\academicons.min.css" type="text/css"/>
+  <link rel="stylesheet" href="files/cv.css" type="text/css"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" type="text/css"/>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css" type="text/css"/>
 
 </head>
 
@@ -1863,7 +1897,7 @@ Cait Harrigan, MSc.
 <a href="mailto:cait.harrigan@mail.utoronto.ca" class="email">cait.harrigan@mail.utoronto.ca</a> | View this CV online at <a href="https://caitharrigan.ca/cv">caitharrigan.ca/cv</a>
 </p>
 </div>
-<p>I am a graduate student at the University of Toronto supervised by <a href="https://www.morrislab.ca/">Quaid Morris</a> and <a href="https://www.camlab.ca/">Kieran Campbell</a>, and a graduate affiliate at the <a href="https://vectorinstitute.ai/">Vector Institute</a>. I did my undergraduate studies at the University of Toronto, in Computational Biology and Statistics. My thesis work pertains to cancer genomics, and modelling the evolutionary constraints that underlie how mutation events occur in DNA. I’m passionate about open science, and promoting great mentorship in the sciences.</p>
+<p>I am a graduate student at the University of Toronto supervised by <a href="https://www.morrislab.ca/">Quaid Morris</a> and <a href="https://www.camlab.ca/">Kieran Campbell</a>, and a graduate researcher at the <a href="https://vectorinstitute.ai/">Vector Institute</a>. I did my undergraduate studies at the University of Toronto, in Computational Biology and Statistics. My thesis work pertains to cancer genomics, and modelling the evolutionary constraints that underlie how mutation events occur in DNA. I’m passionate about open science, and promoting great mentorship in the sciences.</p>
 <h2 id="memberships-affiliations">Memberships &amp; Affiliations</h2>
 <div class="layout-chunk" data-layout="l-body">
 <table>
@@ -1881,6 +1915,17 @@ where
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align:left;width: 11em; ">
+Jul 2022 — present
+</td>
+<td style="text-align:left;width: 20em; width: 15em; ">
+Doctoral Fellow
+</td>
+<td style="text-align:right;font-style: italic;">
+Data Science Institute, University of Toronto
+</td>
+</tr>
 <tr>
 <td style="text-align:left;width: 11em; ">
 May 2020 — present
@@ -2017,7 +2062,7 @@ May 2016 — Sep 2016
 Intern
 </td>
 <td style="text-align:right;font-style: italic;">
-Eviviz
+Eviviz Vancouver
 </td>
 </tr>
 </tbody>
@@ -2037,7 +2082,7 @@ Eviviz
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;min-width: 2em; ">
+<td style="text-align:left;min-width: 1em; ">
 1 .
 </td>
 <td style="text-align:left;">
@@ -2045,7 +2090,7 @@ Caitlin Timmons, Quaid Morris, and <strong>Caitlin F Harrigan</strong>. “<a hr
 </td>
 </tr>
 <tr>
-<td style="text-align:left;min-width: 2em; ">
+<td style="text-align:left;min-width: 1em; ">
 2 .
 </td>
 <td style="text-align:left;">
@@ -2053,7 +2098,7 @@ Caitlin Timmons, Quaid Morris, and <strong>Caitlin F Harrigan</strong>. “<a hr
 </td>
 </tr>
 <tr>
-<td style="text-align:left;min-width: 2em; ">
+<td style="text-align:left;min-width: 1em; ">
 3 .
 </td>
 <td style="text-align:left;">
@@ -2061,7 +2106,7 @@ Caitlin Timmons, Quaid Morris, and <strong>Caitlin F Harrigan</strong>. “<a hr
 </td>
 </tr>
 <tr>
-<td style="text-align:left;min-width: 2em; ">
+<td style="text-align:left;min-width: 1em; ">
 4 .
 </td>
 <td style="text-align:left;">
@@ -2090,9 +2135,20 @@ where
 <tbody>
 <tr>
 <td style="text-align:left;width: 6em; ">
+Jul 2022
+</td>
+<td style="text-align:left;width: 20em; width: 29em; ">
+<em>Dirichlet Allocation of Mutations Captures the Action of DNA Damage and Misrepair Processes</em><br>Intelligent Systems for Molecular Biology
+</td>
+<td style="text-align:right;font-style: italic;">
+Poster
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 6em; ">
 Nov 2021
 </td>
-<td style="text-align:left;width: 20em; width: 28em; ">
+<td style="text-align:left;width: 20em; width: 29em; ">
 <em>Dirichlet Allocation of Mutations in Cancer Genomes</em><br>Machine Learning in Computational Biology (MLCB) 2021
 </td>
 <td style="text-align:right;font-style: italic;">
@@ -2103,7 +2159,7 @@ Poster
 <td style="text-align:left;width: 6em; ">
 Nov 2021
 </td>
-<td style="text-align:left;width: 20em; width: 28em; ">
+<td style="text-align:left;width: 20em; width: 29em; ">
 <em>DAMUTA: Dirichlet allocation of mutations as a function of both damage and DNA repair</em><br>Cold Spring Harbour Laboratory Meeting: Genome Informatics
 </td>
 <td style="text-align:right;font-style: italic;">
@@ -2114,7 +2170,7 @@ Oral Presentation
 <td style="text-align:left;width: 6em; ">
 Apr 2021
 </td>
-<td style="text-align:left;width: 20em; width: 28em; ">
+<td style="text-align:left;width: 20em; width: 29em; ">
 <em>Tandem Signatures of DNA Damage and Misrepair in Cancer</em><br>Computing Research Association’s Grad Cohort for Women
 </td>
 <td style="text-align:right;font-style: italic;">
@@ -2125,7 +2181,7 @@ Poster
 <td style="text-align:left;width: 6em; ">
 Feb 2020
 </td>
-<td style="text-align:left;width: 20em; width: 28em; ">
+<td style="text-align:left;width: 20em; width: 29em; ">
 <em>Undergraduate research opportunities: how to find them and make them work for you</em><br>Invited by the Bioinformatics and Computational Biology Student Union, University of Toronto
 </td>
 <td style="text-align:right;font-style: italic;">
@@ -2136,7 +2192,7 @@ Talk
 <td style="text-align:left;width: 6em; ">
 Jan 2020
 </td>
-<td style="text-align:left;width: 20em; width: 28em; ">
+<td style="text-align:left;width: 20em; width: 29em; ">
 <em>TrackSigFreq: subclonal reconstructions based on mutation signatures and allele frequencies</em><br>Pacific Symposium on Biocomputing (PSB) 2020
 </td>
 <td style="text-align:right;font-style: italic;">
@@ -2147,7 +2203,7 @@ Oral Presentation, Poster
 <td style="text-align:left;width: 6em; ">
 Dec 2019
 </td>
-<td style="text-align:left;width: 20em; width: 28em; ">
+<td style="text-align:left;width: 20em; width: 29em; ">
 <em>TrackSigFreq: subclonal reconstructions based on mutation signatures and allele frequencies</em><br>Machine Learning in Computational Biology (MLCB) 2019
 </td>
 <td style="text-align:right;font-style: italic;">
@@ -2158,7 +2214,7 @@ Poster
 <td style="text-align:left;width: 6em; ">
 May 2019
 </td>
-<td style="text-align:left;width: 20em; width: 28em; ">
+<td style="text-align:left;width: 20em; width: 29em; ">
 <em>How to hack your degree</em><br>Invited by the Computer Science Student Union, University of Toronto
 </td>
 <td style="text-align:right;font-style: italic;">
@@ -2185,10 +2241,18 @@ what
 <tbody>
 <tr>
 <td style="text-align:left;width: 11em; width: 8em; ">
-2020 — present
+2022 — present
 </td>
 <td style="text-align:left;">
-<strong>ACM SIGHPC Computational &amp; Data Science Fellowship</strong>, Special Interest Group on High Performance Computing of the Association for Computing Machinery
+<strong>NSERC Postgraduate Scholarship - Doctoral</strong>, University of Toronto
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 11em; width: 8em; ">
+2022 — present
+</td>
+<td style="text-align:left;">
+<strong>Doctoral Student Fellowship Award</strong>, Data Science Institute, University of Toronto
 </td>
 </tr>
 <tr>
@@ -2201,10 +2265,18 @@ what
 </tr>
 <tr>
 <td style="text-align:left;width: 11em; width: 8em; ">
+2020 — 2022
+</td>
+<td style="text-align:left;">
+<strong>ACM SIGHPC Computational &amp; Data Science Fellowship</strong>, Special Interest Group on High Performance Computing of the Association for Computing Machinery
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 11em; width: 8em; ">
 2021
 </td>
 <td style="text-align:left;">
-<strong>JXTX foundation 2021 Genome Informatics Scholarship</strong>, James P. Taylor Foundation for Open Science
+<strong>JXTX foundation Genome Informatics Scholarship</strong>, James P. Taylor Foundation for Open Science
 </td>
 </tr>
 <tr>
@@ -2306,6 +2378,16 @@ JSC370: Data Science II
 </tr>
 <tr>
 <td style="text-align:left;width: 11em; width: 6.5em; ">
+Jan 2022
+</td>
+<td style="text-align:left;width: 20em; width: 42em; ">
+PRISM: Preparation for Research through Immersion, Skills, and Mentorship
+</td>
+<td style="text-align:right;font-style: italic;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 11em; width: 6.5em; ">
 Fall 2021
 </td>
 <td style="text-align:left;width: 20em; width: 42em; ">
@@ -2349,7 +2431,7 @@ JSC270: Data Science I
 Jan 2020
 </td>
 <td style="text-align:left;width: 20em; width: 42em; ">
-Curriculum design and workshop series facilitator: “Environmental &amp; Life Sciences”
+Curriculum design and workshop series facilitator: “Environmental &amp; Life Sciences”, STEMHub Foundation
 </td>
 <td style="text-align:right;font-style: italic;">
 </td>
@@ -2359,7 +2441,7 @@ Curriculum design and workshop series facilitator: “Environmental &amp; Life S
 Jan 2020
 </td>
 <td style="text-align:left;width: 20em; width: 42em; ">
-Curriculum design and workshop facilitator: “R for bioinformatics”
+Curriculum design and workshop facilitator: “R for bioinformatics”, Global Society for Genetics and Genome Biology
 </td>
 <td style="text-align:right;font-style: italic;">
 </td>

@@ -1,42 +1,34 @@
 [
   {
-    "path": "posts/2021-09-10-galiwatch/",
-    "title": "Operation Galiwatch",
-    "description": "A citizen science project to monitor pollinators",
-    "author": [
-      {
-        "name": "Cait Harrigan",
-        "url": {}
-      }
-    ],
-    "date": "2021-09-10",
+    "path": "posts/genometracksig/",
+    "title": "GenomeTrackSig",
+    "description": "Preprint",
+    "author": [],
+    "date": "2022-08-07",
     "categories": [
-      "data viz",
-      "side project"
+      "cancer evolution",
+      "machine learning",
+      "preprint"
     ],
-    "contents": "\r\nMy parents are scientists. Since retiring, they’ve taken up their version of bird watching in the backyard: conducting an observational study of the birds in the backyard.\r\nThey’ve set up a bunch of sensors to collect air quality data, weather information, and timelapse images. They’re monitoring flower visits of all sorts of pollinators, such as bees and humming birds. If all goes well with the infrared camera, maybe even bats.\r\nI’ve been helping them out with some data analysis and visualizations. I’m putting together a data dashboard, and I set up the Galiwatch website. We’re collaborating with the folks at Biodiversity Galiano and IMERSS to make low-cost, hyperlocal ecosystem and climate monitoring accessible for other citizen scientists!\r\n\r\n\r\n\r\n\r\n",
-    "preview": "posts/2021-09-10-galiwatch/preview.jpg",
-    "last_modified": "2021-09-13T20:27:06-04:00",
+    "contents": "\r\n\r\n\r\n\r\npaper code\r\n\r\n\r\nKey Ideas\r\nWe observe mutational signature activity to vary on a large scale across the genome.\r\nChromatin changes over the course of tumour evolution may be shared across many tumours of the same tissue type. In particular: Melanoma, CLL.\r\nCitation\r\nCaitlin Timmons, Quaid Morris, and Caitlin F. Harrigan, “Regional Mutational Signature Activities in Cancer Genomes,” bioRxiv [preprint], Jan. 2022, doi: 10.1101/2022.01.23.477261.\r\n\r\n\r\n\r\n",
+    "preview": "posts/genometracksig/preview.jpg",
+    "last_modified": "2022-07-08T23:27:57-04:00",
     "input_file": {}
   },
   {
-    "path": "posts/2021-05-04-how-to-be-a-good-grad-student/",
-    "title": "How to be a good grad student",
-    "description": "What makes for a truly excellent grad student? I surveyed my mentors, here's what they had to say.",
-    "author": [
-      {
-        "name": "Cait Harrigan",
-        "url": {}
-      }
-    ],
-    "date": "2021-05-04",
+    "path": "posts/mtor-rcc/",
+    "title": "Oncogenic mTOR mutations are detrimental in nutrient-poor conditions",
+    "description": "In: Cancer Research 2022",
+    "author": [],
+    "date": "2022-01-09",
     "categories": [
-      "gradschool",
-      "soap box"
+      "driver mutations",
+      "oncogenesis",
+      "peer reviewed"
     ],
-    "contents": "\r\nOver the last year, I have been asking various people this question:\r\n\r\nWhat makes for a truly excellent grad student?\r\n\r\nI highly recommend you put this question to the people in your life that you work with, and admire. So far, I’ve recieved thoughtful answers, but the question often seems to takes people by surprise. This is funny to me because it makes me think that although a lot of grad students seem to be concerned with getting feedback on “am I doing a good job?” they aren’t asking for help on how to do a good job.\r\nObviously you can substitute “grad student” with whatever your position is. I think this is a valuable question in general for getting perspective on what skills and behaviours you should be investing your time into.\r\nHere are some of my favourite responses from the people I asked:\r\nThey read a lot. They survey the field and have a good understanding of what’s out there and how their work fits within the context of the research landscape, and how their work is driving the field forward.\r\nThey are someone who focuses on what the big-picture impact of their project is, and thinks about the ultimate results and their significance.\r\nThey are a good communicator. They can write clearly, and they can explain their ideas.\r\nThey know how to make use of their advisor. Often, there are things that an advisor knows a simple answer to, that students don’t find out about just because they didn’t ask.\r\nDid you get a good answer to this question? Create an issue if you’d like to share it, and I’ll add it to my list 🌻\r\n\r\n\r\n\r\n",
-    "preview": "posts/2021-05-04-how-to-be-a-good-grad-student/preview.jpg",
-    "last_modified": "2021-09-13T22:10:21-04:00",
+    "contents": "\r\n\r\n\r\n\r\npaper code\r\n\r\n\r\nKey Ideas\r\nMany cancers lack activating mTOR mutations, but this is not the case in Renal Clear Cell Carcinoma (RCCC)\r\nmTOR is involved in several important pathways: including growth, and nutrient sensing\r\nIn nutrient-rich conditions (such as in hypervascular kidney tissue), disregulated mTOR may be less detrimental for survival than in nutrient-poor conditions, accounting for the enrichment mTOR mutations in RCCC.\r\nCitation\r\nTODO\r\n\r\n\r\n\r\n",
+    "preview": "posts/mtor-rcc/preview.jpg",
+    "last_modified": "2022-07-09T14:08:47-04:00",
     "input_file": {}
   },
   {
@@ -49,32 +41,12 @@
       "data viz",
       "clinical ml"
     ],
-    "contents": "\r\n\r\n\r\na.button{\r\n  display:inline;\r\n  padding:0.35em 1.2em;\r\n  border:0.1em solid #0F2E3D;\r\n  margin: 1.2em 0em 0em 0.3em;\r\n  border-radius: 0.25rem;\r\n  box-sizing: border-box;\r\n  text-decoration:none;\r\n  font-family: 'Open Sans', sans-serif;\r\n  font-weight:400;\r\n  font-size: 1.3em;\r\n  color: #0F2E3D;\r\n  text-align:center;\r\n  transition: all 0.2s;\r\n}\r\n\r\na.button:hover{\r\n color:#FFFFFF;\r\n background-color:#0F2E3D;\r\n}\r\n\r\n\r\npaper\r\n\r\nKey Ideas\r\nDisplaying uncertainty when visualizing a model output increases trust in the prediction\r\nClinicians are a unique user group because they interpret predictions by examining raw features alongside model output\r\nCitation\r\nCaitlin F Harrigan*, Gabriella Morgenshtern*, Anna Goldenberg, and Fanny Chevalier. “Considerations for Visualizing Uncertainty in Clinical Machine Learning Models”. Workshop: Realizing AI in Healthcare: Challenges Appearing in the Wild, CHI 2021 Online Virtual Conference (originally Yokohama, Japan), May. 2021.\r\n* Equal contribution\r\n\r\n\r\n\r\n",
+    "contents": "\r\n\r\n\r\n\r\npaper\r\n\r\nKey Ideas\r\nDisplaying uncertainty when visualizing a model output increases trust in the prediction\r\nClinicians are a unique user group because they interpret predictions by examining raw features alongside model output\r\nCitation\r\nCaitlin F Harrigan*, Gabriella Morgenshtern*, Anna Goldenberg, and Fanny Chevalier. “Considerations for Visualizing Uncertainty in Clinical Machine Learning Models”. Workshop: Realizing AI in Healthcare: Challenges Appearing in the Wild, CHI 2021 Online Virtual Conference (originally Yokohama, Japan), May. 2021.\r\n* Equal contribution\r\n\r\n\r\n\r\n",
     "preview": "posts/consider-uncertainty/preview.png",
-    "last_modified": "2021-09-17T18:09:25-04:00",
+    "last_modified": "2022-07-08T22:43:19-04:00",
     "input_file": {},
     "preview_width": 1491,
     "preview_height": 541
-  },
-  {
-    "path": "posts/2020-03-21-advice-a-postdoc-gave-me/",
-    "title": "Advice a postdoc gave me",
-    "description": "Simple tips for computational biologists",
-    "author": [
-      {
-        "name": "Cait Harrigan",
-        "url": {}
-      }
-    ],
-    "date": "2020-03-21",
-    "categories": [
-      "gradschool",
-      "soap box"
-    ],
-    "contents": "\r\nThis article got posted in my lab’s slack. It claims the folowing:\r\n\r\nConventional wisdom in the laboratory sciences suggests that PhD students develop their research skills as a function of mentorship from their faculty advisors (i.e., principal investigators; PIs). However, no prior research has identified empirically a relationship between specific PI practices and the development of research skills. Here we show that PIs’ laboratory and mentoring activities do not significantly predict students’ skill development trajectories, but the engagement of postdocs and senior graduate students in laboratory interactions do. These findings support the practice of “cascading mentorship” as differentially effective and identify a critical but previously unrecognized role for postdocs in the graduate training process. They also illustrate both the importance and the feasibility of identifying evidence-based practices in graduate education.\r\n\r\nA postdoc in my lab responded, with their wisdom:\r\nuse tmux\r\nuse Snakemake\r\nuse Pycharm\r\nuse zsh\r\ndon’t use Jupyter Notebooks\r\nuse conda environments\r\nThis list has served me well so far. To add some wisdom of my own:\r\nalways write a readme\r\nuse wandb\r\n\r\n\r\n\r\n",
-    "preview": "posts/2020-03-21-advice-a-postdoc-gave-me/preview.jpg",
-    "last_modified": "2021-09-15T14:19:46-04:00",
-    "input_file": {}
   },
   {
     "path": "posts/tracksigfreq/",
@@ -87,9 +59,9 @@
       "machine learning",
       "peer reviewed"
     ],
-    "contents": "\r\n\r\n\r\na.button{\r\n  display:inline;\r\n  padding:0.35em 1.2em;\r\n  border:0.1em solid #0F2E3D;\r\n  margin: 1.2em 0em 0em 0.3em;\r\n  border-radius: 0.25rem;\r\n  box-sizing: border-box;\r\n  text-decoration:none;\r\n  font-family: 'Open Sans', sans-serif;\r\n  font-weight:400;\r\n  font-size: 1.3em;\r\n  color: #0F2E3D;\r\n  text-align:center;\r\n  transition: all 0.2s;\r\n}\r\n\r\na.button:hover{\r\n color:#FFFFFF;\r\n background-color:#0F2E3D;\r\n}\r\n\r\n\r\npaper code\r\n\r\n\r\nKey Ideas\r\nBoth variant allele frequency (VAF) and mutational signatures are useful for identifying subclonal cell populations\r\nTrackSig is easily extensible to account for VAF when detecting subclonal evolution\r\nCitation\r\nCaitlin F Harrigan, Yulia Rubanova, Quaid Morris, and Alina Selega. “TrackSigFreq : subclonal reconstructions based on mutation signatures and allele frequencies”. In: Pacific Symposium on Biocomputing 25 (2020), pp. 238-249.\r\n\r\n\r\n\r\n",
+    "contents": "\r\n\r\n\r\n\r\npaper code\r\n\r\n\r\nKey Ideas\r\nBoth variant allele frequency (VAF) and mutational signatures are useful for identifying subclonal cell populations\r\nTrackSig is easily extensible to account for VAF when detecting subclonal evolution\r\nCitation\r\nCaitlin F Harrigan, Yulia Rubanova, Quaid Morris, and Alina Selega. “TrackSigFreq : subclonal reconstructions based on mutation signatures and allele frequencies”. In: Pacific Symposium on Biocomputing 25 (2020), pp. 238-249.\r\n\r\n\r\n\r\n",
     "preview": "posts/tracksigfreq/preview.png",
-    "last_modified": "2021-09-13T20:27:13-04:00",
+    "last_modified": "2022-07-08T22:43:19-04:00",
     "input_file": {},
     "preview_width": 850,
     "preview_height": 488
@@ -105,9 +77,9 @@
       "machine learning",
       "peer reviewed"
     ],
-    "contents": "\r\n\r\n\r\na.button{\r\n  display:inline;\r\n  padding:0.35em 1.2em;\r\n  border:0.1em solid #0F2E3D;\r\n  margin: 1.2em 0em 0em 0.3em;\r\n  border-radius: 0.25rem;\r\n  box-sizing: border-box;\r\n  text-decoration:none;\r\n  font-family: 'Open Sans', sans-serif;\r\n  font-weight:400;\r\n  font-size: 1.3em;\r\n  color: #0F2E3D;\r\n  text-align:center;\r\n  transition: all 0.2s;\r\n}\r\n\r\na.button:hover{\r\n color:#FFFFFF;\r\n background-color:#0F2E3D;\r\n}\r\n\r\n\r\npaper code\r\n\r\n\r\nKey Ideas\r\nOrder mutations by pseudotime: every cell contains all the mutations of its ancestors\r\nSubclonal evolution can be observed by detecting changes in mutational processes\r\nCitation\r\nYulia Rubanova, Ruian Shi, Caitlin F Harrigan, Roujia Li, Jeff Wintersinger, Nil Sahin, Amit Deshwar, and Quaid Morris. “Reconstructing evolutionary trajectories of mutation signature activities in cancer using TrackSig”. En. In: Nature Communications 11.1 (Feb. 2020). Number: 1 Publisher: Nature Publishing Group, pp. 1-12.\r\n\r\n\r\n\r\n",
+    "contents": "\r\n\r\n\r\n\r\npaper code\r\n\r\n\r\nKey Ideas\r\nOrder mutations by pseudotime: every cell contains all the mutations of its ancestors\r\nSubclonal evolution can be observed by detecting changes in mutational processes\r\nCitation\r\nYulia Rubanova, Ruian Shi, Caitlin F Harrigan, Roujia Li, Jeff Wintersinger, Nil Sahin, Amit Deshwar, and Quaid Morris. “Reconstructing evolutionary trajectories of mutation signature activities in cancer using TrackSig”. En. In: Nature Communications 11.1 (Feb. 2020). Number: 1 Publisher: Nature Publishing Group, pp. 1-12.\r\n\r\n\r\n\r\n",
     "preview": "posts/tracksig/preview.png",
-    "last_modified": "2021-09-13T20:27:13-04:00",
+    "last_modified": "2022-07-08T22:43:19-04:00",
     "input_file": {},
     "preview_width": 1612,
     "preview_height": 636

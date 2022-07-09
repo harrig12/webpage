@@ -83,6 +83,7 @@ d-article ol{
     font-variant-caps: all-small-caps;
   }
 
+
   #content,#page {
     width: 100%; 
     margin: 0; 
@@ -129,4 +130,11 @@ d-article ol{
  background-color:#0F2E3D;
 }
 }
+
+@media screen and (max-width: 900px) {
+#TOC {
+    position: relative;
+  }
+}
+
 
