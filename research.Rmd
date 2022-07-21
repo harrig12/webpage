@@ -57,7 +57,7 @@ citation = c(
 <p style="color:#457EAC">Cancer Research, 2022<p>
 <center>
   <i class="fa-solid fa-user-check"></i> &nbsp;
-  <i class="ai ai-open-access ai-lg"></i>
+  <i class="ai ai-open-access ai-lg"></i> 
   <a href="https://doi.org/10.1158/0008-5472.CAN-22-0121" class="button">paper</a>
   <a href="https://github.com/morrislab/mtor-rcc" class="button">code</a>
 </center>
@@ -128,7 +128,8 @@ image = c(
 )
 
 kable(df, escape = F, col.names = NULL) %>%
-  kable_paper(html_font = "\"Open Sans\",  sans-serif")  
+  kable_paper(html_font = "\"Open Sans\",  sans-serif") %>%
+  column_spec(2, width_max = "30em", width_min = "10em")
 
 ```
 
