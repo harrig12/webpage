@@ -7,8 +7,6 @@ output:
     css: ["files/cv.css",
           "https://use.fontawesome.com/releases/v6.0.0/css/all.css",
           "https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"]
-    toc: True
-    toc_float: True
     includes:
       in_header: "files/header.html"
 knit: pagedown::chrome_print
@@ -26,7 +24,7 @@ library(RefManageR)
 
 ```{r pub-setup, include=FALSE}
 # bibliography items 
-publications <- "files/pubs.bib"
+publications <- "files/harrigan.bib"
 # bibliography items 
 embedURL <- RefManageR:::MakeBibLaTeX()
 # Create modifications for Article, and Misc types
@@ -236,7 +234,7 @@ refs %>%
   mutate(rn = paste(1:length(refs), ".")) %>%
   column_to_rownames(var='rn') %>%
   kable() %>%
-  column_spec(1, width_min = "1em")
+  column_spec(1, width_min = "1.5em")
 
 ```
 
