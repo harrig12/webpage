@@ -90,27 +90,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_meta_tags-->
   <title>Cait Harrigan: Research</title>
 
-  <meta property="description" itemprop="description" content="project briefings"/>
+  <meta property="description" itemprop="description" content="&lt;a href=&quot;files/harrigan.bib&quot; class=&quot;button&quot;&gt;Download all as BibTeX&lt;/a&gt; &lt;br&gt;  &lt;i class=&quot;fa-solid fa-user-check&quot;&gt; &lt;/i&gt; Peer reviewed &amp;nbsp;&amp;nbsp; &lt;i class=&quot;ai ai-open-access ai-lg&quot;&gt;&lt;/i&gt; Open access &amp;nbsp;&amp;nbsp; * Indicates equal contribution"/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="Cait Harrigan: Research"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="project briefings"/>
+  <meta property="og:description" content="&lt;a href=&quot;files/harrigan.bib&quot; class=&quot;button&quot;&gt;Download all as BibTeX&lt;/a&gt; &lt;br&gt;  &lt;i class=&quot;fa-solid fa-user-check&quot;&gt; &lt;/i&gt; Peer reviewed &amp;nbsp;&amp;nbsp; &lt;i class=&quot;ai ai-open-access ai-lg&quot;&gt;&lt;/i&gt; Open access &amp;nbsp;&amp;nbsp; * Indicates equal contribution"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Cait Harrigan"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="Cait Harrigan: Research"/>
-  <meta property="twitter:description" content="project briefings"/>
+  <meta property="twitter:description" content="&lt;a href=&quot;files/harrigan.bib&quot; class=&quot;button&quot;&gt;Download all as BibTeX&lt;/a&gt; &lt;br&gt;  &lt;i class=&quot;fa-solid fa-user-check&quot;&gt; &lt;/i&gt; Peer reviewed &amp;nbsp;&amp;nbsp; &lt;i class=&quot;ai ai-open-access ai-lg&quot;&gt;&lt;/i&gt; Open access &amp;nbsp;&amp;nbsp; * Indicates equal contribution"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["site","title","description","listing"]}},"value":[{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["Research"]},{"type":"character","attributes":{},"value":["project briefings"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["posts"]}},"value":[{"type":"character","attributes":{},"value":["genometracksig","consider-uncertainty","tracksigfreq","tracksig"]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["site","title","description","output"]}},"value":[{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["Research"]},{"type":"character","attributes":{},"value":["<a href=\"files/harrigan.bib\" class=\"button\">Download all as BibTeX<\/a> <br>  <i class=\"fa-solid fa-user-check\"> <\/i> Peer reviewed &nbsp;&nbsp; <i class=\"ai ai-open-access ai-lg\"><\/i> Open access &nbsp;&nbsp; * Indicates equal contribution"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["css"]}},"value":[{"type":"character","attributes":{},"value":["https://use.fontawesome.com/releases/v6.0.0/css/all.css","https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"]}]}]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -1809,6 +1809,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   <!--/radix_placeholder_distill-->
   <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+  <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+  <link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -1820,15 +1822,17 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_site_in_header-->
   <!--/radix_placeholder_site_in_header-->
 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" type="text/css"/>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css" type="text/css"/>
 
 </head>
 
-<body class="layout-listing">
+<body>
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Research","description":"project briefings","authors":[]}
+{"title":"Research","description":"<a href=\"files/harrigan.bib\" class=\"button\">Download all as BibTeX<\/a> <br>  <i class=\"fa-solid fa-user-check\"> <\/i> Peer reviewed &nbsp;&nbsp; <i class=\"ai ai-open-access ai-lg\"><\/i> Open access &nbsp;&nbsp; * Indicates equal contribution","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1851,264 +1855,179 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
-<!--radix_placeholder_article_listing-->
-
-
-<script type="application/javascript">
-
-function init_posts_list() {
-
-  function load_image(img) {
-    var src = $(img).attr('data-src');
-    if (src) {
-      $(img).attr('src', src);
-      $(img).on("load", function() {
-        img.removeAttribute('data-src');
-      });
-    }
-  }
-
-  function set_posts_visible(posts, visible) {
-    if (visible) {
-
-      // show bottom border by default
-      $(posts).removeClass('post-preview-last');
-
-      // apply limits if need be
-      var max_posts = 25;
-      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
-      if (apply_limits && posts.length > max_posts) {
-        posts = $(posts).slice(0, max_posts);
-      } else {
-        $('.posts-more a').addClass('hidden');
-      }
-
-      // apply last style
-      $(posts.slice(-1)[0]).addClass('post-preview-last');
-
-      $(posts).removeClass('hidden');
-      $(posts).find('img[data-src]').each(function(i, img) {
-        load_image(img);
-      });
-    } else {
-      $(posts).addClass('hidden');
-    }
-  }
-
-  function apply_hash_filter() {
-
-    // clear active state
-    $('.categories .active').removeClass('active');
-
-    // mark all posts invisible to start
-    set_posts_visible($('.posts-list').children('a'), false);
-
-    // if we have a hash filter
-    if (window.location.hash && window.location.hash.startsWith("#category:")) {
-
-      // mark posts that match the category visible
-      var page_category = window.location.hash.replace(/^#category:/, "");
-      page_category = decodeURIComponent(page_category)
-      var posts = $('.post-metadata').map(function(idx, script) {
-        var metadata = $.parseJSON($(script).html());
-        var post = null;
-        $.each(metadata.categories, function(idx, category) {
-          category = category.replace(/ /g,"_");
-          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
-            post = $(script).parent().get();
-            return false;
-          }
-        });
-        return post;
-      });
-      set_posts_visible(posts, true);
-
-      // mark the hash active
-      $('.categories li>a[href="' + decodeURIComponent(window.location.hash) + '"]').addClass('active');
-
-      // update the list_caption
-      var list_caption = $('.posts-list-caption');
-      var caption = (page_category || '').toLowerCase() === "articles"
-        ? list_caption.attr('data-caption')
-        : ('Category: ' + page_category.replace(/_/g," "));
-      list_caption.text(caption);
-
-    } else {
-
-      // no hash filter, make all posts visible (subject to max display)
-      set_posts_visible($('.posts-list').children(), true);
-
-      // reset list caption
-      var list_caption = $('.posts-list-caption');
-      list_caption.text(list_caption.attr('data-caption'));
-
-
-    }
-  }
-
-  // more articles
-  function apply_post_limits(apply) {
-    if (apply) {
-      $('.posts-container').addClass('posts-apply-limit');
-      $('.posts-more a').removeClass('hidden');
-    } else {
-      $('.posts-container').removeClass('posts-apply-limit');
-      $('.posts-more a').addClass('hidden');
-    }
-  }
-
-  // click handling for tags
-  $('.dt-tag').click(function(ev) {
-    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
-    return false;
-  })
-
-  // hash filter handling
-  apply_hash_filter();
-  $(window).on('hashchange',function() {
-    apply_post_limits(true);
-    apply_hash_filter();
-  });
-
-  // more articles link
-  $('.posts-more a').click(function(e) {
-    e.preventDefault();
-    apply_post_limits(false);
-    apply_hash_filter();
-    return false;
-  });
-
-}
-
-</script>
-
-
-
-<div class="posts-container posts-with-sidebar posts-apply-limit l-screen-inset">
-<div class="posts-list">
-<h1 class="posts-list-caption" data-caption="Research">Research</h1>
-<a href="posts/genometracksig/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["cancer evolution","machine learning","preprint"]}</script>
-<div class="metadata">
-<div class="publishedDate">Aug. 7, 2022</div>
-</div>
-<div class="thumbnail">
-<img src="posts/genometracksig/preview.jpg"/>
-</div>
-<div class="description">
-<h2>GenomeTrackSig</h2>
-<div class="dt-tags">
-<div class="dt-tag">cancer evolution</div>
-<div class="dt-tag">machine learning</div>
-<div class="dt-tag">preprint</div>
-</div>
-<p>Preprint</p>
-</div>
-</a>
-<a href="posts/consider-uncertainty/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["data viz","clinical ml"]}</script>
-<div class="metadata">
-<div class="publishedDate">May 1, 2021</div>
-</div>
-<div class="thumbnail">
-<img src="posts/consider-uncertainty/preview.png"/>
-</div>
-<div class="description">
-<h2>Considerations for Visualizing Uncertainty</h2>
-<div class="dt-tags">
-<div class="dt-tag">data viz</div>
-<div class="dt-tag">clinical ml</div>
-</div>
-<p>Workshop paper presented at CHI 2021</p>
-</div>
-</a>
-<a href="posts/tracksigfreq/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["cancer evolution","machine learning","peer reviewed"]}</script>
-<div class="metadata">
-<div class="publishedDate">March 2, 2020</div>
-</div>
-<div class="thumbnail">
-<img src="posts/tracksigfreq/preview.png"/>
-</div>
-<div class="description">
-<h2>TrackSigFreq</h2>
-<div class="dt-tags">
-<div class="dt-tag">cancer evolution</div>
-<div class="dt-tag">machine learning</div>
-<div class="dt-tag">peer reviewed</div>
-</div>
-<p>In: Proceedings of the Pacific Symposium on Biocomputing, January 2020</p>
-</div>
-</a>
-<a href="posts/tracksig/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":["cancer evolution","machine learning","peer reviewed"]}</script>
-<div class="metadata">
-<div class="publishedDate">Feb. 27, 2020</div>
-</div>
-<div class="thumbnail">
-<img src="posts/tracksig/preview.png"/>
-</div>
-<div class="description">
-<h2>TrackSig</h2>
-<div class="dt-tags">
-<div class="dt-tag">cancer evolution</div>
-<div class="dt-tag">machine learning</div>
-<div class="dt-tag">peer reviewed</div>
-</div>
-<p>In: Nature Communications, February 2020</p>
-</div>
-</a>
-</div>
-<div class="posts-sidebar">
-<div class="sidebar-section categories">
-<h3>Categories</h3>
-<ul>
-<li>
-<a href="#category:articles">articles</a>
-<span class="category-count">(4)</span>
-</li>
-<li>
-<a href="#category:cancer_evolution">cancer evolution</a>
-<span class="category-count">(3)</span>
-</li>
-<li>
-<a href="#category:clinical_ml">clinical ml</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:data_viz">data viz</a>
-<span class="category-count">(1)</span>
-</li>
-<li>
-<a href="#category:machine_learning">machine learning</a>
-<span class="category-count">(3)</span>
-</li>
-<li>
-<a href="#category:peer_reviewed">peer reviewed</a>
-<span class="category-count">(2)</span>
-</li>
-<li>
-<a href="#category:preprint">preprint</a>
-<span class="category-count">(1)</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="posts-more">
-<a href="#">More articles &raquo;</a>
-</div>
-</div>
-<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
 <h1>Research</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p>project briefings</p>
+<p><a href="files/harrigan.bib" class="button">Download all as BibTeX</a> <br> <i class="fa-solid fa-user-check"> </i> Peer reviewed    <i class="ai ai-open-access ai-lg"></i> Open access    * Indicates equal contribution</p>
 </div>
 
 
 <div class="d-article">
+<div class="layout-chunk" data-layout="l-body">
+<style type="text/css">
+d-article p{
+  margin-bottom: 0.2em;
+}
+
+table{
+  width: 100%;
+}
+
+a.button{
+  display:inline-block;
+  padding:0.3em 1em;
+  border:0.1em solid #0F2E3D;
+  margin: 0.5em 0.5em 0.5em 0.5em;
+  border-radius: 0.25rem;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight:400;
+  font-size: 0.9em;
+  color: #0F2E3D;
+  text-align:center;
+  transition: all 0.2s;
+}
+
+a.button:hover{
+ color:#FFFFFF;
+ background-color:#0F2E3D;
+}
+</style>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<table class=" lightable-paper" style="font-family: &quot;Open Sans&quot;,  sans-serif; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="text-align:left;">
+<p style="font-size:18px;font-weight:600;color:#0F2E3D">
+Activating mTOR mutations are detrimental in nutrient-poor conditions
+</p>
+<p>
+</p>
+<p style="color:#2D5D7B">
+Agata A. Bielska, <strong>Caitlin F. Harrigan</strong>, Yeon Ju Kyung, Quaid Morris, Wilhelm Palm, and Craig B. Thompson
+</p>
+<p>
+</p>
+<p style="color:#457EAC">
+Cancer Research, 2022
+</p>
+<p>
+</p>
+<center>
+<i class="fa-solid fa-user-check"></i>   <i class="ai ai-open-access ai-lg"></i> <a href="https://doi.org/10.1158/0008-5472.CAN-22-0121" class="button">paper</a> <a href="https://github.com/morrislab/mtor-rcc" class="button">code</a>
+</center>
+</td>
+<td style="text-align:left;">
+<img src="files/mtor-rcc.jpg" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<p style="font-size:18px;font-weight:600;color:#0F2E3D">
+Regional Mutational Signature Activities in Cancer Genomes
+</p>
+<p>
+</p>
+<p style="color:#2D5D7B">
+Caitlin Timmons, Quaid Morris, and <strong>Caitlin F. Harrigan</strong>
+</p>
+<p>
+</p>
+<p style="color:#457EAC">
+bioRxiv, 2022
+</p>
+<p>
+</p>
+<center>
+<i class="ai ai-open-access ai-lg"></i> <a href="https://doi.org/10.1101/2022.01.23.477261" class="button">preprint</a> <a href="https://github.com/morrislab/GenomeTrackSig" class="button">code</a>
+</center>
+</td>
+<td style="text-align:left;">
+<img src="files/genometracksig.jpg" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<p style="font-size:18px;font-weight:600;color:#0F2E3D">
+Considerations for Visualizing Uncertainty in Clinical Machine Learning Models
+</p>
+<p>
+</p>
+<p style="color:#2D5D7B">
+<strong>Caitlin F Harrigan</strong>*, Gabriella Morgenshtern*, Anna Goldenberg, and Fanny Chevalier
+</p>
+<p>
+</p>
+<p style="color:#457EAC">
+Workshop paper at CHI 2021
+</p>
+<p>
+</p>
+<center>
+<i class="ai ai-open-access ai-lg"></i> <a href="Harrigan2021.pdf" class="button">paper</a>
+</center>
+</td>
+<td style="text-align:left;">
+<img src="files/consider-uncertainty.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<p style="font-size:18px;font-weight:600;color:#0F2E3D">
+TrackSigFreq : subclonal reconstructions based on mutation signatures and allele frequencies
+</p>
+<p>
+</p>
+<p style="color:#2D5D7B">
+<strong>Caitlin F Harrigan</strong>, Yulia Rubanova, Quaid Morris, and Alina Selega
+</p>
+<p>
+</p>
+<p style="color:#457EAC">
+Pacific Symposium on Biocomputing, 2020
+</p>
+<p>
+</p>
+<center>
+<i class="fa-solid fa-user-check"></i>   <i class="ai ai-open-access ai-lg"></i> <a href="https://doi.org/10.1142/9789811215636_0022" class="button">paper</a> <a href="https://github.com/morrislab/TrackSigFreq" class="button">code</a>
+</center>
+</td>
+<td style="text-align:left;">
+<img src="files/tracksigfreq.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<p style="font-size:18px;font-weight:600;color:#0F2E3D">
+Reconstructing evolutionary trajectories of mutation signature activities in cancer using TrackSig
+</p>
+<p>
+</p>
+<p style="color:#2D5D7B">
+Yulia Rubanova, Ruian Shi, <strong>Caitlin F Harrigan</strong>, Roujia Li, Jeff Wintersinger, Nil Sahin, Amit Deshwar, and Quaid Morris
+</p>
+<p>
+</p>
+<p style="color:#457EAC">
+Nature Communications, 2020
+</p>
+<p>
+</p>
+<center>
+<i class="fa-solid fa-user-check"></i>   <i class="ai ai-open-access ai-lg"></i> <a href="https://doi.org/10.1038/s41467-020-14352-7" class="button">paper</a> <a href="https://github.com/morrislab/TrackSigFreq" class="button">code</a>
+</center>
+</td>
+<td style="text-align:left;">
+<img src="files/tracksig.png" />
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

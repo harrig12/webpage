@@ -83,7 +83,6 @@ d-article ol{
     font-variant-caps: all-small-caps;
   }
 
-
   #content,#page {
     width: 100%; 
     margin: 0; 
@@ -95,21 +94,7 @@ d-article ol{
 }
 
 
-@media screen and (min-width: 1000px){
-  .base-grid,
-  distill-header,
-  d-title,
-  d-abstract,
-  d-article,
-  d-appendix,
-  distill-appendix,
-  d-byline,
-  d-footnote-list,
-  d-citation-list,
-  distill-footer {
-    grid-column-gap: 60px;
-  }
-}
+
   a.cv_button{
  display:inline-block;
  padding:0.35em 1.2em;
@@ -130,11 +115,4 @@ d-article ol{
  background-color:#0F2E3D;
 }
 }
-
-@media screen and (max-width: 900px) {
-#TOC {
-    position: relative;
-  }
-}
-
 
