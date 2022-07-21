@@ -82,7 +82,7 @@ citation = c(
 <p style="color:#457EAC">Workshop paper at CHI 2021<p>
 <center>
   <i class="ai ai-open-access ai-lg"></i>
-  <a href="Harrigan2021.pdf" class="button">paper</a>
+  <a href="https://francisconunes.me/RealizingAIinHealthcareWS/papers/Harrigan2021.pdf" class="button">paper</a>
 </center>
 
 ',
@@ -91,6 +91,7 @@ citation = c(
 <p style="font-size:18px;font-weight:600;color:#0F2E3D">TrackSigFreq : subclonal reconstructions based on mutation signatures and allele frequencies<p>
 <p style="color:#2D5D7B">__Caitlin F Harrigan__, Yulia Rubanova, Quaid Morris, and Alina Selega<p>
 <p style="color:#457EAC">Pacific Symposium on Biocomputing, 2020<p>
+<p style="color:#457EAC"><i class="fa-regular fa-person-chalkboard"></i> Presented at PSB 2020<p>
 <center>
   <i class="fa-solid fa-user-check"></i> &nbsp;
   <i class="ai ai-open-access ai-lg"></i>
