@@ -6,8 +6,6 @@ navbar:
   right:
     - text: "Research"
       href: research.html
-    #- text: "Blog"
-    #  href: blog.html
     - text: "CV"
       href: cv.html
     - icon: fab fa-github

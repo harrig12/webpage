@@ -51,6 +51,15 @@ df = tibble(
   
 citation = c(
   
+#'<p style="font-size:18px;font-weight:600;color:#0F2E3D">DAMUTA: Dirichlet Allocation of Mutations in Cancer<p> 
+#<p style="color:#2D5D7B">__Caitlin F. Harrigan__, Kieran Campbell, Quaid Morris, Tyler Funnell<p>
+#<p style="color:#457EAC"><i class="fa-solid fa-chalkboard-user"></i> Oral Presentation at CSHL Genome Informatics 2021<p>
+#<center>
+#  <a href="https://github.com/morrislab/damuta" #class="button">code</a>
+#</center>
+#',
+
+  
 '
 <p style="font-size:18px;font-weight:600;color:#0F2E3D">Activating mTOR mutations are detrimental in nutrient-poor conditions<p> 
 <p style="color:#2D5D7B">Agata A. Bielska, __Caitlin F. Harrigan__, Yeon Ju Kyung, Quaid Morris, Wilhelm Palm, and Craig B. Thompson<p>
@@ -90,8 +99,8 @@ citation = c(
 '
 <p style="font-size:18px;font-weight:600;color:#0F2E3D">TrackSigFreq : subclonal reconstructions based on mutation signatures and allele frequencies<p>
 <p style="color:#2D5D7B">__Caitlin F Harrigan__, Yulia Rubanova, Quaid Morris, and Alina Selega<p>
-<p style="color:#457EAC">Pacific Symposium on Biocomputing, 2020<p>
-<p style="color:#457EAC"><i class="fa-regular fa-person-chalkboard"></i> Presented at PSB 2020<p>
+<p style="color:#457EAC"> Pacific Symposium on Biocomputing, 2020<p>
+<p style="color:#457EAC"><i class="fa-solid fa-chalkboard-user"></i> Oral Presentation at PSB 2020<p>
 <center>
   <i class="fa-solid fa-user-check"></i> &nbsp;
   <i class="ai ai-open-access ai-lg"></i>
@@ -118,6 +127,7 @@ citation = c(
 
 image = c(
 
+  #'![](files/damuta.png)',
   '![](files/mtor-rcc.jpg)',
   '![](files/genometracksig.jpg)',
   '![](files/consider-uncertainty.png)',
@@ -129,7 +139,7 @@ image = c(
 
 kable(df, escape = F, col.names = NULL) %>%
   kable_paper(html_font = "\"Open Sans\",  sans-serif") %>%
-  column_spec(2, width_max = "30em", width_min = "10em")
+  column_spec(2, width_max = "20em", width_min = "10em")
 
 ```
 
