@@ -1,0 +1,26 @@
+---
+title: Cait Harrigan
+image: images/face_bw.jpg
+about:
+  template: trestles
+  image-width: 10em
+  image-shape: round
+  links:
+    - text: '<i class="ai ai-google-scholar ai-xl" style="padding: .25em .2em;"></i>'
+      href: https://scholar.google.ca/citations?user=l4ElMEgAAAAJ&hl
+      aria-label: google scholar
+    - icon: linkedin
+      href: https://linkedin.com/in/cait-harrigan
+      aria-label: linkedin
+    - icon: github
+      href: https://github.com/harrig12
+      aria-label: github
+    - icon: envelope
+      href: mailto:cait(dot)harrigan(at)mail.utoronto.ca
+      aria-label: email
+---
+
+
+I'm a graduate student in Computer Science at the University of Toronto. I have a background in computational biology and statistics, and I use machine learning to understand cancer evolution. 
+
+I like to drink coffee and go hiking `r emo::ji('coffee')` `r emo::ji('snow_capped_mountain')` `r emo::ji('sun')`

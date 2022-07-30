@@ -1,0 +1,29 @@
+---
+title: Research
+---
+
+<center>
+ 
+<i class="fa-solid fa-user-check"> </i> Peer reviewed &nbsp;&nbsp; <i class="ai ai-open-access ai-lg"></i> Open access &nbsp;&nbsp; * Indicates equal contribution <br>
+<a href="files/harrigan.bib" class="btn btn-secondary icon-link"><i class="fa-solid fa-download fa-sm"></i> BibTeX</a>
+<a href="https://scholar.google.ca/citations?user=l4ElMEgAAAAJ&hl" class="btn btn-secondary icon-link"><i class="ai ai-google-scholar ai-xl"></i> Google scholar</a>
+<a href="https://orcid.org/0000-0002-9243-9648" class="btn btn-secondary icon-link"><i class="ai ai-orcid ai-xl"></i> ORCID</a>
+ 
+</center>
+ 
+```{r, echo=F, warning=F, message=F}
+source('formatter.R')
+
+"1JKlSIuDrfC1wa4V1zf4Si_Tu34upiBEn1DlvFfDeFh0" %>%
+  read_sheet('publications') ->
+  pubs
+
+
+
+tibble(text = apply(pubs,1,make_pub), image = apply(pubs,1,make_image)) %>%
+  kable(escape = F, col.names = NULL) %>%
+  kable_paper(html_font = "\"Open Sans\",  sans-serif") %>%
+  column_spec(2, width_max = "20em", width_min = "10em")
+
+
+```

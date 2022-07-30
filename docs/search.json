@@ -1,0 +1,121 @@
+[
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "foo bar",
+    "section": "",
+    "text": "news\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJul 25, 2022\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJul 22, 2022\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "Cait Harrigan, MSc.",
+    "section": "",
+    "text": "Print this CV\nI am a graduate student at the University of Toronto supervised by Quaid Morris and Kieran Campbell, and a graduate researcher at the Vector Institute. I did my undergraduate studies at the University of Toronto, in Computational Biology and Statistics. My thesis work pertains to cancer genomics, and modelling the evolutionary constraints that underlie how mutation events occur in DNA. I’m passionate about open science, and promoting great mentorship in the sciences."
+  },
+  {
+    "objectID": "cv.html#memberships-affiliations",
+    "href": "cv.html#memberships-affiliations",
+    "title": "Cait Harrigan, MSc.",
+    "section": "Memberships & Affiliations",
+    "text": "Memberships & Affiliations\n\n\n Doctoral Fellow  Data Science Institute, University of Toronto  Jul 2022 — present \n\n\n\n\n Graduate Researcher  Ontario Institute for Cancer Research  May 2020 — present \n\n\n\n\n Graduate Researcher  Vector Institute, Toronto, Canada  Sep 2019 — present"
+  },
+  {
+    "objectID": "cv.html#education",
+    "href": "cv.html#education",
+    "title": "Cait Harrigan, MSc.",
+    "section": "Education",
+    "text": "Education\n\n\n PhD in Computer Science  University of Toronto  Jan 2021 — present \n\n\n\n\n MSc in Computer Science  University of Toronto  Sep 2019 — Mar 2021 \n\n\n\n\n Honours BSc. Awarded with distinction  University of Toronto  Sep 2015 — Jun 2019"
+  },
+  {
+    "objectID": "cv.html#work-experience",
+    "href": "cv.html#work-experience",
+    "title": "Cait Harrigan, MSc.",
+    "section": "Work experience",
+    "text": "Work experience\n\n\n Visiting Graduate Researcher   May 2021 — Sep 2021 \n\nMemorial Sloan Kettering Cancer Center\n\n\n\n\n\n Undergraduate Research Assistant   Sep 2018 — May 2019 \n\nTerrence Donnelly Centre for Cellular and Biomolecular Genetics\n\n\n\n\n\n Undergraduate Research Assistant   May 2017 — Sep 2017 \n\nSickKids The Hospital for Sick Children\n\n\n\n\n\n Intern  Eviviz Vancouver  May 2016 — Sep 2016"
+  },
+  {
+    "objectID": "cv.html#publications",
+    "href": "cv.html#publications",
+    "title": "Cait Harrigan, MSc.",
+    "section": "Publications",
+    "text": "Publications\n\nAgata A. Bielska, Caitlin F. Harrigan, Yeon Ju Kyung, Quaid Morris, Wilhelm Palm, and Craig B. Thompson. “Activating mTOR mutations are detrimental in nutrient-poor conditions”. Eng. In: Cancer Research (Jul. 2022).\nCaitlin Timmons, Quaid Morris, and Caitlin F Harrigan. “Regional Mutational Signature Activities in Cancer Genomes”. In: bioRxiv [preprint] (Jan. 2022).\nCaitlin F Harrigan, Gabriella Morgenshtern, Anna Goldenberg, and Fanny Chevalier. “Considerations for Visualizing Uncertainty in Clinical Machine Learning Models”. Workshop: Realizing AI in Healthcare: Challenges Appearing in the Wild, CHI 2021 Online Virtual Conference (originally Yokohama, Japan), May. 2021.\nCaitlin F Harrigan, Yulia Rubanova, Quaid Morris, and Alina Selega. “TrackSigFreq : subclonal reconstructions based on mutation signatures and allele frequencies”. In: Pacific Symposium on Biocomputing 25 (2020), pp. 238-249.\nYulia Rubanova, Ruian Shi, Caitlin F Harrigan, Roujia Li, Jeff Wintersinger, Nil Sahin, Amit Deshwar, and Quaid Morris. “Reconstructing evolutionary trajectories of mutation signature activities in cancer using TrackSig”. In: Nature Communications 11.1 (Feb. 2020), pp. 1-12."
+  },
+  {
+    "objectID": "cv.html#talks-posters",
+    "href": "cv.html#talks-posters",
+    "title": "Cait Harrigan, MSc.",
+    "section": "Talks & Posters",
+    "text": "Talks & Posters\n\n\n Dirichlet Allocation of Mutations Captures the Action of DNA Damage and Misrepair Processes   Jul 2022 \n\nIntelligent Systems for Molecular Biology 2022\n\nPoster\n\n\n\n\n DAMUTA: Dirichlet allocation of mutations as a function of both damage and DNA repair   Nov 2021 \n\nCold Spring Harbour Laboratory Meeting: Genome Informatics\n\nOral Presentation\n\n\n\n\n Tandem Signatures of DNA Damage and Misrepair in Cancer   Apr 2021 \n\nComputing Research Association’s Grad Cohort for Women\n\nPoster\n\n\n\n\n Undergraduate research opportunities: how to find them and make them work for you   Feb 2020 \n\nInvited by the Bioinformatics and Computational Biology Student Union, University of Toronto\n\nTalk\n\n\n\n\n TrackSigFreq: subclonal reconstructions based on mutation signatures and allele frequencies   Jan 2020 \n\nPacific Symposium on Biocomputing (PSB) 2020\n\nOral Presentation, Poster\n\n\n\n\n How to hack your degree   May 2019 \n\nInvited by the Computer Science Student Union, University of Toronto\n\nTalk"
+  },
+  {
+    "objectID": "cv.html#grants-awards",
+    "href": "cv.html#grants-awards",
+    "title": "Cait Harrigan, MSc.",
+    "section": "Grants & Awards",
+    "text": "Grants & Awards\n\n\n NSERC Postgraduate Scholarship - Doctoral   Sep 2022 — present \n\n\n\n\n Doctoral Student Fellowship Award   Sep 2022 — present \n\n\n\n\n Queen Elizabeth II Graduate Scholarship in Science & Technology   Jul 2022 \n\n\n\n\n Ontario Graduate Scholarship   Sep 2021 — Sep 2022 \n\n\n\n\n ACM SIGHPC Computational & Data Science Fellowship   Jul 2020 — Jul 2022 \n\n\n\n\n JXTX foundation Genome Informatics Scholarship   Aug 2021 \n\n\n\n\n General Motors Women in Science and Mathematics Award   Sep 2020 \n\n\n\n\n NIH Conference Travel Fellowship   Nov 2019 \n\n\n\n\n The Audrey Taylor Award   Jul 2017"
+  },
+  {
+    "objectID": "cv.html#service",
+    "href": "cv.html#service",
+    "title": "Cait Harrigan, MSc.",
+    "section": "Service",
+    "text": "Service\n\n\n Program committee member   Nov 2019 \n\nMachine Learning in Computational Biology (MLCB) 2019\n\n\n\n\n\n Program committee member   Oct 2019 \n\nPacific Symposium on Biocomputing (PSB) 2020"
+  },
+  {
+    "objectID": "cv.html#teaching",
+    "href": "cv.html#teaching",
+    "title": "Cait Harrigan, MSc.",
+    "section": "Teaching",
+    "text": "Teaching\nUnless otherwise noted, school is University of Toronto\n\n\n JSC370: Data Science II   Jan 2022 — May 2022 \n\n\n\n\n PRISM: Preparation for Research through Immersion, Skills, and Mentorship   Jan 2022 — May 2022 \n\nDepartment of Computer Science, University of Toronto\n\n\n\n\n\n CSC197: What, Who, How: Privacy in the Age of Big Data Collection   Sep 2021 — Dec 2021 \n\n\n\n\n STA4273: Minimizing Expectations   Jan 2021 — May 2021 \n\n\n\n\n CSC197: What, Who, How: Privacy in the Age of Big Data Collection   Sep 2020 — Dec 2020 \n\n\n\n\n JSC270: Data Science I   Jan 2020 — May 2020 \n\n\n\n\n Curriculum design and workshop series facilitator: “Environmental & Life Sciences”   Jan 2020 \n\nSTEMHub Foundation\n\n\n\n\n\n Curriculum design and workshop facilitator: “R for bioinformatics”   Jan 2020 \n\nGlobal Society for Genetics and Genome Biology\n\n\n\n\n\n CSC373: Algorithm Design, Analysis & Complexity   Sep 2019 — Dec 2019"
+  },
+  {
+    "objectID": "cv.html#mentorship",
+    "href": "cv.html#mentorship",
+    "title": "Cait Harrigan, MSc.",
+    "section": "Mentorship",
+    "text": "Mentorship\n\n\n Mentor  ProjectX machine learning research competition  Sep 2020 — present \n\n\n\n\n Mentor  Statistical Science Alumni Mentorship  Oct 2021 — May 2022 \n\n\n\n\n Mentor  Her Code Camp, Toronto  Aug 2020 — Aug 2021 \n\n\n\n\n Mentor   Oct 2018 — May 2019 \n\nMentorship Program, Department of Statistics, University of Toronto\n\n\n\n\n\n Mentor   Sep 2016 — May 2019 \n\nSPROUT Peer Mentorship Program, New College, University of Toronto"
+  },
+  {
+    "objectID": "cv.html#event-organization",
+    "href": "cv.html#event-organization",
+    "title": "Cait Harrigan, MSc.",
+    "section": "Event Organization",
+    "text": "Event Organization\n\n\n Organizer   Sep 2021 — present \n\nGraduate Application Assistance Program, Department of Computer Science, University of Toronto\n\n\n\n\n\n Event chair and host: program information session   Jun 2017 — Jun 2019 \n\nBioinformatics and Computational Biology Student Union, University of Toronto\n\n\n\n\n\n Event chair: BioHacks   Mar 2018 \n\nBioinformatics and Computational Biology Hackathon"
+  },
+  {
+    "objectID": "cv.html#volunteering",
+    "href": "cv.html#volunteering",
+    "title": "Cait Harrigan, MSc.",
+    "section": "Volunteering",
+    "text": "Volunteering\n\n\n Project Manager  STEMHub Foundation  Oct 2020 — May 2021 \n\n\n\n\n Founder and treasurer   May 2018 — May 2019 \n\nBioinformatics and Computational Biology Student Union, University of Toronto"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Cait Harrigan",
+    "section": "",
+    "text": "I like to drink coffee and go hiking ☕ 🏔️ ☀️"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "Since this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Activating mTOR mutations are detrimental in nutrient-poor conditions Agata A. Bielska, Caitlin F. Harrigan, Yeon Ju Kyung, Quaid Morris, Wilhelm Palm, and Craig B. Thompson Cancer Research, 2022  view  code  \n     \n  \n  \n    Regional Mutational Signature Activities in Cancer Genomes Caitlin Timmons, Quaid Morris, and Caitlin F. Harrigan bioRxiv, 2022  view  code  \n     \n  \n  \n    Considerations for Visualizing Uncertainty in Clinical Machine Learning Models Caitlin F Harrigan*, Gabriella Morgenshtern*, Anna Goldenberg, and Fanny Chevalier Workshop paper at CHI 2021  view  pdf  \n     \n  \n  \n    TrackSigFreq: subclonal reconstructions based on mutation signatures and allele frequencies Caitlin F Harrigan, Yulia Rubanova, Quaid Morris, and Alina Selega Pacific Symposium on Biocomputing, 2020Oral Presentation at PSB 2020  view  code   \n     \n  \n  \n    Reconstructing evolutionary trajectories of mutation signature activities in cancer using TrackSig Yulia Rubanova, Ruian Shi, Caitlin F Harrigan, Roujia Li, Jeff Wintersinger, Nil Sahin, Amit Deshwar, and Quaid Morris Nature Communications, 2020  view  code"
+  }
+]

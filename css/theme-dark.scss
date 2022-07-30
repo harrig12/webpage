@@ -1,0 +1,32 @@
+/*-- scss:defaults --*/
+// Base document colors
+$primary:     #0F2E3D;
+$secondary:   #85D4FF; 
+$tert:        #D6F1FF;
+$link-color:  #999;
+
+$body-color:  #fff;
+$body-bg:     #181818;
+$navbar-fg:   #fff;
+$navbar-hl:   $secondary;
+
+/*-- scss:rules --*/
+
+h1, .h1{
+  color: $light;
+}
+
+
+.pub-title{
+  color: #fff;
+}
+
+.pub-authors{
+  color: $secondary;
+  margin-bottom: 0;
+}
+
+
+.pub-where{
+  color: $tert;
+}

@@ -1,0 +1,115 @@
+---
+title: "Cait Harrigan, MSc."
+format:
+  html:
+    toc: true
+    toc_float: true
+    toc-location: left
+    css: 'css/cv.css'
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+options(knitr.kable.NA = '')
+
+```
+
+```{r entries-setup, ehcho=F, warning=F, message=F}
+source('formatter.R')
+
+cv_entries <- read_sheet("1JKlSIuDrfC1wa4V1zf4Si_Tu34upiBEn1DlvFfDeFh0", col_types = "c") %>%
+  subset(website_show == T) %>%
+  arrange(desc(pmax(year_end, year_begin, na.rm = T)), desc(year_begin), desc(month_begin)) 
+
+stopifnot(all(!is.na(cv_entries$year_begin)))
+
+cv_entries <- cv_entries %>%  
+  mutate(description = case_when(show_description == FALSE ~ '', TRUE ~ description)) %>%
+  mutate(description = replace_na(description, '')) %>%
+  mutate(where = case_when(show_where == FALSE ~ '', TRUE ~ where)) %>%
+  mutate(month_begin = month.abb[as.numeric(month_begin)]) %>%
+  mutate(month_end = month.abb[as.numeric(month_end)]) %>%
+  mutate(when = bestOf(list(str_c(month_begin, " ", year_begin, " --- ", month_end, " ", year_end),
+                            str_c(month_begin, " ", year_begin, " --- ", year_end),
+                            str_c(year_begin, " --- ", year_end),
+                            str_c(month_begin, " ", year_begin),
+                            year_begin)))
+
+
+publications <- "files/harrigan.bib"
+refs <- ReadBib(publications) 
+NoCite(refs)
+```
+
+<div id=cv_print_header>
+<center>
+<p style="font-size: 15pt; font-weight:300; margin-bottom: 0.5em">
+Cait Harrigan, MSc.
+</p>
+
+<p style="font-weight:400; margin-bottom: 0.5em">
+cait.harrigan@mail.utoronto.ca \| View this CV online at [caitharrigan.ca/cv](https://caitharrigan.ca/cv)
+</p>
+</center>
+</div>
+
+
+<a id=print_button href="cv.pdf" class="btn btn-primary icon-link">Print this CV</a>
+
+I am a graduate student at the University of Toronto supervised by [Quaid Morris](https://www.morrislab.ca/) and [Kieran Campbell](https://www.camlab.ca/), and a graduate researcher at the [Vector Institute](https://vectorinstitute.ai/). I did my undergraduate studies at the University of Toronto, in Computational Biology and Statistics. My thesis work pertains to cancer genomics, and modelling the evolutionary constraints that underlie how mutation events occur in DNA. I'm passionate about open science, and promoting great mentorship in the sciences.
+
+
+## Memberships & Affiliations
+
+
+
+`r print_section(cv_entries, "affiliation_and_membership")`
+
+
+## Education
+
+`r print_section(cv_entries, "education")`
+
+
+## Work experience
+
+`r print_section(cv_entries, "work")`
+
+## Publications
+
+`r print_publications(refs)`
+
+
+
+## Talks & Posters
+
+`r print_section(cv_entries, "talks_and_posters")`
+
+
+## Grants & Awards
+
+`r print_section(cv_entries, "grants_and_awards")`
+
+## Service
+
+`r print_section(cv_entries, "service")`
+
+## Teaching
+
+<em style="font-size:0.8em">Unless otherwise noted, school is University of Toronto</em>
+
+`r print_section(cv_entries, "teaching")`
+
+## Mentorship
+
+`r print_section(cv_entries, "mentorship")`
+
+## Event Organization
+
+`r print_section(cv_entries, "event_org")`
+
+## Volunteering
+
+`r print_section(cv_entries, "volunteering")`
+

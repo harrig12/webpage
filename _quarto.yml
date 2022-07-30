@@ -1,0 +1,25 @@
+project:
+  type: website
+  uotput-dir: docs
+
+website:
+  title: "Cait Harrigan"
+  navbar:
+    right:
+      - text: 'About'
+        href: index.qmd
+      - text: 'Research'
+        href: research.qmd
+      - text: 'CV'
+        href: cv.qmd
+      - icon: github
+        href: https://github.com/harrig12
+format:
+  html:
+    theme: 
+      light: [flatly, css/theme-light.scss]
+      dark: [flatly, css/theme-dark.scss]
+    css: [css/custom.css,
+          "https://use.fontawesome.com/releases/v6.0.0/css/all.css",
+          "https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"]
+
