@@ -1,6 +1,6 @@
 project:
   type: website
-  uotput-dir: docs
+  output-dir: docs
 
 website:
   title: "Cait Harrigan"
