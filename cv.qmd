@@ -82,7 +82,7 @@ I am a graduate student at the University of Toronto supervised by [Quaid Morris
 
 ```{r, echo=F, warning=F, message=F}
 # collate all service together
-peer_review <- cv_entries %>% 
+pr <- cv_entries %>% 
   filter(what == 'Peer review') %>%
   pull(where) %>%
   paste0(collapse = ', ')
@@ -95,16 +95,36 @@ pc <- cv_entries %>%
   pull(description) %>%
   paste0(collapse = ', ')
 
-service <- tibble(
-  type = c('service', 'service'),
-  what = c("Peer review: ", "Conference program committee: "),
-  where = c(peer_review, pc),
-  when = c('',''),
-  description = c('','')
-) 
+pr <- c(
+    '<div class= short-entry>',
+    # title
+    '<span class="entry-title">',
+    "Peer review:",
+    '</span>',
+    # contents
+    '<span class="entry-body">',
+    pr,
+    '</span>',
+    '</div>'
+)
+
+pc <- c(
+    '<div class= short-entry>',
+    # title
+    '<span class="entry-title">',
+    "Conference program committee: ",
+    '</span>',
+    # contents
+    '<span class="entry-body">',
+    pc,
+    '</span>',
+    '</div>'
+)
+
 ```
 
-`r print_section(service, "service")`
+`r HTML(pr)`
+`r HTML(pc)`
 
 ## Teaching
 
