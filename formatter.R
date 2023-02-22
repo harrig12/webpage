@@ -19,18 +19,20 @@ gs4_auth('cait.harrigan@mail.utoronto.ca')
 make_title <- function(pub){
   title1 <- paste0('<p class="pub-title">', pub['title'], '</p>')
   title2 <- paste0('<p class="pub-authors">', pub['authors'], '</p>')
-  title3 <- paste0('<p class="pub-where">', pub['where'], '</p>')
+  title3 <- paste0('<p class="pub-authors">', pub['where'], '</p>')
   return(c(title1, title2, title3))
 }
+
 # make icons
 make_icons <- function(pub){
-  icons <- c()
+  icons <- c('<span class="pub-authors">')
   if(pub['peer_reviewed'] == TRUE){
-    icons <- '<i class="fa-solid fa-user-check"></i>'
+    icons <- c(icons, '<i class="fa-solid fa-user-check"></i>')
   }
   if(pub['open_access'] == TRUE){
     icons <- c(icons, '<i class="ai ai-open-access ai-lg"></i>')
   }
+  icons <- c(icons, '<span>')
   return(icons)
 }
 # make buttons
