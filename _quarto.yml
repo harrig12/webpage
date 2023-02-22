@@ -11,7 +11,7 @@ website:
       - text: 'Research'
         href: research.qmd
       - text: 'CV'
-        href: cv.qmd
+        href: files/cv.pdf
       - icon: github
         href: https://github.com/harrig12
 format:
