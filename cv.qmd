@@ -22,7 +22,8 @@ cv_entries <- cv_entries %>% subset(pdf_show == T)
   
 
 publications <- "files/harrigan.bib"
-refs <- ReadBib(publications) 
+BibOptions(sorting = 'none')
+refs <- rev(ReadBib(publications))
 NoCite(refs)
 ```
 

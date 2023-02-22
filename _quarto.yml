@@ -21,5 +21,6 @@ format:
       dark: [flatly, css/theme-dark.scss]
     css: [css/custom.css,
           "https://use.fontawesome.com/releases/v6.0.0/css/all.css",
-          "https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"]
+          "https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+          ]
 

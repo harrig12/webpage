@@ -10,6 +10,38 @@ library(RefManageR)
 gs4_auth('cait.harrigan@mail.utoronto.ca')
 
 #---------#
+# Retrieve data
+#---------#
+
+bestOf <- function(l){
+  # return the first non-na argument
+  #print(head(data.frame(l)))
+  r <- apply(data.frame(l), FUN = function(x){x[which(!is.na(x))][[1]]}, MAR = 1)
+  return(r)
+}
+
+cv_entries <- read_sheet("1JKlSIuDrfC1wa4V1zf4Si_Tu34upiBEn1DlvFfDeFh0", col_types = "c") %>%
+  arrange(desc(pmax(year_end, year_begin, na.rm = T)), desc(year_begin), desc(month_begin)) 
+
+stopifnot(all(!is.na(cv_entries$year_begin)))
+
+cv_entries <- cv_entries %>%  
+  arrange(desc(pmax(year_end, year_begin, na.rm = T)), desc(year_begin), desc(month_begin)) %>%
+  mutate(description = case_when(show_description == FALSE ~ '', TRUE ~ description)) %>%
+  mutate(description = replace_na(description, '')) %>%
+  mutate(where = case_when(show_where == FALSE ~ '', TRUE ~ where)) %>%
+  mutate(month_begin = month.abb[as.numeric(month_begin)]) %>%
+  mutate(month_end = month.abb[as.numeric(month_end)]) %>%
+  mutate(when = bestOf(list(str_c(month_begin, " ", year_begin, " --- ", month_end, " ", year_end),
+                            str_c(month_begin, " ", year_begin, " --- ", year_end),
+                            str_c(year_begin, " --- ", year_end),
+                            str_c(month_begin, " ", year_begin),
+                            year_begin)))
+
+pub_entries <- "1JKlSIuDrfC1wa4V1zf4Si_Tu34upiBEn1DlvFfDeFh0" %>%
+  read_sheet('publications')
+
+#---------#
 # Research
 #---------#
 
@@ -26,9 +58,9 @@ make_title <- function(pub){
 # make icons
 make_icons <- function(pub){
   icons <- c('<span class="pub-authors">')
-  if(pub['peer_reviewed'] == TRUE){
-    icons <- c(icons, '<i class="fa-solid fa-user-check"></i>')
-  }
+  #if(pub['peer_reviewed'] == TRUE){
+  #  icons <- c(icons, '<i class="fa-solid fa-user-check"></i>')
+  #}
   if(pub['open_access'] == TRUE){
     icons <- c(icons, '<i class="ai ai-open-access ai-lg"></i>')
   }
@@ -141,8 +173,8 @@ boldName <- function(refsList){
     unlist() -> entries
   
   # bold my name
-  entries <- gsub("Harrigan, Caitlin F", "**Harrigan, Caitlin F**", fixed = T, entries)
-  entries <- gsub("Caitlin F Harrigan", "**Caitlin F Harrigan**", fixed = T, entries)
+  entries <- gsub("Harrigan, Caitlin F.", "**Harrigan, Caitlin F.**", fixed = T, entries)
+  entries <- gsub("Caitlin F. Harrigan", "**Caitlin F. Harrigan**", fixed = T, entries)
   entries <- gsub("Harrigan, Caitlin", "**Harrigan, Caitlin**", fixed = T, entries)
   entries <- gsub("Caitlin Harrigan", "**Caitlin Harrigan**", fixed = T, entries)
   
@@ -155,6 +187,7 @@ boldName <- function(refsList){
 }
 
 print_publications <- function(refs){
+  
   refs <- refs %>%
     PrintBibliography() %>%
     capture.output() %>%
@@ -166,39 +199,43 @@ print_publications <- function(refs){
 }
 
 
-bestOf <- function(l){
-  # return the first non-na argument
-  #print(head(data.frame(l)))
-  r <- apply(data.frame(l), FUN = function(x){x[which(!is.na(x))][[1]]}, MAR = 1)
-  return(r)
-}
-
 
 print_entry <- function(line){
   
   if( (nchar(line['what']) + nchar(line['where'])) >65 ){
-    line['description'] <- paste0(line['where'], '<p>', line['description'], '</p>')
-    line['where'] <- ''
+    line['where'] <- paste0('<p class="entry-body">', line['where'], '<br>', line['description'], '</p>')
+    line['description'] <- NA
   }
   
   entry <- c(
     '<div class= short-entry>',
-    '<p>',
+    # title
     '<span class="entry-title">',
     line['what'],
-    '</span>', 
-    line['where'],
+    '</span>',
+    # date 
     '<span class="side-date">',
     line['when'],
     '</span>',
-    '<p>'
+    # contents
+    '<span class="entry-body">',
+    line['where'],
+    '</span>'
   )
   
-  if (!is.na(line['description'])){
-    entry <- c(entry, line['description'])
-  }
+  #if (!is.na(line['description'])){
+  #  entry <- c(entry,
+  #             '<p class="entry-body">',
+  #             line['description'],
+  #             '</p>'
+  #             )
+  #}
   
-  entry <- c(entry, '</div>')
+  entry <- c(
+    entry,
+    '</div>'
+  )
+  
   HTML(entry)
 }
 
