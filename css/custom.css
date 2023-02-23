@@ -38,13 +38,14 @@ div.quarto-about-trestles .about-entity .about-link {
   color: grey;
 }
 
-.entry-title{
-  font-weight: bold;
+.entry-body{
+  width: 80%;
+  display: inline-block;
 }
 
-.ol {padding-left: 1rem;}
-
-
+body{
+  font-size: 0.8em;
+}
 
 /* hide link destinations when printing */ 
 @media print {
@@ -98,9 +99,6 @@ div.quarto-about-trestles .about-entity .about-link {
     transform: translate(0px,-40px);
   }
   
-  .entry-body {
-    transform: translate(0px,0px);
-  }
 
   h2, d-article h2 {
     margin-top: 0.8em;

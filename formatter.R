@@ -202,39 +202,35 @@ print_publications <- function(refs){
 
 print_entry <- function(line){
   
-  if( (nchar(line['what']) + nchar(line['where'])) >65 ){
-    line['where'] <- paste0('<p class="entry-body">', line['where'], '<br>', line['description'], '</p>')
-    line['description'] <- NA
-  }
-  
-  entry <- c(
-    '<div class= short-entry>',
-    # title
-    '<span class="entry-title">',
-    line['what'],
-    '</span>',
-    # date 
-    '<span class="side-date">',
-    line['when'],
-    '</span>',
-    # contents
-    '<span class="entry-body">',
-    line['where'],
-    '</span>'
-  )
-  
-  #if (!is.na(line['description'])){
-  #  entry <- c(entry,
-  #             '<p class="entry-body">',
-  #             line['description'],
-  #             '</p>'
-  #             )
+  #if( (nchar(line['what']) + nchar(line['where'])) > 65 ){
+  #  line['where'] <- paste0('<p class="entry-body">', line['where'], '<br>', line['description'], '</p>')
+  #  line['description'] <- NA
   #}
   
-  entry <- c(
-    entry,
-    '</div>'
-  )
+  if(line['description'] != ''){
+    line['where'] <- paste0(line['where'], '<br>', '*', line['description'], '*')
+  }
+  
+  # if the what and where is short, put it on one line
+  if( (nchar(line['what']) + nchar(line['where'])) < 80 ){
+    entry <- paste0('**', line['what'], '** ', line['where'])
+  } else {
+    entry <- paste0('**', line['what'], '** ', '<br>', line['where'])
+  }
+    
+  
+  entry <- c('<div class= short-entry>',
+             '<div class= entry-body>',
+             entry,
+             '</div>',
+             '<span class="side-date">',
+             line['when'],
+             '</span>',
+             '</div>'
+             )
+             
+  
+
   
   HTML(entry)
 }

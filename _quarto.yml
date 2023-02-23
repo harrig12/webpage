@@ -10,6 +10,10 @@ website:
         href: index.qmd
       - text: 'Research'
         href: research.qmd
+      - text: 'Talks'
+        href: talks.qmd
+      - text: 'Teaching'
+        href: teaching.qmd
       - text: 'CV'
         href: files/cv.pdf
       - icon: github

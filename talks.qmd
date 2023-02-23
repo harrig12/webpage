@@ -1,0 +1,32 @@
+---
+title: Talks
+format:
+  html:
+    toc: true
+    toc_float: true
+    toc-location: left
+---
+
+```{r, echo=F, warning=F, message=F}
+options(knitr.kable.NA = '')
+source('formatter.R')
+
+cv_entries <- cv_entries %>% filter(website_show == T)
+```
+
+
+
+# Academic Talks
+
+`r print_section(cv_entries, "talk_academic")`
+
+# Guest Lectures
+
+`r print_section(cv_entries, "guest_lecture")`
+
+# Other Talks
+
+`r print_section(cv_entries, "talk_other")`
+
+
+

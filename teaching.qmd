@@ -1,0 +1,36 @@
+---
+title: Teaching
+format:
+  html:
+    toc: true
+    toc_float: true
+    toc-location: left
+---
+
+```{r, echo=F, warning=F, message=F}
+options(knitr.kable.NA = '')
+source('formatter.R')
+
+cv_entries <- cv_entries %>%
+  filter(website_show == T) %>%
+  separate(when, into=c('when', 'when_end'), ' --- ')
+```
+
+
+
+### Student Supervision
+
+`r print_section(cv_entries, "supervision")`
+
+
+### Teaching Assisstant Positions
+
+
+`r print_section(cv_entries, "teaching")`
+
+<!-- ## Testimonials 
+
+
+"As a mentor, Caitlin has greatly enhanced my ability to conduct research. She also provided valuable resources and aimed to make sure that I understood the fundamental concepts behind all the research conducted by breaking down difficult principles into easily comprehensible statements and thoughts. Additionally, she helped me find any sources of error as the research progressed. I enjoyed researching under her guidance, and I had an overall positive experience."  
+
+-->

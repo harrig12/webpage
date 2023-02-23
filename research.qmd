@@ -1,20 +1,29 @@
 ---
-title: Publications  
+title: Research
+format:
+  html:
+    toc: true
+    toc_float: true
+    toc-location: left
 ---
 
-<center>
- 
-<a href="files/harrigan.bib" class="btn btn-secondary icon-link"><i class="fa-solid fa-download fa-sm"></i> BibTeX</a> <i class="fa-solid fa-user-check"> </i> Peer reviewed &nbsp;&nbsp; <i class="ai ai-open-access ai-lg"></i> Open access &nbsp;&nbsp; * Indicates equal contribution <br>
-
- 
-</center>
- 
 ```{r, echo=F, warning=F, message=F}
+options(knitr.kable.NA = '')
 source('formatter.R')
 
-"1JKlSIuDrfC1wa4V1zf4Si_Tu34upiBEn1DlvFfDeFh0" %>%
-  read_sheet('publications') ->
-  pubs
+
+cv_entries <- cv_entries %>% filter(website_show == T)
+```
+
+<!-- # Software -->
+
+<i class="ai ai-open-access ai-lg"></i> Indicates open access &nbsp;&nbsp; \* Indicates equal contribution &nbsp;&nbsp; <a href="files/harrigan.bib" class="btn btn-secondary icon-link"><i class="fa-solid fa-download fa-sm"></i> Download all as BibTeX</a> 
+
+# Peer Reviewed Publications
+ 
+```{r, echo=F, warning=F, message=F}
+
+pubs <- pub_entries %>% filter(peer_reviewed == T)
 
 
 tibble(text = apply(pubs,1,make_pub), image = apply(pubs,1,make_image)) %>%
@@ -24,3 +33,21 @@ tibble(text = apply(pubs,1,make_pub), image = apply(pubs,1,make_image)) %>%
 
 
 ```
+
+# Other Publications
+
+```{r, echo=F, warning=F, message=F}
+pubs <- pub_entries %>% filter(peer_reviewed == F)
+
+
+tibble(text = apply(pubs,1,make_pub), image = apply(pubs,1,make_image)) %>%
+  kable(escape = F, col.names = NULL) %>%
+  kable_paper(html_font = "\"Open Sans\",  sans-serif") %>%
+  column_spec(2, width_max = "20em", width_min = "10em")
+
+
+```
+
+# Posters
+
+`r print_section(cv_entries, "poster")`

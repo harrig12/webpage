@@ -3,7 +3,7 @@
 $primary:     #0F2E3D;
 $secondary:   #85D4FF; 
 $tert:        #D6F1FF;
-$link-color:  #999;
+$link-color:  $secondary;
 
 $body-color:  #fff;
 $body-bg:     #181818;
@@ -22,7 +22,7 @@ h1, .h1{
 }
 
 .pub-authors{
-  color: $secondary;
+  color: grey;
   margin-bottom: 0;
 }
 
