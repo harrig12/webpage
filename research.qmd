@@ -17,7 +17,11 @@ cv_entries <- cv_entries %>% filter(website_show == T)
 
 <!-- # Software -->
 
-<i class="ai ai-open-access ai-lg"></i> Indicates open access &nbsp;&nbsp; \* Indicates equal contribution &nbsp;&nbsp; <a href="files/harrigan.bib" class="btn btn-secondary icon-link"><i class="fa-solid fa-download fa-sm"></i> Download all as BibTeX</a> 
+::: {.column-margin}
+<a href="files/harrigan.bib" class="btn btn-secondary icon-link"><i class="fa-solid fa-download fa-sm"></i> Download all as BibTeX</a> 
+:::
+
+<i class="ai ai-open-access ai-lg"></i> Indicates open access &nbsp;&nbsp; \* Indicates equal contribution 
 
 # Peer Reviewed Publications
  

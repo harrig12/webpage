@@ -18,12 +18,12 @@ cv_entries <- cv_entries %>%
 
 
 
-### Student Supervision
+# Student Supervision
 
 `r print_section(cv_entries, "supervision")`
 
 
-### Teaching Assisstant Positions
+# Teaching Assisstant Positions
 
 
 `r print_section(cv_entries, "teaching")`

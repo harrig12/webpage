@@ -32,10 +32,13 @@ cv_entries <- cv_entries %>%
   mutate(where = case_when(show_where == FALSE ~ '', TRUE ~ where)) %>%
   mutate(month_begin = month.abb[as.numeric(month_begin)]) %>%
   mutate(month_end = month.abb[as.numeric(month_end)]) %>%
-  mutate(when = bestOf(list(str_c(month_begin, " ", year_begin, " --- ", month_end, " ", year_end),
-                            str_c(month_begin, " ", year_begin, " --- ", year_end),
+  
+  mutate(year_end = ifelse(year_end == 'present', '', year_end),
+         year_end = ifelse(year_begin == year_end, NA, year_end)) %>%
+  mutate(when = bestOf(list(#str_c(month_begin, " ", year_begin, " --- ", month_end, " ", year_end),
+                            #str_c(month_begin, " ", year_begin, " --- ", year_end),
                             str_c(year_begin, " --- ", year_end),
-                            str_c(month_begin, " ", year_begin),
+                            #str_c(month_begin, " ", year_begin),
                             year_begin)))
 
 pub_entries <- "1JKlSIuDrfC1wa4V1zf4Si_Tu34upiBEn1DlvFfDeFh0" %>%
@@ -203,10 +206,10 @@ print_publications <- function(refs){
 print_entry <- function(line){
 
   entry <-  c(
-    '<div class="grid" style="--bs-columns: 12; --bs-gap: 0em;">',
-    '<div class="g-col-9">', paste0('**', line['what'], '** ', line['where']), '</div>',
-    '<div class="g-col-3" style="text-align:right;">', line['when'], '</div>',
-    '<div class="g-col-12"><em>', line['description'], '</em></div>', 
+    '<div class="grid" style="--bs-columns: 6; --bs-gap: 0.3rem;">',
+    '<div class="g-col-1"><span class="entry-when">', line['when'], '</span></div>',
+    '<div class="g-col-5">', '<span class="entry-what">', line['what'], '</span> <span class="entry-where">', line['where'], '</span></div>',
+    '<div class="g-col-5, g-start-2"><span class="entry-desc">', line['description'], '</span></div>', 
     '</div>'
   )
   
@@ -214,7 +217,11 @@ print_entry <- function(line){
 }
 
 print_section <- function(cv_entries, sel){
-  paste(apply(dplyr::filter(cv_entries, type == sel) , 1, print_entry), collapse = "")
+  # hr for section header
+  hr <- '<div class="grid" style="--bs-columns: 6; --bs-gap: 0.3rem;"><div class="g-col-1"><div class="cv-line"></div></div></div>'
+  # section contents
+  entries <- paste(apply(dplyr::filter(cv_entries, type == sel) , 1, print_entry), collapse = "")
+  paste0(hr, entries)
 }
 
 
