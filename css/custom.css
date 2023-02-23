@@ -38,12 +38,8 @@ div.quarto-about-trestles .about-entity .about-link {
   color: grey;
 }
 
-.entry-body{
-  width: 80%;
-  display: inline-block;
-}
 
-body{
+body {
   font-size: 0.8em;
 }
 
@@ -91,7 +87,7 @@ body{
   }
 
   
-  body, p, ol, .short-entry {
+  body, p, ol, .short-entry, .grid {
     font-family: serif;
     font-size: 11pt;
     margin-bottom: 0em;

@@ -202,35 +202,20 @@ print_publications <- function(refs){
 
 print_entry <- function(line){
   
-  #if( (nchar(line['what']) + nchar(line['where'])) > 65 ){
-  #  line['where'] <- paste0('<p class="entry-body">', line['where'], '<br>', line['description'], '</p>')
-  #  line['description'] <- NA
-  #}
-  
-  if(line['description'] != ''){
-    line['where'] <- paste0(line['where'], '<br>', '*', line['description'], '*')
-  }
   
   # if the what and where is short, put it on one line
-  if( (nchar(line['what']) + nchar(line['where'])) < 80 ){
-    entry <- paste0('**', line['what'], '** ', line['where'])
-  } else {
-    entry <- paste0('**', line['what'], '** ', '<br>', line['where'])
-  }
-    
-  
-  entry <- c('<div class= short-entry>',
-             '<div class= entry-body>',
-             entry,
-             '</div>',
-             '<span class="side-date">',
-             line['when'],
-             '</span>',
-             '</div>'
-             )
-             
-  
 
+  title <- paste0('**', line['what'], '** ', line['where'])
+
+  entry <-  c('<div class="grid" style="--bs-columns: 12; --bs-gap: 0em;">',
+    '<div class="g-col-9">', title, '</div>',
+    '<div class="g-col-3" style="text-align:right;">', 
+    line['when'], '</div>'
+  )
+  
+  entry <- c(entry, '<div class="g-col-12"><em>', line['description'], '</em></div>')
+
+  entry <- c(entry, '</div>')
   
   HTML(entry)
 }
