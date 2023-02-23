@@ -201,21 +201,14 @@ print_publications <- function(refs){
 
 
 print_entry <- function(line){
-  
-  
-  # if the what and where is short, put it on one line
 
-  title <- paste0('**', line['what'], '** ', line['where'])
-
-  entry <-  c('<div class="grid" style="--bs-columns: 12; --bs-gap: 0em;">',
-    '<div class="g-col-9">', title, '</div>',
-    '<div class="g-col-3" style="text-align:right;">', 
-    line['when'], '</div>'
+  entry <-  c(
+    '<div class="grid" style="--bs-columns: 12; --bs-gap: 0em;">',
+    '<div class="g-col-9">', paste0('**', line['what'], '** ', line['where']), '</div>',
+    '<div class="g-col-3" style="text-align:right;">', line['when'], '</div>',
+    '<div class="g-col-12"><em>', line['description'], '</em></div>', 
+    '</div>'
   )
-  
-  entry <- c(entry, '<div class="g-col-12"><em>', line['description'], '</em></div>')
-
-  entry <- c(entry, '</div>')
   
   HTML(entry)
 }
