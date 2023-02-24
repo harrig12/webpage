@@ -52,9 +52,9 @@ pub_entries <- "1JKlSIuDrfC1wa4V1zf4Si_Tu34upiBEn1DlvFfDeFh0" %>%
 # publication formatting:
 # make title
 make_title <- function(pub){
-  title1 <- paste0('<p class="pub-title">', pub['title'], '</p>')
-  title2 <- paste0('<p class="pub-authors">', pub['authors'], '</p>')
-  title3 <- paste0('<p class="pub-authors">', pub['where'], '</p>')
+  title1 <- paste0('<p class="entry-what">', pub['title'], '</p>')
+  title2 <- paste0('<p class="entry-where">', pub['authors'], '</p>')
+  title3 <- paste0('<p class="entry-desc">', pub['where'], '</p>')
   return(c(title1, title2, title3))
 }
 
@@ -93,7 +93,7 @@ make_image <- function(pub){
 # put it all together
 make_pub <- function(pub){
   
-  HTML(c(make_title(pub),
+  HTML(c(bold_name(make_title(pub)),
          #'<center>',
          make_buttons(pub),
          make_icons(pub)#,
@@ -166,7 +166,7 @@ BibOptions(bib.style = "embedURL", match.author = "exact",
            style = "text", no.print.fields = c("doi","urldate", "issn", "note"))
 
 
-boldName <- function(refsList){
+bold_name <- function(refsList){
   
   # add delim, and split entries
   refsList[which(nchar(refsList) == 0)] <- "<DELIM>"
@@ -176,10 +176,10 @@ boldName <- function(refsList){
     unlist() -> entries
   
   # bold my name
-  entries <- gsub("Harrigan, Caitlin F.", "**Harrigan, Caitlin F.**", fixed = T, entries)
-  entries <- gsub("Caitlin F. Harrigan", "**Caitlin F. Harrigan**", fixed = T, entries)
-  entries <- gsub("Harrigan, Caitlin", "**Harrigan, Caitlin**", fixed = T, entries)
-  entries <- gsub("Caitlin Harrigan", "**Caitlin Harrigan**", fixed = T, entries)
+  entries <- gsub("Harrigan, Caitlin F.", "<b>Harrigan, Caitlin F.</b>", fixed = T, entries)
+  entries <- gsub("Caitlin F. Harrigan", "<b>Caitlin F. Harrigan</b>", fixed = T, entries)
+  entries <- gsub("Harrigan, Caitlin", "<b>Harrigan, Caitlin</b>", fixed = T, entries)
+  entries <- gsub("Caitlin Harrigan", "<b>Caitlin Harrigan</b>", fixed = T, entries)
   
   # remove numeric if necessary
   #entries <- gsub('\\[', '', entries)
@@ -194,7 +194,7 @@ print_publications <- function(refs){
   refs <- refs %>%
     PrintBibliography() %>%
     capture.output() %>%
-    boldName() %>% 
+    bold_name() %>% 
     unlist()
   
   paste(paste0(1:length(refs), '. ', refs, '\n'), collapse = '')
