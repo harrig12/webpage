@@ -1,13 +1,13 @@
 /*-- scss:defaults --*/
 // Base document colors
 $primary:     #0F2E3D;    
-$secondary:   #2D5D7B; 
-$link-color:  #666;
+$secondary:   #319FB7; 
+$link-color:  $secondary;
 
 $body-color:  #000;
 $body-bg:     #fff; /* #F8F5F0; */
 $navbar-fg:   #fff;
-$navbar-hl:   #85D4FF;
+$navbar-hl:   $secondary;
 
 /*-- scss:rules --*/
 
@@ -17,16 +17,5 @@ h1, .h1{
 
 .cv-line{
   border-top: 3px solid $secondary;
-}
-
-.pub-title{
-  color: $primary;
-  font-size: 1.3em;
-  margin-bottom: 0;
-}
-
-.pub-authors{
-  color: $secondary;
-  margin-bottom: 0;
 }
 
