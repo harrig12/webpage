@@ -20,10 +20,14 @@ cv_entries <- cv_entries %>%
 
 # Student Supervision
 
+<div class="grid" style="--bs-columns: 6; --bs-gap: 0.3rem;"><div class="g-col-1"><div class="cv-line"></div></div></div>
+
 `r print_section(cv_entries, "supervision")`
 
 
 # Teaching Assisstant Positions
+
+<div class="grid" style="--bs-columns: 6; --bs-gap: 0.3rem;"><div class="g-col-1"><div class="cv-line"></div></div></div>
 
 
 `r print_section(cv_entries, "teaching")`

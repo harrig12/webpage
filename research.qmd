@@ -24,6 +24,8 @@ cv_entries <- cv_entries %>% filter(website_show == T)
 <i class="ai ai-open-access ai-lg"></i> Indicates open access &nbsp;&nbsp; \* Indicates equal contribution 
 
 # Peer Reviewed Publications
+
+<div class="grid" style="--bs-columns: 6; --bs-gap: 0.3rem;"><div class="g-col-1"><div class="cv-line"></div></div></div>
  
 ```{r, echo=F, warning=F, message=F}
 
@@ -39,6 +41,8 @@ tibble(text = apply(pubs,1,make_pub), image = apply(pubs,1,make_image)) %>%
 ```
 
 # Other Publications
+
+<div class="grid" style="--bs-columns: 6; --bs-gap: 0.3rem;"><div class="g-col-1"><div class="cv-line"></div></div></div>
 
 ```{r, echo=F, warning=F, message=F}
 pubs <- pub_entries %>% filter(peer_reviewed == F)
