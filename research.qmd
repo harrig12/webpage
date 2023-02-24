@@ -10,8 +10,6 @@ format:
 ```{r, echo=F, warning=F, message=F}
 options(knitr.kable.NA = '')
 source('formatter.R')
-
-
 cv_entries <- cv_entries %>% filter(website_show == T)
 ```
 
@@ -26,35 +24,15 @@ cv_entries <- cv_entries %>% filter(website_show == T)
 # Peer Reviewed Publications
 
 <div class="grid" style="--bs-columns: 6; --bs-gap: 0.3rem;"><div class="g-col-1"><div class="cv-line"></div></div></div>
- 
-```{r, echo=F, warning=F, message=F}
 
-pubs <- pub_entries %>% filter(peer_reviewed == T)
-
-
-tibble(text = apply(pubs,1,make_pub), image = apply(pubs,1,make_image)) %>%
-  kable(escape = F, col.names = NULL) %>%
-  kable_paper(html_font = "\"Open Sans\",  sans-serif") %>%
-  column_spec(2, width_max = "20em", width_min = "10em")
-
-
-```
+`r paste(apply(filter(pub_entries, peer_reviewed == T),1,make_pub), collapse = "")`
 
 # Other Publications
 
 <div class="grid" style="--bs-columns: 6; --bs-gap: 0.3rem;"><div class="g-col-1"><div class="cv-line"></div></div></div>
 
-```{r, echo=F, warning=F, message=F}
-pubs <- pub_entries %>% filter(peer_reviewed == F)
+`r paste(apply(filter(pub_entries, peer_reviewed == F),1,make_pub), collapse = "")`
 
-
-tibble(text = apply(pubs,1,make_pub), image = apply(pubs,1,make_image)) %>%
-  kable(escape = F, col.names = NULL) %>%
-  kable_paper(html_font = "\"Open Sans\",  sans-serif") %>%
-  column_spec(2, width_max = "20em", width_min = "10em")
-
-
-```
 
 # Posters
 

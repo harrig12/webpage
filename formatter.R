@@ -48,31 +48,12 @@ pub_entries <- "1JKlSIuDrfC1wa4V1zf4Si_Tu34upiBEn1DlvFfDeFh0" %>%
 # Research
 #---------#
 
-
-# publication formatting:
-# make title
-make_title <- function(pub){
-  title1 <- paste0('<p class="entry-what">', pub['title'], '</p>')
-  title2 <- paste0('<p class="entry-where">', pub['authors'], '</p>')
-  title3 <- paste0('<p class="entry-desc">', pub['where'], '</p>')
-  return(c(title1, title2, title3))
-}
-
-# make icons
-make_icons <- function(pub){
-  icons <- c('<span class="pub-authors">')
-  #if(pub['peer_reviewed'] == TRUE){
-  #  icons <- c(icons, '<i class="fa-solid fa-user-check"></i>')
-  #}
-  if(pub['open_access'] == TRUE){
-    icons <- c(icons, '<i class="ai ai-open-access ai-lg"></i>')
-  }
-  icons <- c(icons, '<span>')
-  return(icons)
-}
 # make buttons
 make_buttons <- function(pub){
   buttons <- c()
+  if(pub['open_access'] == TRUE){
+    buttons <- c(buttons, '<i class="ai ai-open-access ai-lg"></i>')
+  }
   if (!is.na(pub['doi'])) {
     buttons <- c(buttons, paste0('<a href="', pub['doi'],'" class="btn btn-outline-secondary icon-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> view</a>'))
   }
@@ -85,20 +66,28 @@ make_buttons <- function(pub){
   return(buttons)
 }
 
-# make image
-make_image <- function(pub){
-  paste0('<img class="research-thumbnail" src="', pub['thumbnail_path'], '" alt="img"/>')
-}
 
 # put it all together
 make_pub <- function(pub){
+
+  entry <-  c(
+    '<div class="grid" style="--bs-columns: 2; --bs-gap: 0rem 0.5rem; grid-template-columns: 70% 30%">',
+    '<div class="grid">',
+      '<div class="g-col-12"><span class="entry-what">', pub['title'], '</span></div>',
+      '<div class="g-col-12">', '<span class="entry-where">', pub['authors'], '</div>',
+      '<div class="g-col-12"><span class="entry-desc">', pub['where'], '</span></div>', 
+      '<div class="g-col-12">', make_buttons(pub), '</div>',
+    '</div>',
+    '<div class="grid">',
+      '<div class="g-col-12">', '<img class="research-thumbnail" src="', pub['thumbnail_path'], '" alt="img"/>', '</div>',
+    '</div>',
+    '</div>',
+    '<br>'
+  )
   
-  HTML(c(bold_name(make_title(pub)),
-         #'<center>',
-         make_buttons(pub),
-         make_icons(pub)#,
-         #'<center>'
-  ))
+  HTML(entry)
+  
+  
 }
 
 #-----#
