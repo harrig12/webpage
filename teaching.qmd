@@ -22,7 +22,7 @@ cv_entries <- cv_entries %>% filter(website_show == T)
 `r print_section(cv_entries, "supervision")`
 
 
-# Teaching Assisstant Positions
+# Teaching Assistant Positions
 
 
 `r print_section(cv_entries, "teaching")`
