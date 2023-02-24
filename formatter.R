@@ -195,10 +195,10 @@ print_publications <- function(refs){
 print_entry <- function(line){
 
   entry <-  c(
-    '<div class="grid" style="--bs-columns: 6; --bs-gap: 0rem 0.3rem;">',
+    '<div class="grid cv-entry">',
     '<div class="g-col-1"><span class="entry-when">', line['when'], '</span></div>',
-    '<div class="g-col-5">', '<span class="entry-what">', line['what'], '</span> <span class="entry-where">', line['where'], '</span></div>',
-    '<div class="g-col-5 g-start-2"><span class="entry-desc">', line['description'], '</span></div>', 
+    '<div class="g-col-1">', '<span class="entry-what">', line['what'], '</span> <span class="entry-where">', line['where'], '</span></div>',
+    '<div class="g-col-1 g-start-2"><span class="entry-desc">', line['description'], '</span></div>', 
     '</div>'
   )
   
@@ -207,7 +207,7 @@ print_entry <- function(line){
 
 print_section <- function(cv_entries, sel){
   # hr for section header
-  hr <- '<div class="grid" style="--bs-columns: 6; --bs-gap: 0.3rem;"><div class="g-col-1"><div class="cv-line"></div></div></div>'
+  hr <- '<div class="grid cv-entry"><div class="g-col-1"><div class="cv-line"></div></div></div>'
   # section contents
   entries <- paste(apply(dplyr::filter(cv_entries, type == sel) , 1, print_entry), collapse = "")
   paste0(hr, entries)

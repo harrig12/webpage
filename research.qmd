@@ -23,13 +23,13 @@ cv_entries <- cv_entries %>% filter(website_show == T)
 
 # Peer Reviewed Publications
 
-<div class="grid" style="--bs-columns: 6; --bs-gap: 0.3rem;"><div class="g-col-1"><div class="cv-line"></div></div></div>
+<div class="grid cv-entry"><div class="g-col-1"><div class="cv-line"></div></div></div>
 
 `r paste(apply(filter(pub_entries, peer_reviewed == T),1,make_pub), collapse = "")`
 
 # Other Publications
 
-<div class="grid" style="--bs-columns: 6; --bs-gap: 0.3rem;"><div class="g-col-1"><div class="cv-line"></div></div></div>
+<div class="grid cv-entry"><div class="g-col-1"><div class="cv-line"></div></div></div>
 
 `r paste(apply(filter(pub_entries, peer_reviewed == F),1,make_pub), collapse = "")`
 

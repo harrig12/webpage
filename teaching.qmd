@@ -15,15 +15,12 @@ cv_entries <- cv_entries %>% filter(website_show == T)
 ```
 
 
-
 # Student Supervision
-
 
 `r print_section(cv_entries, "supervision")`
 
 
 # Teaching Assistant Positions
-
 
 `r print_section(cv_entries, "teaching")`
 

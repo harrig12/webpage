@@ -57,7 +57,7 @@ I am a graduate student at the University of Toronto supervised by [Quaid Morris
 
 # Publications
 
-<div class="grid" style="--bs-columns: 6; --bs-gap: 0.3rem;"><div class="g-col-1"><div class="cv-line"></div></div></div>
+<div class="grid cv-entry"><div class="g-col-1"><div class="cv-line"></div></div></div>
 
 `r print_publications(refs)`
 
@@ -72,7 +72,7 @@ I am a graduate student at the University of Toronto supervised by [Quaid Morris
 
 # Service
 
-<div class="grid" style="--bs-columns: 6; --bs-gap: 0.3rem;"><div class="g-col-1"><div class="cv-line"></div></div></div>
+<div class="grid cv-entry"><div class="g-col-1"><div class="cv-line"></div></div></div>
 
 ```{r, echo=F, warning=F, message=F}
 # collate all service together
