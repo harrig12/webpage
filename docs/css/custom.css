@@ -1,4 +1,4 @@
-
+/* index */
 
 div.quarto-about-trestles .about-entity .about-link {
   font-size: 1.3em !important;
@@ -13,109 +13,102 @@ div.quarto-about-trestles .about-entity .about-link {
   font-size: 0.85em
 }
 
+/* research */
+
 .pub-title{
   line-height: 1.15em;
-  font-size: 1.3em;
   margin-bottom: 0.3em;
 }
 
 .pub-authors{
-  line-height: 1.15em;
-  margin-bottom: 0.3em;
+  font-size: 0.8em; 
 }
 
 .research-thumbnail{
   max-width: 10em;
 }
 
-
 /* CV */
-@media screen {
-  #cv_print_header { display: none; } 
-}
 
-.side-date{
-  float: right;
-  color: grey;
-}
-
-.entry-title{
+.entry-what{
   font-weight: bold;
 }
 
-.ol {padding-left: 1rem;}
+.entry-when{
+  float: right;
+}
+
+.entry-desc{
+  font-style: italic;
+}
+
+.cv-line{
+  width: 100%;
+  height: 0px;
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
+}
+
+.btn-secondary { font-size: 1.3em}
+
+@media screen {
   
+  h1, .h1{
+    margin-bottom: 0.1em;
+  }
+  
+  #cv_print_header { display: none; } 
+}
 
 /* hide link destinations when printing */ 
-@media print {
-  
-  #TOC, d-title,
-  .d-contents.d-contents-float{display: none;}
-  a[href]:after {content: none;}
-  d-article {
-    border-top: none;
-    padding-top: 0em;
-  }
-  
+@media print { 
+
   /* create header for printed version of CV */
-  #cv_print_header .p{  
-    display: inline-block;
-    margin: auto;
+  #cv_print_header{  
+    display: block;
     text-align: center;
-    font-family: serif;
-    line-height: 2em;
   }
   
+  #cv-title{
+    font-size: 20pt;
+    color: #0F2E3D;
+  }
   
-  .navbar-title{
+  .navbar, .quarto-title, #print_button {
     display: none ;
     color: transparent;
   }
   
-  #title-block-header.quarto-title-block.default .quarto-title .title {
-    display: none;
-    text-align: center;
-    transform: translate(0px,-15px);
-  }
   
-  #print_button { 
-    display: none ;
-  } 
-  
-  #body.floating.nav-fixed{
-    color: red;
-  }
-  
-  .floating .nav-fixed .quarto-light{
-    color: red;
-  }
-
-  
-  body, p, ol{
+  body, p, ol, .short-entry, .grid {
     font-family: serif;
     font-size: 11pt;
     margin-bottom: 0em;
     padding-bottom: 0em;
-    transform: translate(0px,-40px);
+    transform: translate(0, -.7cm);
   }
   
 
-  h2, d-article h2 {
+  h1 {
+    color: #0F2E3D;
     margin-top: 0.8em;
-    margin-bottom: 0pt;
+    margin-bottom: 0em;
     border-bottom: none;
-    font-size: 10pt;
+    font-size: 12pt;
     font-family: serif;
     font-weight: 500;
     font-variant-caps: all-small-caps;
-    transform: translate(0px,-40px);
+    transform: translate(0, -.7cm);
   }
   
-  /** Setting margins */       
+  .grid {
+    grid-template-columns: 2.5cm auto auto auto auto auto;
+  }
+  
   @page { 
-    margin-top: 0.5cm;
-    margin-bottom: 1.2cm ;
+    margin-top: 0.25cm;
     
   }
+  
 }
 
