@@ -2,7 +2,6 @@
 // Base document colors
 $primary:     #0F2E3D;    
 $secondary:   #2D5D7B; 
-$tert:        #457EAC;
 $link-color:  #666;
 
 $body-color:  #000;
@@ -16,6 +15,9 @@ h1, .h1{
   color: $primary;
 }
 
+.cv-line{
+  border-top: 3px solid $secondary;
+}
 
 .pub-title{
   color: $primary;
@@ -27,10 +29,4 @@ h1, .h1{
   color: $secondary;
   margin-bottom: 0;
 }
-
-
-.pub-where{
-  color: $tert;
-}
-
 
