@@ -38,7 +38,7 @@ cv_entries <- cv_entries %>%
   mutate(when = bestOf(list(#str_c(month_begin, " ", year_begin, " --- ", month_end, " ", year_end),
                             #str_c(month_begin, " ", year_begin, " --- ", year_end),
                             str_c(year_begin, " --- ", year_end),
-                            #str_c(month_begin, " ", year_begin),
+                            str_c(month_begin, " ", year_begin),
                             year_begin)))
 
 pub_entries <- "1JKlSIuDrfC1wa4V1zf4Si_Tu34upiBEn1DlvFfDeFh0" %>%
@@ -206,7 +206,7 @@ print_publications <- function(refs){
 print_entry <- function(line){
 
   entry <-  c(
-    '<div class="grid" style="--bs-columns: 6; --bs-gap: 0.3rem;">',
+    '<div class="grid" style="--bs-columns: 6; --bs-gap: 0rem 0.3rem;">',
     '<div class="g-col-1"><span class="entry-when">', line['when'], '</span></div>',
     '<div class="g-col-5">', '<span class="entry-what">', line['what'], '</span> <span class="entry-where">', line['where'], '</span></div>',
     '<div class="g-col-5, g-start-2"><span class="entry-desc">', line['description'], '</span></div>', 
