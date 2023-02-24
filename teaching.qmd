@@ -11,9 +11,7 @@ format:
 options(knitr.kable.NA = '')
 source('formatter.R')
 
-cv_entries <- cv_entries %>%
-  filter(website_show == T) %>%
-  separate(when, into=c('when', 'when_end'), ' --- ')
+cv_entries <- cv_entries %>% filter(website_show == T)
 ```
 
 

@@ -15,7 +15,7 @@ website:
       - text: 'Teaching'
         href: teaching.qmd
       - text: 'CV'
-        href: files/cv.pdf
+        href: chv.qmd
       - icon: github
         href: https://github.com/harrig12
 format:
