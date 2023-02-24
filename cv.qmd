@@ -51,7 +51,7 @@ I am a graduate student at the University of Toronto supervised by [Quaid Morris
 `r print_section(cv_entries, "education")`
 
 
-# Work experience
+# Professional Experience
 
 `r print_section(cv_entries, "work")`
 
