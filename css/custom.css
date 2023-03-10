@@ -91,13 +91,12 @@ div.quarto-about-trestles .about-entity .about-link {
     font-family: serif;
     font-size: 11pt;
     margin-bottom: 0em;
-    padding-bottom: 0em;
+    padding-bottom: 0em; 
     transform: translate(0, -.9cm);
   }
   
 
   h1 {
-    color: #0F2E3D;
     margin-top: 0.8em;
     margin-bottom: 0em;
     border-bottom: none;
