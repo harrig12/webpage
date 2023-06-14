@@ -16,11 +16,10 @@ options(knitr.kable.NA = '')
 
 
 ```{r entries-setup, ehcho=F, warning=F, message=F}
-#source('formatter.R')
 source('format_entries.R')
 source('format_bib.R')
 
-cv_entries <- cv_entries %>% subset(cv_show == T) 
+cv_entries <- cv_entries %>% subset(cv_long_show == T) 
   
 
 publications <- "files/harrigan.bib"
@@ -157,20 +156,16 @@ pc <- c(
 
 `r cv_entries %>% filter(type=='supervision') %>% print_section()`
 
+# Progam Administration
+
+`r cv_entries %>% filter(type=='program_admin') %>% print_section()`
+
 # Teaching Assistant Positions
 
 <em style="font-size:0.8em">Unless otherwise noted, school is University of Toronto</em>
 
 `r cv_entries %>% filter(type=='teaching') %>% print_section()`
 
-
-# Event Organization
-
-`r cv_entries %>% filter(type=='event_org') %>% print_section()`
-
-# Progam Administration
-
-`r cv_entries %>% filter(type=='program_admin') %>% print_section()`
 
 # Mentorship
 

@@ -13,7 +13,7 @@ gs4_auth('cait.harrigan@mail.utoronto.ca')
 #--------------#
 
 cv_entries <- read_sheet("1JKlSIuDrfC1wa4V1zf4Si_Tu34upiBEn1DlvFfDeFh0", 
-                         sheet = 'new entries', col_types = "llcDDccccccccc") %>%
+                         sheet = 'new entries', col_types = "lllcDDccccccccc") %>%
   arrange(desc(pmax(year(end), year(begin), na.rm = T)), 
           desc(year(begin)), desc(month(begin))) %>%
   mutate(type = factor(type),
