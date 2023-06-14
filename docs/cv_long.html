@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.35">
+<meta name="generator" content="quarto-1.2.475">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,10 +11,15 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
 </style>
 
 
@@ -25,6 +30,7 @@ ul.task-list{list-style: none;}
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./images/ch_logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -62,39 +68,46 @@ ul.task-list{list-style: none;}
 <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
 </head>
 
-<body class="floating nav-fixed slimcontent">
+<body class="floating nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <a class="navbar-brand" href="./index.html">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Cait Harrigan</span>
-  </a>
+    </a>
+  </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html">About</a>
+    <a class="nav-link" href="./index.html">
+ <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html">Research</a>
+    <a class="nav-link" href="./research.html">
+ <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./talks.html">Talks</a>
+    <a class="nav-link" href="./talks.html">
+ <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./teaching.html">Teaching</a>
+    <a class="nav-link" href="./teaching.html">
+ <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html">CV</a>
+    <a class="nav-link" href="./files/cv_short.pdf">
+ <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/harrig12"><i class="bi bi-github" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
 </ul>
               <div class="quarto-toggle-container">
@@ -109,22 +122,7 @@ ul.task-list{list-style: none;}
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#education" id="toc-education" class="nav-link active" data-scroll-target="#education">Education</a></li>
-  <li><a href="#work-experience" id="toc-work-experience" class="nav-link" data-scroll-target="#work-experience">Work experience</a></li>
-  <li><a href="#publications" id="toc-publications" class="nav-link" data-scroll-target="#publications">Publications</a></li>
-  <li><a href="#talks" id="toc-talks" class="nav-link" data-scroll-target="#talks">Talks</a></li>
-  <li><a href="#posters" id="toc-posters" class="nav-link" data-scroll-target="#posters">Posters</a></li>
-  <li><a href="#service" id="toc-service" class="nav-link" data-scroll-target="#service">Service</a></li>
-  <li><a href="#grants-awards" id="toc-grants-awards" class="nav-link" data-scroll-target="#grants-awards">Grants &amp; Awards</a></li>
-  <li><a href="#teaching" id="toc-teaching" class="nav-link" data-scroll-target="#teaching">Teaching</a></li>
-  <li><a href="#event-organization" id="toc-event-organization" class="nav-link" data-scroll-target="#event-organization">Event Organization</a></li>
-  <li><a href="#progam-administration" id="toc-progam-administration" class="nav-link" data-scroll-target="#progam-administration">Progam Administration</a></li>
-  </ul>
-</nav>
+    
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -142,6 +140,7 @@ ul.task-list{list-style: none;}
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
@@ -164,9 +163,9 @@ cait.harrigan@mail.utoronto.ca | View this CV online at <a href="https://caithar
 
 <div class="no-row-height column-margin column-container"><div class="">
 <p><a id="print_button" href="files/cv.pdf" class="btn btn-secondary icon-link">Print this CV</a></p>
-</div></div><p>I am a graduate student at the University of Toronto supervised by <a href="https://www.morrislab.ca/">Quaid Morris</a> and <a href="https://www.camlab.ca/">Kieran Campbell</a>. I’m a graduate researcher at the <a href="https://vectorinstitute.ai/">Vector Institute</a> and Doctoral Student Fellow at the <a href="https://datasciences.utoronto.ca/">UofT Data Sciences Institute</a>. I did my undergraduate studies at the University of Toronto, in Computational Biology and Statistics. In my PhD work, I use machine learning to understand cancer genomics by modelling the evolutionary constraints that underlie how mutation events occur in DNA. I’m passionate about open science, and promoting great mentorship in the sciences.</p>
-<section id="education" class="level2">
-<h2 class="anchored" data-anchor-id="education">Education</h2>
+</div></div><p>I am a graduate student at the University of Toronto supervised by <a href="https://www.morrislab.ca/">Quaid Morris</a> and <a href="https://www.camlab.ca/">Kieran Campbell</a>. I’m a graduate researcher at the <a href="https://vectorinstitute.ai/">Vector Institute</a> and Doctoral Fellow at the <a href="https://datasciences.utoronto.ca/">UofT Data Sciences Institute</a>. I use machine learning to understand cancer genomics by modelling the evolutionary constraints that underlie how mutations occur in DNA. I’m passionate about open science, and promoting great mentorship in the sciences.</p>
+<section id="education" class="level1">
+<h1>Education</h1>
 <div class="grid cv-entry">
 <div class="g-col-1">
 <div class="cv-line">
@@ -176,40 +175,49 @@ cait.harrigan@mail.utoronto.ca | View this CV online at <a href="https://caithar
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> 2021 — </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> PhD in Computer Science </span> <span class="entry-where"> University of Toronto </span>
+<span class="entry-when"> 01/21 - present </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> PhD in Computer Science </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> University of Toronto </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-italic"> Supervised by Quaid Morris and Kieran Campbell </span>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> 2019 — 2021 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> MSc in Computer Science </span> <span class="entry-where"> University of Toronto </span>
+<span class="entry-when"> 09/19 - 03/21 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> MSc. in Computer Science </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> University of Toronto </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-italic"> Supervised by Quaid Morris </span>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> 2015 — 2019 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> Honours BSc. Awarded with distinction </span> <span class="entry-where"> University of Toronto </span>
+<span class="entry-when"> 09/15 - 06/19 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> BSc. in Computational Biology </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> University of Toronto </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-italic"> Awarded with distinction </span>
 </div>
 </div>
 </section>
-<section id="work-experience" class="level2">
-<h2 class="anchored" data-anchor-id="work-experience">Work experience</h2>
+<section id="research-experience" class="level1">
+<h1>Research experience</h1>
 <div class="grid cv-entry">
 <div class="g-col-1">
 <div class="cv-line">
@@ -219,61 +227,81 @@ cait.harrigan@mail.utoronto.ca | View this CV online at <a href="https://caithar
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> May 2021 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> Visiting Graduate Researcher </span> <span class="entry-where"> Memorial Sloan Kettering Cancer Center </span>
+<span class="entry-when"> 06/23 - present </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> Visiting Graduate Researcher </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> Memorial Sloan Kettering Cancer Center </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-italic"> Hosted by Quaid Morris </span>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> 2018 — 2019 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> Undergraduate Research Assistant </span> <span class="entry-where"> Donnelly Centre for Cellular and Biomolecular Genetics </span>
+<span class="entry-when"> 05/21 - 09/21 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> Visiting Graduate Researcher </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> Memorial Sloan Kettering Cancer Center </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-italic"> Hosted by Quaid Morris </span>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> May 2017 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> Undergraduate Research Assistant </span> <span class="entry-where"> SickKids Hospital </span>
+<span class="entry-when"> 05/17 - 09/17 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
-</div>
-</div>
-<div class="grid cv-entry">
-<div class="g-col-1">
-<span class="entry-when"> May 2016 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> Intern </span> <span class="entry-where"> Eviviz Vancouver </span>
+<span class="entry-bold"> Undergraduate Research Assistant </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-plain"> SickKids Hospital </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-italic"> Supervised by Michael Wilson and Anna Goldenberg </span>
 </div>
 </div>
 </section>
-<section id="publications" class="level2">
-<h2 class="anchored" data-anchor-id="publications">Publications</h2>
+<section id="peer-reviewed-publications" class="level1">
+<h1>Peer Reviewed Publications</h1>
+<div class="cell">
+
+</div>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<div class="cv-line">
+
+</div>
+</div>
+</div>
 <ol type="1">
 <li>Caitlin Timmons, Quaid Morris, and <b>Caitlin F. Harrigan</b>. “<a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010733">Regional mutational signature activities in cancer genomes</a>”. En. In: <em>PLOS Computational Biology</em> 18.12 (Dec.&nbsp;2022), p.&nbsp;e1010733.</li>
 <li>Agata A. Bielska, <b>Caitlin F. Harrigan</b>, Yeon Ju Kyung, Quaid Morris, Wilhelm Palm, and Craig B. Thompson. “Activating mTOR mutations are detrimental in nutrient-poor conditions”. Eng. In: <em>Cancer Research</em> (Jul.&nbsp;2022).</li>
-<li><b>Caitlin F. Harrigan</b>, Gabriella Morgenshtern, Anna Goldenberg, and Fanny Chevalier. “<a href="https://francisconunes.me/RealizingAIinHealthcareWS/papers/Harrigan2021.pdf">Considerations for Visualizing Uncertainty in Clinical Machine Learning Models</a>”. Realizing AI in Healthcare: Challenges Appearing in the Wild, Workshop at CHI 2021 Online Virtual Conference, May. 2021.</li>
 <li><b>Caitlin F. Harrigan</b>, Yulia Rubanova, Quaid Morris, and Alina Selega. “<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6905203/">TrackSigFreq : subclonal reconstructions based on mutation signatures and allele frequencies</a>”. In: <em>Pacific Symposium on Biocomputing</em> 25 (Jan.&nbsp;2020), pp.&nbsp;238-249.</li>
 <li>Yulia Rubanova, Ruian Shi, <b>Caitlin F. Harrigan</b>, Roujia Li, Jeff Wintersinger, Nil Sahin, Amit Deshwar, and Quaid Morris. “<a href="https://www.nature.com/articles/s41467-020-14352-7">Reconstructing evolutionary trajectories of mutation signature activities in cancer using TrackSig</a>”. In: <em>Nature Communications</em> 11.1 (Feb.&nbsp;2020), pp.&nbsp;1-12.</li>
 </ol>
 </section>
-<section id="talks" class="level2">
-<h2 class="anchored" data-anchor-id="talks">Talks</h2>
+<section id="other-publications" class="level1">
+<h1>Other Publications</h1>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<div class="cv-line">
+
+</div>
+</div>
+</div>
+<ol type="1">
+<li><b>Caitlin F. Harrigan</b>*, Gabriella Morgenshtern*, Anna Goldenberg, and Fanny Chevalier. “<a href="https://francisconunes.me/RealizingAIinHealthcareWS/papers/Harrigan2021.pdf">Considerations for Visualizing Uncertainty in Clinical Machine Learning Models</a>”. Realizing AI in Healthcare: Challenges Appearing in the Wild, Workshop at CHI 2021 Online Virtual Conference, May. 2021.</li>
+</ol>
+</section>
+<section id="posters" class="level1">
+<h1>Posters</h1>
 <div class="grid cv-entry">
 <div class="g-col-1">
 <div class="cv-line">
@@ -283,29 +311,62 @@ cait.harrigan@mail.utoronto.ca | View this CV online at <a href="https://caithar
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> Nov 2021 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> DAMUTA: Dirichlet allocation of mutations as a function of both damage and DNA repair </span> <span class="entry-where"> Cold Spring Harbour Laboratory Meeting: Genome Informatics </span>
+<span class="entry-when"> 04/23 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> Selected Talk </span>
+<span class="entry-bold"> Dirichlet allocation of mutations to model DDR in cancer </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> Toronto DNA Damage &amp; Repair Symposium </span>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> Jan 2020 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> TrackSigFreq: subclonal reconstructions based on mutation signatures and allele frequencies </span> <span class="entry-where"> Pacific Symposium on Biocomputing </span>
+<span class="entry-when"> 07/22 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> Selected Talk, Poster </span>
+<span class="entry-bold"> Dirichlet Allocation of Mutations Captures the Action of DNA Damage and Misrepair Processes </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> Intelligent Systems for Molecular Biology </span>
+</div>
+</div>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<span class="entry-when"> 11/21 </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-bold"> Dirichlet Allocation of Mutations in Cancer Genomes </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> Machine Learning in Computational Biology </span>
+</div>
+</div>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<span class="entry-when"> 04/21 </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-bold"> Tandem Signatures of DNA Damage and Misrepair in Cancer </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> Computing Research Association’s Grad Cohort for Women </span>
+</div>
+</div>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<span class="entry-when"> 12/19 </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-bold"> TrackSigFreq: subclonal reconstructions based on mutation signatures and allele frequencies </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> Machine Learning in Computational Biology </span>
 </div>
 </div>
 </section>
-<section id="posters" class="level2">
-<h2 class="anchored" data-anchor-id="posters">Posters</h2>
+<section id="honours-awards" class="level1">
+<h1>Honours &amp; Awards</h1>
 <div class="grid cv-entry">
 <div class="g-col-1">
 <div class="cv-line">
@@ -315,47 +376,324 @@ cait.harrigan@mail.utoronto.ca | View this CV online at <a href="https://caithar
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> Jul 2022 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> Dirichlet Allocation of Mutations Captures the Action of DNA Damage and Misrepair Processes </span> <span class="entry-where"> Intelligent Systems for Molecular Biology </span>
+<span class="entry-when"> 03/20 - present </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> Vector Institute Research Grant </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> Vector Institute, Toronto, Canada </span>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> Nov 2021 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> Dirichlet Allocation of Mutations in Cancer Genomes </span> <span class="entry-where"> Machine Learning in Computational Biology </span>
+<span class="entry-when"> 09/22 - present </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> NSERC Postgraduate Scholarship - Doctoral </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> University of Toronto </span>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> Dec 2019 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> TrackSigFreq: subclonal reconstructions based on mutation signatures and allele frequencies </span> <span class="entry-where"> Machine Learning in Computational Biology </span>
+<span class="entry-when"> 09/22 - present </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> DSI Doctoral Student Fellowship Award </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> Data Science Institute, University of Toronto </span>
+</div>
+</div>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<span class="entry-when"> 07/22 </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-bold"> Queen Elizabeth II Graduate Scholarship in Science &amp; Technology </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-italic"> (respectfully declined) </span>
+</div>
+</div>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<span class="entry-when"> 09/21 - 09/22 </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-bold"> Ontario Graduate Scholarship </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> Department of Computer Science, University of Toronto </span>
+</div>
+</div>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<span class="entry-when"> 07/20 - 07/22 </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-bold"> ACM SIGHPC Computational &amp; Data Science Fellowship </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> Special Interest Group on High Performance Computing of the Association for Computing Machinery </span>
+</div>
+</div>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<span class="entry-when"> 11/19 - 04/22 </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-bold"> Faculty of Arts and Science Program Level Fellowship </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> Department of Computer Science, University of Toronto </span>
+</div>
+</div>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<span class="entry-when"> 08/21 </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-bold"> JXTX foundation Genome Informatics Scholarship </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> James P. Taylor Foundation for Open Science </span>
+</div>
+</div>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<span class="entry-when"> 09/20 </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-bold"> General Motors Women in Science and Mathematics Award </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> University of Toronto </span>
+</div>
+</div>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<span class="entry-when"> 11/19 </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-bold"> NIH Conference Travel Fellowship </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> International Society for Computational Biology </span>
+</div>
+</div>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<span class="entry-when"> 07/17 </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-bold"> The Audrey Taylor Award </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> New College, University of Toronto </span>
 </div>
 </div>
 </section>
-<section id="service" class="level2">
-<h2 class="anchored" data-anchor-id="service">Service</h2>
+<section id="academic-talks" class="level1">
+<h1>Academic Talks</h1>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<div class="cv-line">
+
+</div>
+</div>
+</div>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<span class="entry-when"> 05/23 </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-bold"> Mutational Signautres for DNA Damage and Misrepair </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> Mathematical Methods in Cancer Biology, Evolution and Therapy (BIRS 23w5084) </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-italic"> Invited talk </span>
+</div>
+<div class="g-col-1 g-start-2">
+<a href="https://www.birs.ca/events/2023/5-day-workshops/23w5084/videos/watch/202305180947-Harrigan.html" class="btn btn-outline-secondary icon-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> view</a>
+</div>
+</div>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<span class="entry-when"> 11/21 </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-bold"> DAMUTA: Dirichlet allocation of mutations as a function of both damage and DNA repair </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> Cold Spring Harbour Laboratory Meeting: Genome Informatics </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-italic"> Selected Talk </span>
+</div>
+</div>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<span class="entry-when"> 01/20 </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-bold"> TrackSigFreq: subclonal reconstructions based on mutation signatures and allele frequencies </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> Pacific Symposium on Biocomputing </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-italic"> Selected Talk, Poster </span>
+</div>
+</div>
+</section>
+<section id="guest-lectures" class="level1">
+<h1>Guest Lectures</h1>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<div class="cv-line">
+
+</div>
+</div>
+</div>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<span class="entry-when"> 03/23 </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-bold"> Exploring &amp; Explaining Data in the Wild </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> AI &amp; Data&nbsp;Science Post-Graduate Program, Loyalist College </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-italic"> Invited by Prof.&nbsp;Peter Papadakos </span>
+</div>
+<div class="g-col-1 g-start-2">
+<a href="https://www.caitharrigan.ca/slides/hummingbird_eda.slides.html" class="btn btn-outline-secondary icon-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> view</a> <a href="https://github.com/harrig12/hummingbird_eda" class="btn btn-outline-secondary icon-link"><i class="fa-solid fa-code"></i> code</a>
+</div>
+</div>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<span class="entry-when"> 02/22 </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-bold"> Data Collection &amp; Analysis </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> PRISM research &amp; mentorship program, University of Toronto </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-italic"> Invited by Prof.&nbsp;Sadia Sharmin </span>
+</div>
+<div class="g-col-1 g-start-2">
+<a href="https://www.caitharrigan.ca/slides/PRISM_2022.pdf" class="btn btn-outline-secondary icon-link"><i class="fa-solid fa-file-pdf"></i> pdf</a>
+</div>
+</div>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<span class="entry-when"> 01/20 </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-bold"> Environmental &amp; Life Sciences Workshop Series </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> STEMHub Foundation </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-italic"> Invited workshop series </span>
+</div>
+</div>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<span class="entry-when"> 01/20 </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-bold"> R for bioinformatics </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> Global Society for Genetics and Genome Biology </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-italic"> Invited workshop </span>
+</div>
+</div>
+</section>
+<section id="other-talks" class="level1">
+<h1>Other Talks</h1>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<div class="cv-line">
+
+</div>
+</div>
+</div>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<span class="entry-when"> 10/22 </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-bold"> Finding the ‘I’ in science </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> ACM Canadian Celebration of&nbsp; Women in Computing </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-italic"> Selected Workshop </span>
+</div>
+<div class="g-col-1 g-start-2">
+<a href="https://www.caitharrigan.ca/slides/CanCWIC_2022.pdf" class="btn btn-outline-secondary icon-link"><i class="fa-solid fa-file-pdf"></i> pdf</a>
+</div>
+</div>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<span class="entry-when"> 02/20 </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-bold"> Undergraduate research opportunities: how to find them and make them work for you </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> UofT Bioinformatics and Computational Biology Student Union </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-italic"> Invited by the BCBSU </span>
+</div>
+</div>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<span class="entry-when"> 05/19 </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-bold"> How to hack your degree </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> Computer Science Student Union, University of Toronto </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-italic"> Invited by the CSSU </span>
+</div>
+</div>
+</section>
+<section id="service" class="level1">
+<h1>Service</h1>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<div class="cv-line">
+
+</div>
+</div>
+</div>
 <div class="cell">
 
 </div>
 <p></p><div class="short-entry"> <b>Peer review:</b>  Genome Biology, iScience, Genome Medicine </div> <div class="short-entry"> <b>Conference program committee:</b>  Machine Learning in Computational Biology (2019), Pacific Symposium on Biocomputing (2020) </div><p></p>
 </section>
-<section id="grants-awards" class="level2">
-<h2 class="anchored" data-anchor-id="grants-awards">Grants &amp; Awards</h2>
+<section id="research-mentorship" class="level1">
+<h1>Research Mentorship</h1>
 <div class="grid cv-entry">
 <div class="g-col-1">
 <div class="cv-line">
@@ -365,106 +703,120 @@ cait.harrigan@mail.utoronto.ca | View this CV online at <a href="https://caithar
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> 2022 — </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> NSERC Postgraduate Scholarship - Doctoral </span> <span class="entry-where"> </span>
+<span class="entry-when"> 09/22 - 12/22 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> Fedir Zhydok </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> Undergraduate Student, National University of Kyiv-Mohyla Academy </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-italic"> Topic: Identifying metastatic tumours from mutational signatures </span>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> 2022 — </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> DSI Doctoral Student Fellowship Award </span> <span class="entry-where"> </span>
+<span class="entry-when"> 05/21 - 08/22 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> Caitlin Timmons </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> Undergraduate Student, Memorial Sloan Kettering Cancer Center </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-italic"> Topic: Modelling spatial distribution of mutational signatures in cancer genomes. </span>
+</div>
+<div class="g-col-1 g-start-2">
+<a href="https://www.linkedin.com/in/caitlinmtimmons/" class="btn btn-outline-secondary icon-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> view</a>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> Jul 2022 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> Queen Elizabeth II Graduate Scholarship in Science &amp; Technology </span> <span class="entry-where"> </span>
+<span class="entry-when"> 05/20 - 11/20 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
-</div>
-</div>
-<div class="grid cv-entry">
-<div class="g-col-1">
-<span class="entry-when"> 2021 — 2022 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> Ontario Graduate Scholarship </span> <span class="entry-where"> </span>
+<span class="entry-bold"> Haritha Lakshmanan </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
-</div>
-</div>
-<div class="grid cv-entry">
-<div class="g-col-1">
-<span class="entry-when"> 2020 — 2022 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> ACM SIGHPC Computational &amp; Data Science Fellowship </span> <span class="entry-where"> </span>
+<span class="entry-plain"> Highschool Student, Memorial Sloan Kettering Cancer Center </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
-</div>
-</div>
-<div class="grid cv-entry">
-<div class="g-col-1">
-<span class="entry-when"> Aug 2021 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> JXTX foundation Genome Informatics Scholarship </span> <span class="entry-where"> </span>
+<span class="entry-italic"> Topic: Automatic discovery of mutations predictive of survival in breast cancer patients </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
-</div>
-</div>
-<div class="grid cv-entry">
-<div class="g-col-1">
-<span class="entry-when"> Sep 2020 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> General Motors Women in Science and Mathematics Award </span> <span class="entry-where"> </span>
-</div>
-<div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
-</div>
-</div>
-<div class="grid cv-entry">
-<div class="g-col-1">
-<span class="entry-when"> Nov 2019 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> NIH Conference Travel Fellowship </span> <span class="entry-where"> </span>
-</div>
-<div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
-</div>
-</div>
-<div class="grid cv-entry">
-<div class="g-col-1">
-<span class="entry-when"> Jul 2017 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> The Audrey Taylor Award </span> <span class="entry-where"> </span>
-</div>
-<div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<a href="https://www.linkedin.com/in/haritha-lakshmanan/" class="btn btn-outline-secondary icon-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> view</a>
 </div>
 </div>
 </section>
-<section id="teaching" class="level2">
-<h2 class="anchored" data-anchor-id="teaching">Teaching</h2>
+<section id="progam-administration" class="level1">
+<h1>Progam Administration</h1>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<div class="cv-line">
+
+</div>
+</div>
+</div>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<span class="entry-when"> 09/21 </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-bold"> Program Organizer </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> UofT Graduate Application Assistance Program </span>
+</div>
+</div>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<span class="entry-when"> 10/20 - 05/21 </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-bold"> Project Manager </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> STEMHub Foundation </span>
+</div>
+</div>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<span class="entry-when"> 05/18 - 05/19 </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-bold"> Founder and treasurer </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> Bioinformatics and Computational Biology Student Union, University of Toronto </span>
+</div>
+</div>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<span class="entry-when"> 03/18 </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-bold"> Event chair: BioHacks </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> Bioinformatics and Computational Biology Hackathon </span>
+</div>
+</div>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<span class="entry-when"> 09/16 - 05/17 </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-bold"> Communications and Marketing Executive </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> UofT Women in Computer Science (WiCS), University of Toronto </span>
+</div>
+</div>
+</section>
+<section id="teaching-assistant-positions" class="level1">
+<h1>Teaching Assistant Positions</h1>
 <p><em style="font-size:0.8em">Unless otherwise noted, school is University of Toronto</em></p>
 <div class="grid cv-entry">
 <div class="g-col-1">
@@ -475,106 +827,95 @@ cait.harrigan@mail.utoronto.ca | View this CV online at <a href="https://caithar
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> Jan 2023 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> JSC370: Data Science II </span> <span class="entry-where"> </span>
+<span class="entry-when"> 01/23 - 05/23 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> JSC370: Data Science II </span>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> Jan 2023 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> JSC270: Data Science I </span> <span class="entry-where"> </span>
+<span class="entry-when"> 01/23 - 05/23 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> JSC270: Data Science I </span>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> Sep 2022 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> STA313: Data Visualization </span> <span class="entry-where"> </span>
+<span class="entry-when"> 09/22 - 12/22 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> STA313: Data Visualization </span>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> Jan 2022 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> JSC370: Data Science II </span> <span class="entry-where"> </span>
+<span class="entry-when"> 01/22 - 05/22 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> PRISM: Preparation for Research through Immersion, Skills, and Mentorship </span>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> Sep 2021 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> CSC197: Privacy in the Age of Big Data Collection </span> <span class="entry-where"> </span>
+<span class="entry-when"> 01/22 - 05/22 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> JSC370: Data Science II </span>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> Jan 2021 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> STA4273: Minimizing Expectations </span> <span class="entry-where"> </span>
+<span class="entry-when"> 09/21 - 12/21 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> CSC197: Privacy in the Age of Big Data Collection </span>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> Sep 2020 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> CSC197: Privacy in the Age of Big Data Collection </span> <span class="entry-where"> </span>
+<span class="entry-when"> 01/21 - 05/21 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> STA4273: Minimizing Expectations </span>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> Jan 2020 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> JSC270: Data Science I </span> <span class="entry-where"> </span>
+<span class="entry-when"> 09/20 - 12/20 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> CSC197: Privacy in the Age of Big Data Collection </span>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> Sep 2019 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> CSC373: Algorithm Design, Analysis &amp; Complexity </span> <span class="entry-where"> </span>
+<span class="entry-when"> 01/20 - 05/20 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> JSC270: Data Science I </span>
+</div>
+</div>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<span class="entry-when"> 09/19 - 12/19 </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-bold"> CSC373: Algorithm Design, Analysis &amp; Complexity </span>
 </div>
 </div>
 </section>
-<section id="event-organization" class="level2">
-<h2 class="anchored" data-anchor-id="event-organization">Event Organization</h2>
+<section id="mentorship" class="level1">
+<h1>Mentorship</h1>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<div class="cv-line">
+
+</div>
+</div>
+</div>
+<p>As part of my ongoing commitment to supporting students at all levels and background in engaging with computational biology, I make an effort to be available to provide guidance and resources to students, with a particular focus on creating an inclusive environment that fosters diverse perspectives and experiences. In addition to being a mentor through the organized programs listed here, I set aside ~2h/month for by-request 30 minute meetings.</p>
 <div class="grid cv-entry">
 <div class="g-col-1">
 <div class="cv-line">
@@ -584,69 +925,71 @@ cait.harrigan@mail.utoronto.ca | View this CV online at <a href="https://caithar
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> Mar 2020 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> Volunteer Coordinator </span> <span class="entry-where"> Grad Visit Day, Department of Computer Science, University of Toronto </span>
+<span class="entry-when"> 01/23 - 05/23 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> DCS Alumni-Student Mentorship Program </span>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> Mar 2018 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> Event chair: BioHacks </span> <span class="entry-where"> Bioinformatics and Computational Biology Hackathon </span>
+<span class="entry-when"> 01/23 - 05/23 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
-</div>
-</div>
-</section>
-<section id="progam-administration" class="level2">
-<h2 class="anchored" data-anchor-id="progam-administration">Progam Administration</h2>
-<div class="grid cv-entry">
-<div class="g-col-1">
-<div class="cv-line">
-
-</div>
+<span class="entry-bold"> Computer Science Alumni Mentorship Program </span>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> 2021 — </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> Program Organizer </span> <span class="entry-where"> UofT Graduate Application Assistance Program </span>
+<span class="entry-when"> 10/21 - 05/22 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> Statistical Science Alumni Mentorship Program </span>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> 2020 — 2021 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> Project Manager </span> <span class="entry-where"> STEMHub Foundation </span>
+<span class="entry-when"> 09/20 - 02/21 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> ProjectX machine learning research competition </span>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> 2018 — 2019 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> Founder and treasurer </span> <span class="entry-where"> UofT Bioinformatics and Computational Biology Student Union </span>
+<span class="entry-when"> 08/20 - 08/21 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> Her Code Camp, Toronto Ontario </span>
 </div>
 </div>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<span class="entry-when"> 10/18 - 05/19 </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-bold"> Department of Statistics Mentorship Program </span>
+</div>
+</div>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<span class="entry-when"> 09/16 - 05/19 </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-bold"> SPROUT Peer Mentorship Program </span>
+</div>
+</div>
+<div class="grid cv-entry">
+<div class="g-col-1">
+<span class="entry-when"> 09/16 - 05/19 </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-bold"> New College E-Mentorship Program </span>
+</div>
+</div>
+<center>
+Last updated: Jun 2023
+</center>
 
 
 </section>
@@ -723,6 +1066,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         }
       }
     }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
   }
   const isFileUrl = () => { 
     return window.location.protocol === 'file:';
@@ -774,7 +1127,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   // Switch to dark mode if need be
   if (hasAlternateSentinel()) {
     toggleColorMode(true);
-  } 
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -796,7 +1151,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -824,31 +1196,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
     });
   }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>

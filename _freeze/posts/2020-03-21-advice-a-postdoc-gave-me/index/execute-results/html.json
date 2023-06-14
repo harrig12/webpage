@@ -1,0 +1,14 @@
+{
+  "hash": "9012611cfdd5874c051082124086439b",
+  "result": {
+    "markdown": "---\ntitle: \"Advice a postdoc gave me\"\ndescription: |\n  Simple tips for computational biologists\npreview: preview.jpg\ndate: 03-21-2020\nauthor: Cait Harrigan\ncategories:\n  - gradschool\noutput: \n  distill::distill_article:\n    self_contained: false\n    toc: true\nrepository_url: https://github.com/harrig12/caitharrigan.ca\ncreative_commons: CC BY-NC\ndraft: false\n---\n\n\n\n\n[This article](https://doi.org/10.1073/pnas.1912488116) got posted in my lab's slack. It claims the folowing: \n\n> Conventional wisdom in the laboratory sciences suggests that PhD students develop their research skills as a function of mentorship from their faculty advisors (i.e., principal investigators; PIs). However, no prior research has identified empirically a relationship between specific PI practices and the development of research skills. Here we show that PIs’ laboratory and mentoring activities do not significantly predict students’ skill development trajectories, but the engagement of postdocs and senior graduate students in laboratory interactions do. These findings support the practice of “cascading mentorship” as differentially effective and identify a critical but previously unrecognized role for postdocs in the graduate training process. They also illustrate both the importance and the feasibility of identifying evidence-based practices in graduate education.\n\nA postdoc in my lab responded, with their wisdom:\n\n+ use tmux\n+ use Snakemake\n+ use Pycharm\n+ use zsh\n+ don’t use Jupyter Notebooks\n+ use conda environments\n\nThis list has served me well so far. To add some wisdom of my own:\n\n+ always write a readme\n+ use wandb\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

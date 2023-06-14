@@ -30,18 +30,17 @@ div.quarto-about-trestles .about-entity .about-link {
 
 /* CV */
 
-.entry-what{
+.entry-bold{
   font-weight: bold;
 }
 
 .entry-when{
-  float: right;
+  float: left;
 }
 
-.entry-desc{
+.entry-italic{
   font-style: italic;
 }
-
 
 .cv-line{
   width: 100%;
@@ -61,7 +60,7 @@ div.quarto-about-trestles .about-entity .about-link {
   .grid.cv-entry{
     --bs-columns: 2; 
     --bs-gap: 0rem 0.3rem; 
-    grid-template-columns: 20% 80%
+    grid-template-columns: 22% 78%
   }
   
   #cv_print_header { display: none; } 
@@ -81,7 +80,7 @@ div.quarto-about-trestles .about-entity .about-link {
     color: #0F2E3D;
   }
   
-  .navbar, .quarto-title, #print_button {
+  .navbar, .quarto-title, #print_button, .btn.btn-outline-secondary.icon-link {
     display: none ;
     color: transparent;
   }

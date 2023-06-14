@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.0.35">
+<meta name="generator" content="quarto-1.2.475">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -11,10 +11,15 @@
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
 </style>
 
 
@@ -25,6 +30,7 @@ ul.task-list{list-style: none;}
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<link href="./images/ch_logo.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -68,33 +74,40 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <a class="navbar-brand" href="./index.html">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Cait Harrigan</span>
-  </a>
+    </a>
+  </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html">About</a>
+    <a class="nav-link" href="./index.html">
+ <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./research.html">Research</a>
+    <a class="nav-link" href="./research.html">
+ <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./talks.html">Talks</a>
+    <a class="nav-link" href="./talks.html">
+ <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./teaching.html" aria-current="page">Teaching</a>
+    <a class="nav-link active" href="./teaching.html" aria-current="page">
+ <span class="menu-text">Teaching</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html">CV</a>
+    <a class="nav-link" href="./files/cv_short.pdf">
+ <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://github.com/harrig12"><i class="bi bi-github" role="img">
 </i> 
- </a>
+ <span class="menu-text"></span></a>
   </li>  
 </ul>
               <div class="quarto-toggle-container">
@@ -109,12 +122,13 @@ ul.task-list{list-style: none;}
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc">
+    <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#student-supervision" id="toc-student-supervision" class="nav-link active" data-scroll-target="#student-supervision">Student Supervision</a></li>
+  <li><a href="#research-mentorship" id="toc-research-mentorship" class="nav-link active" data-scroll-target="#research-mentorship">Research Mentorship</a></li>
   <li><a href="#teaching-assistant-positions" id="toc-teaching-assistant-positions" class="nav-link" data-scroll-target="#teaching-assistant-positions">Teaching Assistant Positions</a></li>
+  <li><a href="#testimonials" id="toc-testimonials" class="nav-link" data-scroll-target="#testimonials">Testimonials</a></li>
   </ul>
 </nav>
 </nav>
@@ -134,6 +148,7 @@ ul.task-list{list-style: none;}
 <div class="quarto-title-meta">
 
     
+  
     
   </div>
   
@@ -143,8 +158,8 @@ ul.task-list{list-style: none;}
 <div class="cell">
 
 </div>
-<section id="student-supervision" class="level1">
-<h1>Student Supervision</h1>
+<section id="research-mentorship" class="level1">
+<h1>Research Mentorship</h1>
 <div class="grid cv-entry">
 <div class="g-col-1">
 <div class="cv-line">
@@ -154,35 +169,50 @@ ul.task-list{list-style: none;}
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> Sep 2022 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> <a href="https://www.linkedin.com/in/fedor-zhydok-854102216">Fedir Zhydok</a> </span> <span class="entry-where"> Undergraduate Student, National University of Kyiv-Mohyla Academy </span>
+<span class="entry-when"> 09/22 - 12/22 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> Identifying metastatic tumours from mutational signatures </span>
+<span class="entry-bold"> Fedir Zhydok </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> Undergraduate Student, National University of Kyiv-Mohyla Academy </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-italic"> Topic: Identifying metastatic tumours from mutational signatures </span>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> 2021 — 2022 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> <a href="https://www.linkedin.com/in/caitlinmtimmons/">Caitlin Timmons</a> </span> <span class="entry-where"> Undergraduate Student, Memorial Sloan Kettering Cancer Center </span>
+<span class="entry-when"> 05/21 - 08/22 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> Modelling spatial distribution of mutational signatures in cancer genomes. </span>
+<span class="entry-bold"> Caitlin Timmons </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> Undergraduate Student, Memorial Sloan Kettering Cancer Center </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-italic"> Topic: Modelling spatial distribution of mutational signatures in cancer genomes. </span>
+</div>
+<div class="g-col-1 g-start-2">
+<a href="https://www.linkedin.com/in/caitlinmtimmons/" class="btn btn-outline-secondary icon-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> view</a>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> May 2020 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> <a href="https://www.linkedin.com/in/haritha-lakshmanan/">Haritha Lakshmanan</a> </span> <span class="entry-where"> Secondary Student, Memorial Sloan Kettering Cancer Center </span>
+<span class="entry-when"> 05/20 - 11/20 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> Automatic discovery of mutations predictive of survival in breast cancer patients </span>
+<span class="entry-bold"> Haritha Lakshmanan </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-plain"> Highschool Student, Memorial Sloan Kettering Cancer Center </span>
+</div>
+<div class="g-col-1 g-start-2">
+<span class="entry-italic"> Topic: Automatic discovery of mutations predictive of survival in breast cancer patients </span>
+</div>
+<div class="g-col-1 g-start-2">
+<a href="https://www.linkedin.com/in/haritha-lakshmanan/" class="btn btn-outline-secondary icon-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> view</a>
 </div>
 </div>
 </section>
@@ -197,122 +227,93 @@ ul.task-list{list-style: none;}
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> Jan 2023 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> JSC370: Data Science II </span> <span class="entry-where"> </span>
+<span class="entry-when"> 01/23 - 05/23 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> JSC370: Data Science II </span>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> Jan 2023 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> JSC270: Data Science I </span> <span class="entry-where"> </span>
+<span class="entry-when"> 01/23 - 05/23 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> JSC270: Data Science I </span>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> Sep 2022 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> STA313: Data Visualization </span> <span class="entry-where"> </span>
+<span class="entry-when"> 09/22 - 12/22 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> STA313: Data Visualization </span>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> Jan 2022 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> PRISM: Preparation for Research through Immersion, Skills, and Mentorship </span> <span class="entry-where"> </span>
+<span class="entry-when"> 01/22 - 05/22 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> PRISM: Preparation for Research through Immersion, Skills, and Mentorship </span>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> Jan 2022 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> JSC370: Data Science II </span> <span class="entry-where"> </span>
+<span class="entry-when"> 01/22 - 05/22 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> JSC370: Data Science II </span>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> Sep 2021 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> CSC197: Privacy in the Age of Big Data Collection </span> <span class="entry-where"> </span>
+<span class="entry-when"> 09/21 - 12/21 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> CSC197: Privacy in the Age of Big Data Collection </span>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> Jan 2021 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> STA4273: Minimizing Expectations </span> <span class="entry-where"> </span>
+<span class="entry-when"> 01/21 - 05/21 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> STA4273: Minimizing Expectations </span>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> Sep 2020 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> CSC197: Privacy in the Age of Big Data Collection </span> <span class="entry-where"> </span>
+<span class="entry-when"> 09/20 - 12/20 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> CSC197: Privacy in the Age of Big Data Collection </span>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> Jan 2020 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> JSC270: Data Science I </span> <span class="entry-where"> </span>
+<span class="entry-when"> 01/20 - 05/20 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> JSC270: Data Science I </span>
 </div>
 </div>
 <div class="grid cv-entry">
 <div class="g-col-1">
-<span class="entry-when"> Sep 2019 </span>
-</div>
-<div class="g-col-1">
-<span class="entry-what"> CSC373: Algorithm Design, Analysis &amp; Complexity </span> <span class="entry-where"> </span>
+<span class="entry-when"> 09/19 - 12/19 </span>
 </div>
 <div class="g-col-1 g-start-2">
-<span class="entry-desc"> </span>
+<span class="entry-bold"> CSC373: Algorithm Design, Analysis &amp; Complexity </span>
 </div>
 </div>
-<!-- ## Testimonials 
-
-
-"As a mentor, Caitlin has greatly enhanced my ability to conduct research. She also provided valuable resources and aimed to make sure that I understood the fundamental concepts behind all the research conducted by breaking down difficult principles into easily comprehensible statements and thoughts. Additionally, she helped me find any sources of error as the research progressed. I enjoyed researching under her guidance, and I had an overall positive experience."  
-
-
-"I was fortunate to work with Cait for almost a year and had a wonderful experience. She was patient, supportive, and skilled at explaining complicated concepts in biology and programming. As a mentor, she has a great sense of when to guide you through a problem and when to let you work through challenges on your own. She helped me grow as a researcher and writer and I’m grateful for everything I learned from her."
--->
+</section>
+<section id="testimonials" class="level1">
+<h1>Testimonials</h1>
+<blockquote class="blockquote">
+<p>“I was fortunate to work with Cait for almost a year and had a wonderful experience. She was patient, supportive, and skilled at explaining complicated concepts in biology and programming. As a mentor, she has a great sense of when to guide you through a problem and when to let you work through challenges on your own. She helped me grow as a researcher and writer and I’m grateful for everything I learned from her.”</p>
+</blockquote>
+<blockquote class="blockquote">
+<p>“As a mentor, Caitlin has greatly enhanced my ability to conduct research. She also provided valuable resources and aimed to make sure that I understood the fundamental concepts behind all the research conducted by breaking down difficult principles into easily comprehensible statements and thoughts. Additionally, she helped me find any sources of error as the research progressed. I enjoyed researching under her guidance, and I had an overall positive experience.”</p>
+</blockquote>
 
 
 </section>
@@ -389,6 +390,16 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         }
       }
     }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
   }
   const isFileUrl = () => { 
     return window.location.protocol === 'file:';
@@ -440,7 +451,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   // Switch to dark mode if need be
   if (hasAlternateSentinel()) {
     toggleColorMode(true);
-  } 
+  } else {
+    toggleColorMode(false);
+  }
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -462,7 +475,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
     button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
     setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
       button.setAttribute("title", currentTitle);
       button.classList.remove('code-copy-button-checked');
     }, 1000);
@@ -490,31 +520,50 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
     });
   }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
   var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
   for (var i=0; i<bibliorefs.length; i++) {
     const ref = bibliorefs[i];
-    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-    tippyHover(ref, function() {
-      var popup = window.document.createElement('div');
-      cites.forEach(function(cite) {
-        var citeDiv = window.document.createElement('div');
-        citeDiv.classList.add('hanging-indent');
-        citeDiv.classList.add('csl-entry');
-        var biblioDiv = window.document.getElementById('ref-' + cite);
-        if (biblioDiv) {
-          citeDiv.innerHTML = biblioDiv.innerHTML;
-        }
-        popup.appendChild(citeDiv);
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
       });
-      return popup.innerHTML;
-    });
+    }
   }
 });
 </script>
