@@ -4,6 +4,7 @@ project:
 
 website:
   title: "Cait Harrigan"
+  favicon: images/ch_logo.png
   navbar:
     right:
       - text: 'About'
@@ -15,7 +16,7 @@ website:
       - text: 'Teaching'
         href: teaching.qmd
       - text: 'CV'
-        href: cv.qmd
+        href: file/cv_long.pdf
       - icon: github
         href: https://github.com/harrig12
 format:

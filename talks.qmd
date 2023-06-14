@@ -9,7 +9,7 @@ format:
 
 ```{r, echo=F, warning=F, message=F}
 options(knitr.kable.NA = '')
-source('formatter.R')
+source('format_entries.R')
 
 cv_entries <- cv_entries %>% filter(website_show == T)
 ```
@@ -18,16 +18,14 @@ cv_entries <- cv_entries %>% filter(website_show == T)
 
 # Academic Talks
 
-`r print_section(cv_entries, "talk_academic")`
+`r cv_entries %>% filter(type=='talk_academic') %>% print_section()`
 
 # Guest Lectures
 
-
-`r print_section(cv_entries, "guest_lecture")`
+`r cv_entries %>% filter(type=='guest_lecture') %>% print_section()`
 
 # Other Talks
 
-`r print_section(cv_entries, "talk_other")`
-
+`r cv_entries %>% filter(type=='talk_other') %>% print_section()`
 
 

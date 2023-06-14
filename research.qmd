@@ -9,31 +9,24 @@ format:
 
 ```{r, echo=F, warning=F, message=F}
 options(knitr.kable.NA = '')
-source('formatter.R')
+source('format_entries.R')
 cv_entries <- cv_entries %>% filter(website_show == T)
 ```
-
-<!-- # Software -->
-
 ::: {.column-margin}
 <a href="files/harrigan.bib" class="btn btn-secondary icon-link"><i class="fa-solid fa-download fa-sm"></i> Download all as BibTeX</a> 
 :::
 
-<i class="ai ai-open-access ai-lg"></i> Indicates open access &nbsp;&nbsp; \* Indicates equal contribution 
+\* Indicates equal contribution 
 
 # Peer Reviewed Publications
 
-<div class="grid cv-entry"><div class="g-col-1"><div class="cv-line"></div></div></div>
-
-`r paste(apply(filter(pub_entries, peer_reviewed == T),1,make_pub), collapse = "")`
+`r cv_entries %>% filter(type=='publication_reviewed') %>% mutate(when = NA) %>% print_section()`
 
 # Other Publications
 
-<div class="grid cv-entry"><div class="g-col-1"><div class="cv-line"></div></div></div>
-
-`r paste(apply(filter(pub_entries, peer_reviewed == F),1,make_pub), collapse = "")`
+`r cv_entries %>% filter(type=='publication_other')  %>% mutate(when = NA) %>% print_section()`
 
 
 # Posters
 
-`r print_section(cv_entries, "poster")`
+`r cv_entries %>% filter(type=='poster') %>% print_section()`

@@ -1,0 +1,185 @@
+---
+title: "Cait Harrigan, MSc."
+format: 
+  html:
+    toc: false
+    toc_float: true
+    toc-location: left
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+options(knitr.kable.NA = '')
+
+```
+
+
+```{r entries-setup, ehcho=F, warning=F, message=F}
+#source('formatter.R')
+source('format_entries.R')
+source('format_bib.R')
+
+cv_entries <- cv_entries %>% subset(cv_show == T) 
+  
+
+publications <- "files/harrigan.bib"
+BibOptions(sorting = 'none')
+refs <- rev(ReadBib(publications))
+NoCite(refs)
+```
+
+<div id=cv_print_header>
+<center>
+<p style="font-size: 15pt; font-weight:300; margin-bottom: 0.5em">
+Cait Harrigan, MSc.
+</p>
+
+<p style="font-weight:400; margin-bottom: 0.5em">
+cait.harrigan@mail.utoronto.ca \| View this CV online at [caitharrigan.ca/cv](https://caitharrigan.ca/cv)
+</p>
+</center>
+</div>
+
+
+::: {.column-margin}
+
+<a id=print_button href="files/cv.pdf" class="btn btn-secondary icon-link">Print this CV</a>
+
+:::
+
+I am a graduate student at the University of Toronto supervised by [Quaid Morris](https://www.morrislab.ca/) and [Kieran Campbell](https://www.camlab.ca/). I'm a graduate researcher at the [Vector Institute](https://vectorinstitute.ai/) and Doctoral Fellow at the [UofT Data Sciences Institute](https://datasciences.utoronto.ca/). I use machine learning to understand cancer genomics by modelling the evolutionary constraints that underlie how mutations occur in DNA. I'm passionate about open science, and promoting great mentorship in the sciences.
+
+
+# Education
+
+`r cv_entries %>% filter(type=='education') %>% print_section()`
+
+
+# Research experience
+
+`r cv_entries %>% filter(type=='work') %>% print_section()`
+
+# Peer Reviewed Publications
+
+```{r}
+ref_titles <- c()
+for (r in refs) { 
+  t <- r$title %>%
+    gsub(pattern = "[^[:alnum:]]", replacement = "") %>%
+    tolower()
+  ref_titles <- c(ref_titles, t)
+}
+
+sel_titles <- cv_entries %>% 
+  filter(type=='publication_reviewed') %>%
+  pull(line1) %>%
+  gsub(pattern = "[^[:alnum:]]", replacement = "") %>%
+  tolower()
+
+sel <- ref_titles %in% sel_titles
+```
+
+<div class="grid cv-entry"><div class="g-col-1"><div class="cv-line"></div></div></div>
+
+`r print_publications(refs[sel])`
+
+# Other Publications
+
+<div class="grid cv-entry"><div class="g-col-1"><div class="cv-line"></div></div></div>
+
+
+`r print_publications(refs[!sel])`
+
+
+# Posters
+
+`r cv_entries %>% filter(type=='poster') %>% print_section()`
+
+# Honours & Awards
+
+`r cv_entries %>% filter(type=='grant' | type=='award') %>% print_section()`
+
+
+# Academic Talks 
+
+`r cv_entries %>% filter(type=='talk_academic') %>% print_section()`
+
+# Guest Lectures
+
+`r cv_entries %>% filter(type=='guest_lecture') %>% print_section()`
+
+# Other Talks
+
+`r cv_entries %>% filter(type=='talk_other') %>% print_section()`
+
+
+# Service
+
+<div class="grid cv-entry"><div class="g-col-1"><div class="cv-line"></div></div></div>
+
+```{r, echo=F, warning=F, message=F}
+# collate all service together
+pr <- cv_entries %>% 
+  filter(type == 'service_review') %>%
+  pull(line2) %>%
+  paste0(collapse = ', ')
+
+pc <- cv_entries %>%
+  filter(type == 'service_pc') %>%
+  group_by(line2) %>%
+  summarise(line3 = paste0(year(begin), collapse=', ')) %>%
+  mutate(line3 = paste0(line2, ' (', line3, ')')) %>%
+  pull(line3) %>%
+  paste0(collapse = ', ')
+
+pr <- c(
+    '<div class= short-entry>',
+    "<b>Peer review:</b> ",
+    pr,
+    '</div>'
+)
+
+pc <- c(
+    '<div class= short-entry>',
+    "<b>Conference program committee:</b> ", 
+    pc,
+    '</div>'
+)
+
+```
+
+`r HTML(pr)`
+`r HTML(pc)`
+
+
+# Research Mentorship
+
+`r cv_entries %>% filter(type=='supervision') %>% print_section()`
+
+# Teaching Assistant Positions
+
+<em style="font-size:0.8em">Unless otherwise noted, school is University of Toronto</em>
+
+`r cv_entries %>% filter(type=='teaching') %>% print_section()`
+
+
+# Event Organization
+
+`r cv_entries %>% filter(type=='event_org') %>% print_section()`
+
+# Progam Administration
+
+`r cv_entries %>% filter(type=='program_admin') %>% print_section()`
+
+# Mentorship
+
+<div class="grid cv-entry"><div class="g-col-1"><div class="cv-line"></div></div></div>
+
+As part of my ongoing commitment to supporting students at all levels and background in engaging with computational biology, I make an effort to be available to provide guidance and resources to students, with a particular focus on creating an inclusive environment that fosters diverse perspectives and experiences. In addition to being a mentor through the organized programs listed here, I set aside ~2h/month for by-request 30 minute meetings.
+
+`r cv_entries %>% filter(type=='mentorship') %>% print_section()`
+
+<center>
+Last updated: `r paste(lubridate::month(Sys.Date(), label=T), lubridate::year(Sys.Date()) )`
+</center>
