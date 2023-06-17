@@ -10,13 +10,10 @@ website:
       - text: 'About'
         href: index.qmd
       - text: 'Research'
-        href: research.qmd
       - text: 'Talks'
-        href: talks.qmd
       - text: 'Teaching'
-        href: teaching.qmd
       - text: 'CV'
-        href: files/cv_short.pdf
+        href: cv.qmd
       - icon: github
         href: https://github.com/harrig12
 format:
@@ -28,4 +25,5 @@ format:
           "https://use.fontawesome.com/releases/v6.0.0/css/all.css",
           "https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
           ]
-
+    email-obfuscation: references
+    copyright: Cait Harrigan

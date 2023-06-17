@@ -1,3 +1,4 @@
+library(dplyr)
 library(bibtex)
 library(htmltools)
 library(RefManageR)

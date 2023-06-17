@@ -1,12 +1,6 @@
 ---
 title: "Cait Harrigan, MSc."
-format: 
-  html:
-    toc: false
-    toc_float: true
-    toc-location: left
 ---
-
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
@@ -50,16 +44,18 @@ cait.harrigan@mail.utoronto.ca \| View this CV online at [caitharrigan.ca/cv](ht
 I am a graduate student at the University of Toronto supervised by [Quaid Morris](https://www.morrislab.ca/) and [Kieran Campbell](https://www.camlab.ca/). I'm a graduate researcher at the [Vector Institute](https://vectorinstitute.ai/) and Doctoral Fellow at the [UofT Data Sciences Institute](https://datasciences.utoronto.ca/). I use machine learning to understand cancer genomics by modelling the evolutionary constraints that underlie how mutations occur in DNA. I'm passionate about open science, and promoting great mentorship in the sciences.
 
 
-# Education
+## Education
 
 `r cv_entries %>% filter(type=='education') %>% print_section()`
 
 
-# Research experience
+## Research experience 
 
 `r cv_entries %>% filter(type=='work') %>% print_section()`
 
-# Peer Reviewed Publications
+## Peer Reviewed Publications
+
+\* Indicates equal contribution
 
 ```{r}
 ref_titles <- c()
@@ -79,43 +75,36 @@ sel_titles <- cv_entries %>%
 sel <- ref_titles %in% sel_titles
 ```
 
-<div class="grid cv-entry"><div class="g-col-1"><div class="cv-line"></div></div></div>
-
 `r print_publications(refs[sel])`
 
-# Other Publications
-
-<div class="grid cv-entry"><div class="g-col-1"><div class="cv-line"></div></div></div>
-
+## Other Publications
 
 `r print_publications(refs[!sel])`
 
 
-# Posters
+## Posters
 
 `r cv_entries %>% filter(type=='poster') %>% print_section()`
 
-# Honours & Awards
+## Fellowships & Awards
 
 `r cv_entries %>% filter(type=='grant' | type=='award') %>% print_section()`
 
 
-# Academic Talks 
+## Academic Talks 
 
 `r cv_entries %>% filter(type=='talk_academic') %>% print_section()`
 
-# Guest Lectures
+## Guest Lectures
 
 `r cv_entries %>% filter(type=='guest_lecture') %>% print_section()`
 
-# Other Talks
+## Other Talks
 
 `r cv_entries %>% filter(type=='talk_other') %>% print_section()`
 
 
-# Service
-
-<div class="grid cv-entry"><div class="g-col-1"><div class="cv-line"></div></div></div>
+## Service
 
 ```{r, echo=F, warning=F, message=F}
 # collate all service together
@@ -152,28 +141,29 @@ pc <- c(
 `r HTML(pc)`
 
 
-# Research Mentorship
+## Research Mentorship
 
 `r cv_entries %>% filter(type=='supervision') %>% print_section()`
 
-# Progam Administration
+## Progam Administration
 
 `r cv_entries %>% filter(type=='program_admin') %>% print_section()`
 
-# Teaching Assistant Positions
+## Teaching Assistant Positions
 
 <em style="font-size:0.8em">Unless otherwise noted, school is University of Toronto</em>
 
 `r cv_entries %>% filter(type=='teaching') %>% print_section()`
 
 
-# Mentorship
-
-<div class="grid cv-entry"><div class="g-col-1"><div class="cv-line"></div></div></div>
+## Mentorship
 
 As part of my ongoing commitment to supporting students at all levels and background in engaging with computational biology, I make an effort to be available to provide guidance and resources to students, with a particular focus on creating an inclusive environment that fosters diverse perspectives and experiences. In addition to being a mentor through the organized programs listed here, I set aside ~2h/month for by-request 30 minute meetings.
 
 `r cv_entries %>% filter(type=='mentorship') %>% print_section()`
+
+
+---
 
 <center>
 Last updated: `r paste(lubridate::month(Sys.Date(), label=T), lubridate::year(Sys.Date()) )`

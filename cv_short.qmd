@@ -1,10 +1,5 @@
 ---
 title: "Cait Harrigan, MSc."
-format:
-  html:
-    toc: true
-    toc_float: true
-    toc-location: left
 ---
 
 
@@ -46,34 +41,34 @@ I am a graduate student at the University of Toronto supervised by [Quaid Morris
 
 
 
-# Education
+## Education
 
 `r cv_entries %>% filter(type=='education') %>% print_section()`
 
-# Publications
-
-<div class="grid cv-entry"><div class="g-col-1"><div class="cv-line"></div></div></div>
-
-`r print_publications(refs)`
-
-
-# Honours & Awards
-
-`r cv_entries %>% filter(type=='award') %>% print_section()`
-
-
-# Research Experience
+## Research Experience
 
 `r cv_entries %>% filter(type=='work') %>% print_section()`
 
 
+## Publications
+
+\* Indicates equal contribution
+
+`r print_publications(refs)`
+
+## Fellowships & Awards
+
+`r cv_entries %>% filter(type=='award') %>% print_section()`
 
 
-# Talks 
+## Talks 
 
 `r cv_entries %>% filter(type=='talk_academic') %>% print_section()`
 
-# Posters 
+## Research Mentorship
 
-`r cv_entries %>% filter(type=='poster') %>% print_section()`
+`r cv_entries %>% filter(type=='supervision') %>% print_section()`
 
+<center>
+Last updated: `r paste(lubridate::month(Sys.Date(), label=T), lubridate::year(Sys.Date()) )`
+</center>
