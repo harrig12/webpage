@@ -19,6 +19,8 @@
 h2 {
   border-bottom: none;
   margin-bottom: auto;
+  color: #0F2E3D;
+  font-size: calc(1.345rem + 1.14vw);
 }
 
 

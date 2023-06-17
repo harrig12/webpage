@@ -10,12 +10,16 @@ website:
       - text: 'About'
         href: index.qmd
       - text: 'Research'
+        href: https://www.caitharrigan.ca/#research
       - text: 'Talks'
+        href: https://www.caitharrigan.ca/#talks
       - text: 'Teaching'
+        href: https://www.caitharrigan.ca/#teaching
       - text: 'CV'
         href: cv.qmd
       - icon: github
         href: https://github.com/harrig12
+  google-analytics: 'G-01XD03JCPM'
 format:
   html:
     theme: 

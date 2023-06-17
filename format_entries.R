@@ -58,9 +58,9 @@ print_entry <- function(entry){
   if (!is.na(entry['line4'])) {
     lines <- c(lines, '<p class="entry-italic">', entry['line4'], '</p>')
   }
-  lines <- c(lines, '</div>')
+  lines <- c(lines, '</div><div class="g-col-1">')
   if (!is.na(entry['when'])){
-    lines <- c(lines, '<div class="g-col-1"><span class="entry-when">', entry['when'], '</span>')
+    lines <- c(lines, '<span class="entry-when">', entry['when'], '</span>')
   }
   # entry may have buttons 
   if( any(c(!is.na(entry['view']), !is.na(entry['pdf']), !is.na(entry['pdf']))) ){

@@ -9,19 +9,19 @@ title: "Hi, I'm Cait"
 <img src="images/face_bw.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 80%; border-radius: 50%;" alt="cait headshot">
 
 ::: {.grid style="--bs-columns: 4; --bs-gap: 1rem;"} 
-::: {.gcol-1 .g-col-sm-2 .g-col-md-1}
+::: {.g-col-sm-2 .g-col-md-1}
 <a href="https://scholar.google.ca/citations?user=l4ElMEgAAAAJ&hl" class="btn btn-outline-primary contact-btn" role="button" aria-label="google scholar"><i class="ai ai-google-scholar ai-xl"></i></a>
 :::
 
-::: {.gcol-1 .g-col-sm-2 .g-col-md-1}
+::: {.g-col-sm-2 .g-col-md-1}
 <a href="https://orcid.org/0000-0002-9243-9648" class="btn btn-outline-primary" role="button" aria-label="orcid"><i class="ai ai-orcid ai-xl"></i></a>
 :::
 
-::: {.gcol-1 .g-col-sm-2 .g-col-md-1}
+::: {.g-col-sm-2 .g-col-md-1}
 <a href="https://linkedin.com/in/cait-harrigan" class="btn btn-outline-primary contact-btn" role="button" aria-label="linkedin"><i class="fa-brands fa-linkedin"></i></a>
 :::
 
-::: {.gcol-1 .g-col-sm-2 .g-col-md-1}
+::: {.g-col-sm-2 .g-col-md-1}
 <a href="mailto:cait(dot)harrigan(at)mail.utoronto.ca" class="btn btn-outline-primary" role="button" aria-label="email"><i class="fa-solid fa-envelope"></i></a>
 :::
 
@@ -47,12 +47,19 @@ source('format_entries.R')
 cv_entries <- cv_entries %>% filter(website_show == T)
 ```
 
-
+---
 
 ## Research 
 
 \* Indicates equal contribution  
-<i class="fa-solid fa-download fa-xs"></i> [Download all as BibTeX](files/harrigan.bib)
+
+
+::: {.column-margin}
+
+<a id=print_button href="files/harrigan.bib" class="btn btn-outline-primary"><i class="fa-solid fa-download fa-xs"></i> Download as BibTeX</a>
+
+:::
+
 
 ### Peer Reviewed Publications
 
