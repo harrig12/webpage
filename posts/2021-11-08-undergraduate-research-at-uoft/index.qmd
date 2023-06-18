@@ -1,0 +1,157 @@
+---
+title: Undergraduate research at UofT
+description: |
+  Links to some sweet resources and stuff to know when looking for research positions
+preview: gerstein interior heritage.jpg
+date: 11-08-2021
+author: Cait Harrigan
+categories:
+  - tips & tools
+format:
+  html:
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+This post is aimed primarily at students interested in computational biology and machine learning, but not restricted to these areas by any means. 
+
+
+## Resources
+
+Before I say anything at all, I must promote the excellent advice that others have compiled. 
+
+This is a small selection of my personal favourites, but many of them link out to even more resources. 
+
+* [Review of Undergraduate
+Computer Science (RUCS)](https://rucs-uoft.github.io/) and their fabulous [Undergraduate Research Guide](https://rucs-uoft.github.io/assets/info/Undergraduate-Research-Guide.pdf)
+
+* The [Bioinformatics and Computational Biology Student Union (BCBSU)](https://www.facebook.com/BCBSU.UofT) hosts and annual information session on research courses BCB330 & BCB430
+
+* [Tips on finding a supervisor](https://bcb.csb.utoronto.ca/bcb430y-project/tips-on-finding-a-supervisor/) from the BCB program
+
+
+## Research comes in many shapes and sizes
+
+University of Toronto is part of a rich research ecosystem in Toronto, and if you want to try out research as an undergrad, this is a great place to do it! In addition the University labs, many professors from associated institutes are able to take on UofT students for research. To name a few: 
+
+* [United Health Netowrk](https://www.uhn.ca/)
+* [SickKids Hospital](https://www.sickkids.ca/)
+* [Lunenfeld-Tanenbaum Research Institute](https://www.lunenfeld.ca/)
+* [Ontario Insitute for Cancer Research](https://oicr.on.ca/)
+* [Data Sciences Insitute](https://datasciences.utoronto.ca/)
+* [Vector Institute](https://vectorinstitute.ai/)
+
+As an undergrad, I was in the Bioinformatics and Computational Biology program 2015-2019. As part of the requirements for that program, I took two research project courses; BCB330 and BCB430. There are many similar courses offered through a variety of programs, such as ROPs, capstone projects, independent research projects, etc. Most of these are blank-cheque style courses you get credit for by working with a professor in a research capacity. 
+
+
+Sometimes you can get a paid research position supported by a [USRA](https://www.nserc-crsng.gc.ca/students-etudiants/ug-pc/usra-brpc_eng.asp) grant. These are grants offered by the Canadian government to encourage labs to hire undergraduate students for summer research positions. 
+
+:::{.callout-note} 
+Don't apply on your own! The USRA proposal expectations are particular, and field-specific. Ask your professor or research mentor for help with crafting the application.
+:::
+
+### Course-based programs {#sec-course-based}
+
+Often, you don't strictly have to be enrolled in a program to take their research course. You can inquire into research offerings in programs such as CSC, STA, BCB, MGY, BCH, CSB, MBP, and more.
+
+### Summer programs {#sec-summer-programs}
+
+A few examples listed here, by no means exhaustive. 
+
+* [Donnelly Center summer studentships](https://thedonnellycentre.utoronto.ca/summer-undergraduate-research-program)
+* [Vector internships](https://vectorinstitute.ai/programs/research-internships/)
+* [TCAIREM summer studentships](https://tcairem.utoronto.ca/summer-research-studentships)
+* [DSI Summer Undergraduate Data Science (SUDS) Opportunities Program](https://datasciences.utoronto.ca/suds/)
+
+## Don't work for free!
+
+I'll say it again: **don't work for free!**
+
+You should either get course credit, or a paycheck for your time. (If you can swing it, get both!) Don't underestimate the value of your contributions as an undergraduate researcher. 
+
+I hate to see students being taken advantage of via "laboratory volunteer" positions. For one thing, unpaid internships are not legal in Canada. 
+
+Perhaps more significantly, it's a big red flag that your work is not being valued as it should be. Chances are that there is a more suitable position out there for you that will serve you better, and compensate you fairly. "Potentially" getting authorship on a publication is not payment.
+
+## Choose a lab
+
+Most departments have a list of faculty, this is a good place to start. Survey the landscape of professors that you might work with by looking at their google scholar profile. An easy way to find other similar labs is to click through their co-authors.
+
+For an interdisciplinary field such as computational biology, I found it useful to look through the faculty pages of multiple departments, various hospital labs, and start-ups that I knew my peers had done research or PEY at.
+
+### Cold contacting
+
+There are many resources out there for how to compose the dreaded "cold email", some that I've linked to [above](\#resources). Briefly, here is the anatomy of the cold emails I have sent:
+
+* introduce yourself
+* explain what kind of position your looking for
+* mention one thing in their recent publication record or lab website that made their research stick out to you
+* describe any relevant past experience you have
+* ask for an interview
+* attach a cover letter (optional, the email itself may serve as this)
+* attach your CV
+* attach your transcripts
+
+:::{.callout-tip} 
+Attach your transcripts even if you're not happy with your grades (I certainly felt this way!) This will increase the likelihood that you hear back and make things go faster. The grades themselves are often not particularly important, but attaching the transcript is a simple way to indicate that you understand what this type of email should contain.
+:::
+
+:::{.callout-tip} 
+Professors are generally very busy and terrible at responding to emails. Send a few out to different people, and if you don't hear back from anyone after about a week, follow up or move on. Radio silence is common, so don't be discouraged by it.
+:::
+
+
+## What to expect in the research environment
+
+I divide labs into two categories: Hands-on PI / Hands-off PI
+A **Hands-on PI** is a professor who has a lot of time for you, but may have high expectations on your research output. Although you may be working with a grad student, this PI could be directly involved in your project and giving you guidance. This environment might be stressful, but you'll probably learn a lot. Watch out for unreasonable demands. 
+
+**Hands-off PI** has seen it all. Their group is large, and they might not make time to meet with you. They are less obviously invested in your success, but there may be less pressure on you because of this. A grad student is your direct supervisor, and you may work closely with them on their research. In this environment you will have more autonomy, but you will have to be proactive in order to learn. Watch out for feeling isolated or forgotten. 
+
+Obviously the Hands-on PI / Hands-off PI labels are not all-encompassing, and most people will fall somewhere in between the two caricatures. Every environment will have its own peculiarities, advantages, and challenges. 
+
+In all cases you will most likely have a chance to interact with grad students or technical staff. You will get to attend group meetings (usually weekly), and possibly be expected to present your work to the lab at group meeting.
+
+## How are research courses graded?
+
+In general the grading for research project courses is relatively lax. Often there is a performance evaluation that your supervisor has to fill out at the end, plus some written or presentation-based deliverable for you to submit.
+
+Many labs will grade you based on your improvement, and you'll get a good grade as long as you show up regularly and put effort in to learning.
+
+## Your research output
+
+There are several undergraduate poster days run by various departments, often associated with their respective project courses. 
+
+Most of the summer programs I mentioned [above](\#summer-programs) have their own dedicated "research day" at the end of the summer.
+
+If this kind of poster day isn't available to you, one thing you can do at the end of a research experience is to submit to an undergraduate journal or conference. Leave a couple weeks at the end of your research experience for developing a write-up or poster, and ask your mentor for input. With an end product that you deliver in someway to an audience, you will gain more out of your experience, and make it easier to put on your CV.
+
+Some examples of research-focused UofT student publications:
+
+* [Arbor](https://assu.ca/wp/arbor/) Journal of Undergraduate Research (The ASSU also hosts an annual [undergraduate research conference](https://assu.ca/wp/2021/01/19/join-us-for-the-2021-undergraduate-research-conference/))
+* [JULS](https://juls.ca/) Journal of Undergraduate Life
+* [RUCS](https://rucs-uoft.github.io) Review of Undregraduate Computer Science
+
+You can also apply to have your research appear in similar venues at other universities, or if you're particularly ambitious, grab some friends and host your own research day `r emo::ji('rainbow')` 
+
+
+# And More...
+
+Engaging with research doesn't have to be contained to a formal lab experience.  
+
+* Attend the [TorBUG](https://torbug.org/) monthly meeting for computational biology presentations from UofT grad students, and invited speakers. (Free pizza! `r emo::ji('pizza')`)
+* Contribute an article to the [UTMIST newsletter](https://utmist.gitlab.io/newsletter/) 
+* Check out [ProjectX](https://www.uoft.ai/projectx), an undergraduate research competition by [UofT AI](https://www.uoft.ai/).
+
+
+# Final thoughts
+
+There are a lot of options for getting into research at UofT, and beyond. 
+
+* I think the course-based experiences offer useful structure, especially if it's is your fist time in a lab.  
+* Consider summer programs at other institutes 
+* Shop around! You don't have to do all your research in one group.
+* Befriend a grad student. They are a valuable resource if you're considering grad school, and they love to talk about themselves.    

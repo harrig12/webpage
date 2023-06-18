@@ -1,0 +1,26 @@
+---
+title: How to be a good grad student
+preview: preview.jpg
+date: 05-04-2021
+author: Cait Harrigan
+categories:
+  - gradschool
+---
+
+Over the last year, I asked several of my mentors this question:
+
+> What makes for a truly excellent grad student?
+
+I highly recommend you put this question to the people in your life that you work with, and admire. So far, I've received several thoughtful answers, but the question often seems to takes people by surprise. This seems funny to me and it made me realize that although a lot of grad students seem to be concerned with "am I doing a good job?" they aren't asking for help on *how* to do a good job.
+
+:::{.aside}
+Obviously you can substitute "grad student" with whatever your current position is. I think this is a valuable question in general for getting perspective on what skills and behaviours you should be investing your time into.
+:::
+
+Here are some of my favourite responses:
+
+* They read a lot. They survey the field and have a good understanding of what's out there and how their work fits within the context of the research landscape, and how their work is driving the field forward.
+* They are someone who focuses on what the big-picture impact of their project is, and thinks about the ultimate results and their significance.
+* They are a good communicator. They can write clearly, and they can explain their ideas.
+* They know how to make use of their advisor. Often, there are things that an advisor knows a simple answer to, that students don't find out about just because they didn't ask.
+

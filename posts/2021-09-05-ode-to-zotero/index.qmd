@@ -1,0 +1,36 @@
+---
+title: "Ode to Zotero"
+preview: preview.jpg
+date: 09-05-2021
+categories:
+  - tips & tools
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+[Zotero](https://www.zotero.org/) is my citation manager. I love it, here's why.
+
+* It's open source
+* It's lightweight
+* It syncs with overleaf 
+* It has excellent search
+* One click to save from browser
+* It syncs to the cloud
+* Customizable bibliography formats 
+
+More reasons to love:
+
+* Lots of free storage 
+* Integreations with Word, Google docs, etc
+* The project folders are great for organizing research
+* Automatic report generation with all your notes
+* Group-libraries for collaboration
+* A cute timeline generator 
+
+![You can see I got excited about genomics around 2019.](timeline.png){fig-alt="a screenshot of my zotero timline, annotated for papers about DNA"}
+
+
+
+
