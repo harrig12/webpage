@@ -15,8 +15,9 @@ h1, .h1 h2{
   color: $body-color;
 }
 
-.btn btn-outline-primary{
+.btn.btn-outline-primary{
   color: white;
+  border-color: white;
 }
 
 
