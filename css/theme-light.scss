@@ -5,9 +5,9 @@ $secondary:   #319FB7;
 $link-color:  $secondary;
 
 $body-color:  #000;
-$body-bg:     #fff; /* #F8F5F0; */
-$navbar-fg:   #fff;
-$navbar-hl:   $secondary;
+$body-bg:     white; 
+$navbar-fg:   white;
+$navbar-hl:   white;
 
 /*-- scss:rules --*/
 
@@ -16,6 +16,6 @@ h1, .h1 h2{
 }
 
 .quarto-title-banner .quarto-title .title {
-  color: #fff;
+  color: white;
 }
 
