@@ -11,12 +11,12 @@ $navbar-hl:   $secondary;
 
 /*-- scss:rules --*/
 
-h1, .h1{
+h1, .h1 h2{
   color: $body-color;
 }
 
-.cv-line{
-  border-top: 3px solid $secondary;
+.btn btn-outline-primary{
+  color: white;
 }
 
 

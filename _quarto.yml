@@ -17,8 +17,6 @@ website:
         href: https://www.caitharrigan.ca/#teaching
       - text: 'CV'
         href: cv.qmd
-      - icon: github
-        href: https://github.com/harrig12
   google-analytics: 'G-01XD03JCPM'
 format:
   html:

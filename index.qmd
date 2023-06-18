@@ -8,13 +8,17 @@ title: "Hi, I'm Cait"
 
 <img src="images/face_bw.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 80%; border-radius: 50%;" alt="cait headshot">
 
-::: {.grid style="--bs-columns: 4; --bs-gap: 1rem;"} 
+::: {.grid style="--bs-columns: 5; --bs-gap: 1rem;"} 
 ::: {.g-col-sm-2 .g-col-md-1}
 <a href="https://scholar.google.ca/citations?user=l4ElMEgAAAAJ&hl" class="btn btn-outline-primary contact-btn" role="button" aria-label="google scholar"><i class="ai ai-google-scholar ai-xl"></i></a>
 :::
 
 ::: {.g-col-sm-2 .g-col-md-1}
 <a href="https://orcid.org/0000-0002-9243-9648" class="btn btn-outline-primary" role="button" aria-label="orcid"><i class="ai ai-orcid ai-xl"></i></a>
+:::
+
+::: {.g-col-sm-2 .g-col-md-1}
+<a href="https://github.com/harrig12" class="btn btn-outline-primary" role="button" aria-label="github"><i class="fa-brands fa-github"></i></a>
 :::
 
 ::: {.g-col-sm-2 .g-col-md-1}
