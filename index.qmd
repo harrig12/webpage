@@ -51,7 +51,6 @@ source('format_entries.R')
 cv_entries <- cv_entries %>% filter(website_show == T)
 ```
 
----
 
 ## Research 
 

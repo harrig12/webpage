@@ -1,8 +1,9 @@
-cv.pdf
+/.quarto/
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
 .*
-
-/.quarto/
+blog.qmd
+posts/
+_freeze/

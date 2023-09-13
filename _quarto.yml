@@ -10,13 +10,13 @@ website:
       - text: 'About'
         href: index.qmd
       - text: 'Research'
-        href: https://www.caitharrigan.ca/#research
+        href: /#research
       - text: 'Talks'
-        href: https://www.caitharrigan.ca/#talks
+        href: /#talks
       - text: 'Teaching'
-        href: https://www.caitharrigan.ca/#teaching
+        href: /#teaching
       - text: 'CV'
-        href: cv.qmd
+        href: files/cv_2pg.pdf
   google-analytics: 'G-01XD03JCPM'
 format:
   html:
@@ -28,4 +28,3 @@ format:
           "https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
           ]
     email-obfuscation: references
-    copyright: Cait Harrigan
