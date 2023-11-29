@@ -1,6 +1,7 @@
 ---
-title: "Ode to Zotero"
-preview: preview.jpg
+title: Ode to Zotero
+subtitle: Zotero is my citation manager. I love it, here's why.
+image: preview.png
 date: 09-05-2021
 categories:
   - tips & tools
@@ -29,7 +30,7 @@ More reasons to love:
 * Group-libraries for collaboration
 * A cute timeline generator 
 
-![You can see I got excited about genomics around 2019.](timeline.png){fig-alt="a screenshot of my zotero timline, annotated for papers about DNA"}
+![You can see I got excited about genomics around 2017.](timeline.png){fig-alt="a screenshot of my zotero timline, annotated for papers about DNA"}
 
 
 

@@ -1,15 +1,14 @@
 ---
-title: "Old News"
 listing:
   contents: posts
-  sort: "date desc"
-  type: table
+  sort: date desc
+  type: default
   categories: true
   sort-ui: true
-  filter-ui: false
-  fields: [image, date, title, reading-time]
+  filter-ui: true
+  fields: [image, date, title, subtitle, categories, reading-time]
 page-layout: full
-title-block-banner: false
+title-block-banner: true
 ---
 
 

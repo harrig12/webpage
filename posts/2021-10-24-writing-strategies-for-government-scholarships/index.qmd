@@ -2,7 +2,7 @@
 title: Writing strategies for Canadian scholarships
 subtitle: Applying for OGS, CGS/PGS, and the like. 
 image: preview.jpg
-date: 10-24-2021
+date: 10-24-2022
 categories:
   - gradschool
   - tips & tools
@@ -37,22 +37,22 @@ I explain all the reasons I love Zotero [here](https://www.caitharrigan.ca/posts
 
 A common theme seems to be "I didn't get any awards at all at first, then something clicked and I seemed to get them all at once". You will probably have to apply several years in a row before you have a good grasp on the language to use to describe your problem, and build a strong understand where your work fits within the field as a whole.
 
-Luckily, the easiest thing to work off of is your own past writing. If you start early, you will become a valuable resource to your future self `r emo::ji('relieved')`
+Luckily, the easiest thing to work off of is your own past writing. If you start early, you will become a valuable resource to your future self `r emo::ji('grin')`
 
 ### Get writing help
 
-Many Universities have a writing center, with workshops aimed at specific scholarships. Look into their calendar ahead of time, as you'll get the most out of it if you can bring a draft with you.
+Many universities have a writing center, with workshops aimed at specific scholarships. Look into their calendar ahead of time, as you'll get the most out of it if you can bring a draft with you.
 
 ### Get someone else to read it
 
 Bonus points if they are not in your field, and are able to grasp your research proposal enough to get excited about your problem. This is a good litmus test for writing clarity.
 
-### An algorithm to write to
+## An algorithm to write to
 
-I use this same algorithm for both technical writing, and personal statements.
+I use this same process for both technical writing, and personal statements. This is what works for me personally: take what you like and ignore the rest `r emo::ji('blush')`
 
 ::: callout-warning
-I am writing this in 2021. The specific formatting instructions might have changed since then. Never listen to anyone about presentation standards, except the official instructions.
+I am writing this in 2022. The specific formatting instructions might have changed since then. Never listen to anyone about presentation standards, except the official instructions.
 :::
 
 Do the following things *in this order*:
@@ -76,7 +76,7 @@ Steps 5 & 6 should only contain sentence fragments and ideas that are **easy to 
 
 I learned #6 by reading other people's examples. Done correctly, your headers will greatly improve readability. Ultimately you want your writing to be as skimmable as possible. This is important, because your application will be one of a large number of others that reviewers will have to read through.
 
-#10 is also a critical trick for me: always draft in Arial before finalizing to Times New Roman. TNR is much more condensed, and this font conversion will gift you extra space, as long as you don't *start* by writing in it. I tend to over-write, and this trick helps me avoid having to spend a lot of time cutting content.
+\#10 is also a critical trick for me: always draft in Arial before finalizing to Times New Roman. TNR is much more condensed, and this font conversion will gift you extra space, as long as you don't *start* by writing in it. I tend to over-write, and this trick helps me avoid having to spend a lot of time cutting content.
 
 When it comes to getting the exact wording you want, don't let perfect be the enemy of progress. When you get stuck on a word:
 
@@ -88,7 +88,7 @@ When it comes to getting the exact wording you want, don't let perfect be the en
 
 I have used more or less the same structure for my successful award applications[^3]:
 
-[^3]: Of course, I've also used it on applications which were ultimately unsuccessful: CGS-M 2019, CGS-D 2020, Vanier 2020, Vanier 2021. However, I'd like to believe that I improved my writing skill over time, and this is what drove my later success.
+[^3]: Of course, I've also used it on applications which were ultimately unsuccessful: CGS-M 2019, CGS-D 2020, Vanier 2020, Vanier 2021. However, I'd like to believe that I improved my writing skill over time, and this resulted in my later success.
 
 -   [OGS](https://osap.gov.on.ca/OSAPPortal/en/A-ZListofAid/PRDR019245.html) 2021
 -   [PGS-D](https://www.nserc-crsng.gc.ca/students-etudiants/pg-cs/bellandpostgrad-belletsuperieures_eng.asp) 2021
@@ -132,11 +132,11 @@ The biggest challenge for new grad students is not yet having a strong grasp on 
 
 -   The only other thing you can do to improve on this is to read widely and engage with other researchers in your field. This is more of a student-lifestyle thing than it is writing advice, but it makes for a good researcher (and subsequently, research proposal).
 
-## Research contributions
+### Research contributions
 
 Your research contributions should include everything you did. This also means things that you had shared responsibility with others. (ex. put down writing if you wrote part of the original draft, even if someone else also wrote part). I recommend referring to [CRediT](https://credit.niso.org/) taxonomy for a list and description of roles.
 
-## Relevant Activities
+### Relevant Activities
 
 I treated this section as place to highlight my non-research CV items. They should ideally have some tie-in to your career goals, and speak to your attributes as a researcher. See [Create a draft that harmonizes with your reference letters](\#create-a-draft-that-harmonizes-with-your-reference-letters) below.
 

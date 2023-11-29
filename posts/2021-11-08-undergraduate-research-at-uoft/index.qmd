@@ -1,8 +1,7 @@
 ---
 title: Undergraduate research at UofT
-description: |
-  Links to some sweet resources and stuff to know when looking for research positions
-preview: gerstein interior heritage.jpg
+subtitle: Links to some sweet resources and stuff to know when looking for research positions
+image: preview.jpg
 date: 11-08-2021
 author: Cait Harrigan
 categories:
@@ -74,7 +73,7 @@ You should either get course credit, or a paycheck for your time. (If you can sw
 
 I hate to see students being taken advantage of via "laboratory volunteer" positions. For one thing, unpaid internships are not legal in Canada. 
 
-Perhaps more significantly, it's a big red flag that your work is not being valued as it should be. Chances are that there is a more suitable position out there for you that will serve you better, and compensate you fairly. "Potentially" getting authorship on a publication is not payment.
+It's also a big red flag that your work is not being valued as it should be. Chances are that there is a more suitable position out there for you that will serve you better, and compensate you fairly. "Potentially" getting authorship on a publication is not payment.
 
 ## Choose a lab
 
@@ -107,6 +106,7 @@ Professors are generally very busy and terrible at responding to emails. Send a 
 ## What to expect in the research environment
 
 I divide labs into two categories: Hands-on PI / Hands-off PI
+
 A **Hands-on PI** is a professor who has a lot of time for you, but may have high expectations on your research output. Although you may be working with a grad student, this PI could be directly involved in your project and giving you guidance. This environment might be stressful, but you'll probably learn a lot. Watch out for unreasonable demands. 
 
 **Hands-off PI** has seen it all. Their group is large, and they might not make time to meet with you. They are less obviously invested in your success, but there may be less pressure on you because of this. A grad student is your direct supervisor, and you may work closely with them on their research. In this environment you will have more autonomy, but you will have to be proactive in order to learn. Watch out for feeling isolated or forgotten. 
