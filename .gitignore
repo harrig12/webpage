@@ -4,6 +4,5 @@
 .RData
 .Ruserdata
 .*
-blog.qmd
 posts/
 _freeze/
