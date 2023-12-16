@@ -30,7 +30,7 @@ More reasons to love:
 * Group-libraries for collaboration
 * A cute timeline generator 
 
-![You can see I got excited about genomics around 2017.](timeline.png){fig-alt="a screenshot of my zotero timline, annotated for papers about DNA"}
+![You can see I got excited about genomics around 2017.](preview.png){fig-alt="a screenshot of my zotero timline, annotated for papers about DNA"}
 
 
 
