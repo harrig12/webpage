@@ -382,6 +382,6 @@
     "href": "posts/2023-15-12-data-driven-cv/index.html#conclusions",
     "title": "Data driven CV in R",
     "section": "Conclusions",
-    "text": "Conclusions\nThat’s it! A Quarto website and CV rendered straight from a google sheet. I may have reinvented the wheel but I had fun with it.\n\necho \"foo\" \n\nfoo"
+    "text": "Conclusions\nThat’s it! A Quarto website and CV rendered straight from a google sheet. I may have reinvented the wheel but I had fun with it."
   }
 ]
