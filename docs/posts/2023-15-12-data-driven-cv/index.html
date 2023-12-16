@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -280,8 +314,8 @@ The CV spreadsheet is an excellent tool.
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div id="htmlwidget-c659fc501fd83dfb10e0" style="width:100%;height:100%;" class="pixfigure html-widget "></div>
-<script type="application/json" data-for="htmlwidget-c659fc501fd83dfb10e0">{"x":{"path":["print_bad.png","edit_html.png","new_space.png"],"caption":["Awkward pagebreak","Edit html to add loads of breaks","New spacing in PDF"],"h":"auto","w":"100%","fit":"cover","position":"center"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-0d56a7738ec2b1c3ef4e" style="width:100%;height:100%;" class="pixfigure html-widget "></div>
+<script type="application/json" data-for="htmlwidget-0d56a7738ec2b1c3ef4e">{"x":{"path":["print_bad.png","edit_html.png","new_space.png"],"caption":["Awkward pagebreak","Edit html to add loads of breaks","New spacing in PDF"],"h":"auto","w":"100%","fit":"cover","position":"center"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </center>
@@ -292,6 +326,12 @@ The CV spreadsheet is an excellent tool.
 <section id="conclusions" class="level2">
 <h2 class="anchored" data-anchor-id="conclusions">Conclusions</h2>
 <p>That’s it! A Quarto website and CV rendered straight from a google sheet. I may have reinvented the wheel but I had fun with it.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">"foo"</span> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>foo</code></pre>
+</div>
+</div>
 
 
 </section>

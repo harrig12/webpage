@@ -39,7 +39,20 @@ I am a graduate student at the University of Toronto supervised by [Quaid Morris
 I did my undergraduate studies at the University of Toronto, in Computational Biology and Statistics. I'm passionate about open science, and promoting great mentorship in the sciences.
 
 I like to drink coffee and go hiking `r emo::ji('coffee')` `r emo::ji('snow_capped_mountain')` `r emo::ji('sun')`
+
 :::
+
+:::
+
+::: {.callout-note}
+
+## Office Hours
+
+As part of my ongoing commitment to supporting students at all levels and background in engaging with ML and computational biology, I make an effort to be available to provide mentorship, guidance, and resources. 
+
+I set aside ~2h/month for by-request 30 minute meetings, which you can [book online](https://calendly.com/caitharrigan/open-office-hours), or reach out to me by email to arrange times outside of those listed. 
+
+
 
 :::
 

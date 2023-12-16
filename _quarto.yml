@@ -7,8 +7,6 @@ website:
   favicon: "images/ch_logo.png"
   navbar:
     right:
-      - text: 'About'
-        href: index.qmd
       - text: 'Research'
         href: /#research
       - text: 'Talks'
