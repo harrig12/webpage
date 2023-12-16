@@ -66,11 +66,11 @@ cv_entries <- cv_entries %>% filter(website_show == T)
 
 ### Peer Reviewed Publications
 
-`r cv_entries %>% filter(type=='publication_reviewed') %>% mutate(when = NA) %>% print_section()`
+`r cv_entries %>% filter(type=='publication_reviewed') %>% mutate(when = NA) %>% print_section() %>% gsub(pattern = 'Caitlin F. Harrigan', replacement = '**Caitlin F. Harrigan**')`
 
 ### Other Publications
 
-`r cv_entries %>% filter(type=='publication_other')  %>% mutate(when = NA) %>% print_section()`
+`r cv_entries %>% filter(type=='publication_other')  %>% mutate(when = NA) %>% print_section() %>% gsub(pattern = 'Caitlin F. Harrigan', replacement = '**Caitlin F. Harrigan**')`
 
 ### Posters
 
