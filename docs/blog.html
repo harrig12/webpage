@@ -74,9 +74,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-subtitle','listing-categories','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-date','listing-title','listing-categories','listing-reading-time',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -127,7 +127,7 @@ gtag('config', 'G-01XD03JCPM', { 'anonymize_ip': true});
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link" href="./#research" rel="" target="">
  <span class="menu-text">Research</span></a>
@@ -140,6 +140,8 @@ gtag('config', 'G-01XD03JCPM', { 'anonymize_ip': true});
     <a class="nav-link" href="./#teaching" rel="" target="">
  <span class="menu-text">Teaching</span></a>
   </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link active" href="./blog.html" rel="" target="" aria-current="page">
  <span class="menu-text">Blog</span></a>
@@ -162,7 +164,7 @@ gtag('config', 'G-01XD03JCPM', { 'anonymize_ip': true});
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(7)</span></div><div class="category" data-category="citizen science">citizen science <span class="quarto-category-count">(1)</span></div><div class="category" data-category="gradschool">gradschool <span class="quarto-category-count">(2)</span></div><div class="category" data-category="passion project">passion project <span class="quarto-category-count">(1)</span></div><div class="category" data-category="tips &amp; tools">tips &amp; tools <span class="quarto-category-count">(5)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(8)</span></div><div class="category" data-category="citizen science">citizen science <span class="quarto-category-count">(2)</span></div><div class="category" data-category="gradschool">gradschool <span class="quarto-category-count">(2)</span></div><div class="category" data-category="passion project">passion project <span class="quarto-category-count">(2)</span></div><div class="category" data-category="tips &amp; tools">tips &amp; tools <span class="quarto-category-count">(5)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -172,7 +174,7 @@ gtag('config', 'G-01XD03JCPM', { 'anonymize_ip': true});
 
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="listing-actions-group">
    <div class="input-group input-group-sm quarto-listing-sort">
      <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
@@ -195,116 +197,20 @@ gtag('config', 'G-01XD03JCPM', { 'anonymize_ip': true});
       <input type="text" class="search form-control" placeholder="Filter">
     </div>
 </div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="tips &amp; tools" data-listing-date-sort="1702616400000" data-listing-file-modified-sort="1702748518163" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
-<div class="thumbnail">
-<p><a href="./posts/2023-15-12-data-driven-cv/index.html"> <img src="./posts/2023-15-12-data-driven-cv/preview.png" class="thumbnail-image"> </a></p>
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="citizen science,passion project" data-listing-date-sort="1704949200000" data-listing-file-modified-sort="1705036275955" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./posts/2024-01-11-bee-book/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/2024-01-11-bee-book/preview.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Bee book!
+</h5>
+<div class="listing-reading-time card-text text-muted">
+1 min
 </div>
-<div class="body">
-<a href="./posts/2023-15-12-data-driven-cv/index.html">
-<h3 class="no-anchor listing-title">
-Data driven CV in R
-</h3>
-<div class="listing-subtitle">
-How I built this site
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('tips &amp; tools'); return false;">
-tips &amp; tools
-</div>
-</div>
-<a href="./posts/2023-15-12-data-driven-cv/index.html"> </a>
-</div>
-<div class="metadata">
-<a href="./posts/2023-15-12-data-driven-cv/index.html">
-<div class="listing-date">
-Dec 15, 2023
-</div>
-<div class="listing-reading-time">
-5 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="tips &amp; tools" data-listing-date-sort="1701234000000" data-listing-file-modified-sort="1702673045470" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<div class="thumbnail">
-<p><a href="./posts/2023-11-29-notion-research-dashboard/index.html"> <img src="./posts/2023-11-29-notion-research-dashboard/preview.png" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/2023-11-29-notion-research-dashboard/index.html">
-<h3 class="no-anchor listing-title">
-Research dashboard in Notion
-</h3>
-<div class="listing-subtitle">
-Free template for you &lt;3
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('tips &amp; tools'); return false;">
-tips &amp; tools
-</div>
-</div>
-<a href="./posts/2023-11-29-notion-research-dashboard/index.html"> </a>
-</div>
-<div class="metadata">
-<a href="./posts/2023-11-29-notion-research-dashboard/index.html">
-<div class="listing-date">
-Nov 29, 2023
-</div>
-<div class="listing-reading-time">
-2 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="gradschool,tips &amp; tools" data-listing-date-sort="1666584000000" data-listing-file-modified-sort="1701251267776" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9">
-<div class="thumbnail">
-<p><a href="./posts/2021-10-24-writing-strategies-for-government-scholarships/index.html"> <img src="./posts/2021-10-24-writing-strategies-for-government-scholarships/preview.jpg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/2021-10-24-writing-strategies-for-government-scholarships/index.html">
-<h3 class="no-anchor listing-title">
-Writing strategies for Canadian scholarships
-</h3>
-<div class="listing-subtitle">
-Applying for OGS, CGS/PGS, and the like.
-</div>
-</a>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('gradschool'); return false;">
-gradschool
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('tips &amp; tools'); return false;">
-tips &amp; tools
-</div>
-</div>
-<a href="./posts/2021-10-24-writing-strategies-for-government-scholarships/index.html"> </a>
-</div>
-<div class="metadata">
-<a href="./posts/2021-10-24-writing-strategies-for-government-scholarships/index.html">
-<div class="listing-date">
-Oct 24, 2022
-</div>
-<div class="listing-reading-time">
-9 min
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="citizen science,passion project" data-listing-date-sort="1643518800000" data-listing-file-modified-sort="1702672777979" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/2022-01-30-galiwatch/index.html"> <img src="./posts/2022-01-30-galiwatch/preview.jpg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/2022-01-30-galiwatch/index.html">
-<h3 class="no-anchor listing-title">
-Operation Galiwatch
-</h3>
-<div class="listing-subtitle">
-A citizen science project to monitor pollinators
-</div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('citizen science'); return false;">
 citizen science
@@ -313,111 +219,209 @@ citizen science
 passion project
 </div>
 </div>
-<a href="./posts/2022-01-30-galiwatch/index.html"> </a>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Jan 11, 2024
 </div>
-<div class="metadata">
-<a href="./posts/2022-01-30-galiwatch/index.html">
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="tips &amp; tools" data-listing-date-sort="1702616400000" data-listing-file-modified-sort="1702748518163" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
+<a href="./posts/2023-15-12-data-driven-cv/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/2023-15-12-data-driven-cv/preview.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Data driven CV in R
+</h5>
+<div class="listing-reading-time card-text text-muted">
+5 min
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('tips &amp; tools'); return false;">
+tips &amp; tools
+</div>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Dec 15, 2023
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="tips &amp; tools" data-listing-date-sort="1701234000000" data-listing-file-modified-sort="1705036322431" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<a href="./posts/2023-11-29-notion-research-dashboard/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/2023-11-29-notion-research-dashboard/preview.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Research dashboard in Notion
+</h5>
+<div class="listing-reading-time card-text text-muted">
+2 min
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('tips &amp; tools'); return false;">
+tips &amp; tools
+</div>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Nov 29, 2023
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="3" data-categories="gradschool,tips &amp; tools" data-listing-date-sort="1666584000000" data-listing-file-modified-sort="1701251267776" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9">
+<a href="./posts/2021-10-24-writing-strategies-for-government-scholarships/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/2021-10-24-writing-strategies-for-government-scholarships/preview.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Writing strategies for Canadian scholarships
+</h5>
+<div class="listing-reading-time card-text text-muted">
+9 min
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('gradschool'); return false;">
+gradschool
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('tips &amp; tools'); return false;">
+tips &amp; tools
+</div>
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Oct 24, 2022
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="4" data-categories="citizen science,passion project" data-listing-date-sort="1643518800000" data-listing-file-modified-sort="1705036684715" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./posts/2022-01-30-galiwatch/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/2022-01-30-galiwatch/preview.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Operation Galiwatch
+</h5>
+<div class="listing-reading-time card-text text-muted">
+1 min
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('citizen science'); return false;">
+citizen science
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('passion project'); return false;">
+passion project
+</div>
+</div>
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
 Jan 30, 2022
 </div>
-<div class="listing-reading-time">
-1 min
+</div>
+</div>
 </div>
 </a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="tips &amp; tools" data-listing-date-sort="1636347600000" data-listing-file-modified-sort="1701249418175" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
-<div class="thumbnail">
-<p><a href="./posts/2021-11-08-undergraduate-research-at-uoft/index.html"> <img src="./posts/2021-11-08-undergraduate-research-at-uoft/preview.jpg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/2021-11-08-undergraduate-research-at-uoft/index.html">
-<h3 class="no-anchor listing-title">
+<div class="g-col-1" data-index="5" data-categories="tips &amp; tools" data-listing-date-sort="1636347600000" data-listing-file-modified-sort="1701249418175" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7">
+<a href="./posts/2021-11-08-undergraduate-research-at-uoft/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/2021-11-08-undergraduate-research-at-uoft/preview.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 Undergraduate research at UofT
-</h3>
-<div class="listing-subtitle">
-Links to some sweet resources and stuff to know when looking for research positions
+</h5>
+<div class="listing-reading-time card-text text-muted">
+7 min
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('tips &amp; tools'); return false;">
 tips &amp; tools
 </div>
 </div>
-<a href="./posts/2021-11-08-undergraduate-research-at-uoft/index.html"> </a>
-</div>
-<div class="metadata">
-<a href="./posts/2021-11-08-undergraduate-research-at-uoft/index.html">
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
 Nov 8, 2021
 </div>
-<div class="listing-reading-time">
-7 min
+</div>
+</div>
 </div>
 </a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="tips &amp; tools" data-listing-date-sort="1630814400000" data-listing-file-modified-sort="1702686525092" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="./posts/2021-09-05-ode-to-zotero/index.html"> <img src="./posts/2021-09-05-ode-to-zotero/preview.png" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/2021-09-05-ode-to-zotero/index.html">
-<h3 class="no-anchor listing-title">
+<div class="g-col-1" data-index="6" data-categories="tips &amp; tools" data-listing-date-sort="1630814400000" data-listing-file-modified-sort="1702686525092" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<a href="./posts/2021-09-05-ode-to-zotero/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/2021-09-05-ode-to-zotero/preview.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 Ode to Zotero
-</h3>
-<div class="listing-subtitle">
-Zotero is my citation manager. I love it, here’s why.
+</h5>
+<div class="listing-reading-time card-text text-muted">
+1 min
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('tips &amp; tools'); return false;">
 tips &amp; tools
 </div>
 </div>
-<a href="./posts/2021-09-05-ode-to-zotero/index.html"> </a>
-</div>
-<div class="metadata">
-<a href="./posts/2021-09-05-ode-to-zotero/index.html">
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
 Sep 5, 2021
 </div>
-<div class="listing-reading-time">
-1 min
+</div>
+</div>
 </div>
 </a>
 </div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="gradschool" data-listing-date-sort="1620100800000" data-listing-file-modified-sort="1701249670069" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<div class="thumbnail">
-<p><a href="./posts/2021-05-04-how-to-be-a-good-grad-student/index.html"> <img src="./posts/2021-05-04-how-to-be-a-good-grad-student/preview.jpg" class="thumbnail-image"> </a></p>
-</div>
-<div class="body">
-<a href="./posts/2021-05-04-how-to-be-a-good-grad-student/index.html">
-<h3 class="no-anchor listing-title">
+<div class="g-col-1" data-index="7" data-categories="gradschool" data-listing-date-sort="1620100800000" data-listing-file-modified-sort="1701249670069" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<a href="./posts/2021-05-04-how-to-be-a-good-grad-student/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./posts/2021-05-04-how-to-be-a-good-grad-student/preview.jpg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 How to be a good grad student
-</h3>
-<div class="listing-subtitle">
-It’s not easy bein’ green
+</h5>
+<div class="listing-reading-time card-text text-muted">
+2 min
 </div>
-</a>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('gradschool'); return false;">
 gradschool
 </div>
 </div>
-<a href="./posts/2021-05-04-how-to-be-a-good-grad-student/index.html"> </a>
-</div>
-<div class="metadata">
-<a href="./posts/2021-05-04-how-to-be-a-good-grad-student/index.html">
+<div class="card-attribution card-text-small end">
 <div class="listing-date">
 May 4, 2021
 </div>
-<div class="listing-reading-time">
-2 min
+</div>
+</div>
 </div>
 </a>
-</div>
 </div>
 </div>
 <div class="listing-no-matching d-none">
