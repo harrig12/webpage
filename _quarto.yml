@@ -6,13 +6,14 @@ website:
   title: "Cait Harrigan"
   favicon: "images/ch_logo.png"
   navbar:
-    right:
+    left:
       - text: 'Research'
         href: /#research
       - text: 'Talks'
         href: /#talks
       - text: 'Teaching'
         href: /#teaching
+    right:
       - text: 'Blog'
         href: blog.qmd
       - text: 'CV'
