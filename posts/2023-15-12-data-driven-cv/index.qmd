@@ -8,6 +8,7 @@ categories:
 format:
   html:
     toc: true
+lightbox: true
 ---
 
 Probably the best format for your CV is latex.\
@@ -83,23 +84,15 @@ This part was labour-intensive to figure out, and maybe not the best possible us
 
 Sometimes pagebreaks are awkwardly placed in the middle of a CV entry. To resolve this, I open up the browser developer tools and insert some `<br>` until I'm satisfied. This is inelegant, but an acceptable inconvenience for me.
 
-<center>
+::: {layout-ncol=3}
 
-```{css, echo = FALSE}
-.pixfigure-wrapper {
-  display: grid;
-  grid-gap: 0.3em;
-  grid-auto-columns: auto;
-}
-```
+![Awkward pagebreak](print_bad.png){group="quirks"}
 
-```{r, echo=F}
-paths <- c('print_bad.png', 'edit_html.png', 'new_space.png')
-pixture::pixfigure(paths, caption=c("Awkward pagebreak", "Edit html to add loads of breaks", "New spacing in PDF"))
+![Edit html to add loads of breaks](edit_html.png){group="quirks"}
 
-```
+![New spacing in PDF](new_space.png){group="quirks"}
+:::
 
-</center>
 
 There are two things I format differently from the rest: "Service", which I squish all into one line to save space, and "Publications", which on my CV pages I pull out of a `.bib` file and print using the `RefManageR` package. On my website homepage, I treat publications as a regular entry. I do this so that the online presentation can use the nice buttons that `format_entries.R` provides, and the print version contains the whole formatted reference.
 
