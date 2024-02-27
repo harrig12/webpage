@@ -89,8 +89,7 @@ Sometimes pagebreaks are awkwardly placed in the middle of a CV entry. To resolv
 .pixfigure-wrapper {
   display: grid;
   grid-gap: 0.3em;
-  grid-auto-flow: column;
-  grid-auto-columns: 240px;
+  grid-auto-columns: auto;
 }
 ```
 
