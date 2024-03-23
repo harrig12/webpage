@@ -11,8 +11,12 @@ $navbar-hl:   white;
 
 /*-- scss:rules --*/
 
-h1, .h1 h2{
+h1, .h1 h2 {
   color: $primary;
+}
+
+h3 {
+  color: $secondary;
 }
 
 .quarto-title-banner .quarto-title .title {
