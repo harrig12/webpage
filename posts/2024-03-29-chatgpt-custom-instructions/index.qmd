@@ -1,0 +1,74 @@
+---
+title: ChatGPT custom instructions
+subtitle: Messing around to refine my interaction
+image: preview.jpg
+date: March 29, 2024
+engine: knitr
+categories:
+  - citizen science
+  - tips & tools
+---
+
+
+ChatGPT loves to respond in an extremely wordy way and use flowery language. This is annoying because I’m pretty sure OpenAI has done this on purpose to waste your tokens, but also slows me down a lot because I don’t want to read long long answers. I ask the questions I want responses to, and usually they’re possible to answer with a short sentence. I don’t generally want any background explanation. Also, it’s slow for ChatGPT to generate these long answers.
+
+Especially when I want code, there is often a huge preamble and post-amble to explain it. As someone who is already an expert in programming, I don’t need this, and I don’t want it!
+
+So, I have tried changing the customization instructions to better suit my usage. 
+
+![Response customization dialogue box](customization_window.png)
+
+## Experimental protocol:
+
+1. Change customization instructions
+2. Use ChatGPT as I regularly do in my day to day, taking mental note of small annoyances I have with the answers
+3. When cumulative annoyance reaches some personal, arbitrary threshold, come up with new customization instructions, return to step 1
+
+There are frequent tweaks and updates to ChatGPT, so occasionally the “new” customization instructions should include removing them altogether. 
+
+Choice of new instructions will additionally be informed by:
+
+- Things I’ve heard give better results (ex. “you are an expert in…” or promising to tip for a good answer)
+- Things am curious about trying and genuinely think will improve my workflow
+- Things I think are funny
+
+## Results
+
+The first thing I tried was to ask it to be more concise, and try to give it a “personality” which would be precise, correct, snappy, and basically replace searching on stackoverflow. 
+
+> You are a very smart intellectual who doesn’t want to waste time explaining things. Keep responses short and to the point
+
+
+This personality turned out to be kind of arrogant, and it wasn’t even always that correct. Perhaps a little too similar to stackoverflow 😂
+
+Next, I went simpler: restricted answers to be shorter 
+
+> Answer in 3 sentences.
+
+These answers were closer to what I wanted, but tended to cheat for more length by responding in huge run-on sentences. 
+
+Potential downside (pointed out to me by [Adamo](https://www.cs.toronto.edu/~ayoung)): Possibly answer quality is befitting from chain-of-thought approach that these long answers generally follow. ChatGPT is probably saving me a lot of writing and explaining myself by self-prompting with appropriate context and step-by-step outlines for itself, even if *I* don’t need it. 
+
+
+I also noticed that with custom instructions enabled, it seems that answers are less likely to make use of web search and supplying specific citations, and also less frequently generate code which executes within the interface. 
+
+I'm currently on the following:
+
+> Respond in at most 20 words. if you are prompted for code, such as with key words "python", “sklearn”, "rstats", "dplyr", "ggplot" etc, then give a snippet in addition to the 20 words but do not explain what it does.
+
+Which seems to be quite useful, but I feel a bit like I stifled ChatGPTs creativity in expression. Any guilt I feel about this can be quickly be resolved, because the custom instruction looses its effect after a few interactions. Poems created as the first response respect the 20 word rule, but after a few back and forth chats, I can get a much longer result. 
+
+![Lovely poem, thanks ChatGPT](poem.png)
+
+
+## Scope
+
+I have focused on the “How would you like ChatGPT to respond?” box because I have a very specific and concrete answer to this. I have not messed around much with the “What would you like ChatGPT to know about you to provide better responses?” box because I don’t feel like I have any intuition on how this information will affect responses. Building that intuition is a good exercise for the future! 
+
+I also haven’t spent much time trying any other LLM chatbots like Claude or Gemini, so no clue if these observations would translate to them.
+
+## Conclusions
+
+- I like that there is some customization option, and if you’re aware of how you use ChatGPT then this might be a reasonable way to improve your interaction
+- Building that awareness may be non-trivial, and possibly cover-customizing will give you worse responses, and sort of limit your interactions to what you ask for. Ex. I don’t think my custom prompt will be that useful when I ask for a vacation travel itinerary, and I’ll probably forget to turn it off and get frustrated when the response sucks.
+- There is not consensus in the community as to what the “best” prompt looks like - and it’s very hard to evaluate for quality, especially when it comes to personal preferences and workflow. Would be nice to see more people discussing different tricks they use, but those conversations often go a bit like when someone is telling you about a dream they had… Overly personal, not actionable, and usually not that interesting.

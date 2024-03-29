@@ -1,0 +1,21 @@
+---
+title: Bee book!
+subtitle: A digital field guide to bees in BC
+image: preview.png
+date: 01-11-2024
+author: Cait Harrigan
+categories:
+  - citizen science
+  - passion project
+---
+
+I recently put together a website to act as a guidebook to bees documented in the Pacific Maritime region of British Columbia. 
+
+All the bee images were curated by BC Master Melittologist, Kath Quayle with reference to several public and private collections. I pulled location data for 271 bee species from [GBIF](https://www.gbif.org/) to create "last seen" maps. 
+
+This book can help junior taxonomists determine likely ID's for bee specimens, and may be useful for understanding how bee populations have changed over time in the region. 
+
+
+<center>
+<a href="https://teaswamp-creations.github.io/bee-book"><button type="button" class="btn btn-secondary">See the project <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+</center>

@@ -1,0 +1,41 @@
+---
+title: Research dashboard in Notion
+subtitle: Free template for you <3
+image: preview.png
+date: 11-29-2023
+engine: knitr
+categories:
+  - tips & tools
+---
+
+I use notion to organize lots of things, in particular my research notes. I used to use R Markdown, which was great for mixing text, images, $\LaTeX$, code, and (most importantly) emojis. However, over time my research notebook got bloated and trying to keep notes and also make sure everything rendered correctly became challenging.  
+
+I moved to Notion because it offers a very similar experience for markdown lovers. 
+
+<center>
+<a href="https://caitharrigan.notion.site/Research-Dashboard-b065880e33454b3dbfb5a95176c7d514"><button type="button" class="btn btn-secondary">See the project <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+</center>
+
+<br>
+
+## Thoughts on the experience 
+
+Here's some things I like about it: 
+
+* Cloud backed + mobile app
+* All my notes are searchable
+* Possible to export as markdown 
+* Databases! Every page can be a database and it's pretty cool
+* Templates! I use the "new experiment" button to add structured entries to my lab notebook
+* Every page can be reformatted and nested on the fly
+* I can sync TODOs across multiple pages: my main planner, and each project's respective TODO list
+* Useful shortcuts for Today's date and cross referencing other pages
+* There are some cute templates out there
+
+And some gripes:
+
+* No offline mode - even for simple notes!
+* Search UI is not great: can't search within code chunks, or toggle sections 
+* Markdown exports are clunky and not everything will be well preserved (especially images)
+* Admiring cute templates feels productive, but it's actually a massive time sink
+

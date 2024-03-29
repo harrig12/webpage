@@ -1,0 +1,32 @@
+---
+title: Operation Galiwatch
+subtitle: A citizen science project to monitor pollinators
+image: preview.jpg
+date: 01-30-2022
+author: Cait Harrigan
+categories:
+  - citizen science
+  - passion project
+---
+
+My parents got into birdwatching... at scale. They've set out to thoroughly document what's going on in their yard on Galiano Island, BC: *Operation Galiwatch*. 
+
+We're collaborating with the folks at [Biodiversity Galiano](https://biogaliano.org/) and [IMERSS](https://imerss.org/) to make low-cost, hyperlocal ecosystem and climate monitoring accessible for other citizen scientists!
+
+We've set up a bunch of sensors to collect air quality data, weather information, and timelapse images. We're monitoring all sorts of pollinators, such as bees and humming birds. If all goes well with the infrared camera, maybe even bats.
+
+
+I've been helping debug the setup, doing data analysis, and built the website. I've also authored some blog posts about [analyzing how different hummingbirds visit the feeder](https://galiwatch.ca/posts/hummer-behaviour-170323/).
+
+
+<center>
+<a href="https://galiwatch.ca/"><button type="button" class="btn btn-secondary">See the project <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+</center>
+
+<br>
+
+<center>
+
+![](bee2.jpg){width="30%"} ![](hoverfly.gif){width="30%"} ![](osmia.jpg){width="30%"}
+
+</center>
