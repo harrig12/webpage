@@ -2,8 +2,8 @@
 title: ChatGPT custom instructions
 subtitle: Messing around to refine my interaction
 image: preview.jpg
+lightbox: true
 date: March 29, 2024
-engine: knitr
 categories:
   - citizen science
   - tips & tools
@@ -58,7 +58,7 @@ I'm currently on the following:
 
 Which seems to be quite useful, but I feel a bit like I stifled ChatGPTs creativity in expression. Any guilt I feel about this can be quickly be resolved, because the custom instruction looses its effect after a few interactions. Poems created as the first response respect the 20 word rule, but after a few back and forth chats, I can get a much longer result. 
 
-![Lovely poem, thanks ChatGPT](poem.png)
+![Lovely poem, thanks ChatGPT](poem.png){width=30%}
 
 
 ## Scope
