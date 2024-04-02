@@ -1,0 +1,21 @@
+---
+title: Xetthecum 
+subtitle: Digital ecocultural mapping
+image: preview.png
+date: March 30, 2024
+categories:
+  - citizen science
+  - passion project
+---
+
+I built a website for the [IMERSS ecocultural mapping project](https://floeproject.org/ecocultural-mapping-project/) of Retreat Cove on Galiano, BC. 
+
+Retreat Cove (Xetthecum in the Hul’qumi’num language) has a special place in my heart because growing up I spent many summers in the area. There's loads of interesting marine life that lives around the cove, and when it's warm the water glows at night with bioluminesence. 
+
+The Xettheccum ecocultural mapping team has done a really impressive job of putting together storytelling, ecological data, and elder's knowledge of the area so it was an honour for me to collaborate with them and create the landing page for all their work to be displayed. 
+
+On the technical side, I played around with Quarto and learned more about accessible web principles, thanks to [Dana](https://imerss.org/our-team/) at the OCAD Inclusive Design Research Center.
+
+<center>
+<a href="https://imerss.github.io/xetthecum-storymap/"><button type="button" class="btn btn-secondary">See the project <i class="fa-solid fa-arrow-up-right-from-square"></i></button></a>
+</center>

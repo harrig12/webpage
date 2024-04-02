@@ -1,38 +1,10 @@
 [
   {
-    "objectID": "posts/2024-03-29-chatgpt-custom-instructions/index.html",
-    "href": "posts/2024-03-29-chatgpt-custom-instructions/index.html",
-    "title": "ChatGPT custom instructions",
+    "objectID": "posts/2024-03-30-xetthecum-storymapping/index.html",
+    "href": "posts/2024-03-30-xetthecum-storymapping/index.html",
+    "title": "Xetthecum",
     "section": "",
-    "text": "ChatGPT loves to respond in an extremely wordy way and use flowery language. This is annoying because I’m pretty sure OpenAI has done this on purpose to waste your tokens, but also slows me down a lot because I don’t want to read long long answers. I ask the questions I want responses to, and usually they’re possible to answer with a short sentence. I don’t generally want any background explanation. Also, it’s slow for ChatGPT to generate these long answers.\nEspecially when I want code, there is often a huge preamble and post-amble to explain it. As someone who is already an expert in programming, I don’t need this, and I don’t want it!\nSo, I have tried changing the customization instructions to better suit my usage."
-  },
-  {
-    "objectID": "posts/2024-03-29-chatgpt-custom-instructions/index.html#experimental-protocol",
-    "href": "posts/2024-03-29-chatgpt-custom-instructions/index.html#experimental-protocol",
-    "title": "ChatGPT custom instructions",
-    "section": "Experimental protocol:",
-    "text": "Experimental protocol:\n\nChange customization instructions\nUse ChatGPT as I regularly do in my day to day, taking mental note of small annoyances I have with the answers\nWhen cumulative annoyance reaches some personal, arbitrary threshold, come up with new customization instructions, return to step 1\n\nThere are frequent tweaks and updates to ChatGPT, so occasionally the “new” customization instructions should include removing them altogether.\nChoice of new instructions will additionally be informed by:\n\nThings I’ve heard give better results (ex. “you are an expert in…” or promising to tip for a good answer)\nThings am curious about trying and genuinely think will improve my workflow\nThings I think are funny"
-  },
-  {
-    "objectID": "posts/2024-03-29-chatgpt-custom-instructions/index.html#results",
-    "href": "posts/2024-03-29-chatgpt-custom-instructions/index.html#results",
-    "title": "ChatGPT custom instructions",
-    "section": "Results",
-    "text": "Results\nThe first thing I tried was to ask it to be more concise, and try to give it a “personality” which would be precise, correct, snappy, and basically replace searching on stackoverflow.\n\nYou are a very smart intellectual who doesn’t want to waste time explaining things. Keep responses short and to the point\n\nThis personality turned out to be kind of arrogant, and it wasn’t even always that correct. Perhaps a little too similar to stackoverflow 😂\nNext, I went simpler: restricted answers to be shorter\n\nAnswer in 3 sentences.\n\nThese answers were closer to what I wanted, but tended to cheat for more length by responding in huge run-on sentences.\nPotential downside (pointed out to me by Adamo): Possibly answer quality is befitting from chain-of-thought approach that these long answers generally follow. ChatGPT is probably saving me a lot of writing and explaining myself by self-prompting with appropriate context and step-by-step outlines for itself, even if I don’t need it.\nI also noticed that with custom instructions enabled, it seems that answers are less likely to make use of web search and supplying specific citations, and also less frequently generate code which executes within the interface.\nI’m currently on the following:\n\nRespond in at most 20 words. if you are prompted for code, such as with key words “python”, “sklearn”, “rstats”, “dplyr”, “ggplot” etc, then give a snippet in addition to the 20 words but do not explain what it does.\n\nWhich seems to be quite useful, but I feel a bit like I stifled ChatGPTs creativity in expression. Any guilt I feel about this can be quickly be resolved, because the custom instruction looses its effect after a few interactions. Poems created as the first response respect the 20 word rule, but after a few back and forth chats, I can get a much longer result.\n\n\n\nLovely poem, thanks ChatGPT"
-  },
-  {
-    "objectID": "posts/2024-03-29-chatgpt-custom-instructions/index.html#scope",
-    "href": "posts/2024-03-29-chatgpt-custom-instructions/index.html#scope",
-    "title": "ChatGPT custom instructions",
-    "section": "Scope",
-    "text": "Scope\nI have focused on the “How would you like ChatGPT to respond?” box because I have a very specific and concrete answer to this. I have not messed around much with the “What would you like ChatGPT to know about you to provide better responses?” box because I don’t feel like I have any intuition on how this information will affect responses. Building that intuition is a good exercise for the future!\nI also haven’t spent much time trying any other LLM chatbots like Claude or Gemini, so no clue if these observations would translate to them."
-  },
-  {
-    "objectID": "posts/2024-03-29-chatgpt-custom-instructions/index.html#conclusions",
-    "href": "posts/2024-03-29-chatgpt-custom-instructions/index.html#conclusions",
-    "title": "ChatGPT custom instructions",
-    "section": "Conclusions",
-    "text": "Conclusions\n\nI like that there is some customization option, and if you’re aware of how you use ChatGPT then this might be a reasonable way to improve your interaction\nBuilding that awareness may be non-trivial, and possibly over-customizing will give you worse responses, and sort of limit your interactions to what you ask for. Ex. I don’t think my custom prompt will be that useful when I ask for a vacation travel itinerary, and I’ll probably forget to turn it off and get frustrated when the response sucks.\nThere is not consensus in the community as to what the “best” prompt looks like - and it’s very hard to evaluate for quality, especially when it comes to personal preferences and workflow. Would be nice to see more people discussing different tricks they use, but those conversations often go a bit like when someone is telling you about a dream they had… Overly personal, not actionable, and usually not that interesting."
+    "text": "I built a website for the IMERSS ecocultural mapping project of Retreat Cove on Galiano, BC.\nRetreat Cove (Xetthecum in the Hul’qumi’num language) has a special place in my heart because growing up I spent many summers in the area. There’s loads of interesting marine life that lives around the cove, and when it’s warm the water glows at night with bioluminesence.\nThe Xettheccum ecocultural mapping team has done a really impressive job of putting together storytelling, ecological data, and elder’s knowledge of the area so it was an honour for me to collaborate with them and create the landing page for all their work to be displayed.\nOn the technical side, I played around with Quarto and learned more about accessible web principles, thanks to Dana at the OCAD Inclusive Design Research Center.\n\nSee the project"
   },
   {
     "objectID": "posts/2024-01-11-bee-book/index.html",
@@ -179,14 +151,14 @@
     "href": "cv_2pg.html#research-mentorship",
     "title": "Cait Harrigan, MSc.",
     "section": "Research Mentorship",
-    "text": "Research Mentorship\n\n\n\nFedir Zhydok\n\n\nUndergraduate Student, National University of Kyiv-Mohyla Academy\n\n\nTopic: Identifying metastatic tumours from mutational signatures\n\n\n\n 09/22 - 12/22 \n\n\n\n\n\nCaitlin Timmons\n\n\nUndergraduate Student, Memorial Sloan Kettering Cancer Center\n\n\nTopic: Modelling spatial distribution of mutational signatures in cancer genomes.\n\n\n\n 05/21 - 08/22   view\n\n\n\n\n\nHaritha Lakshmanan\n\n\nHighschool Student, Memorial Sloan Kettering Cancer Center\n\n\nTopic: Automatic discovery of mutations predictive of survival in breast cancer patients\n\n\n\n 05/20 - 11/20   view\n\n\n\nLast updated: Mar 2024"
+    "text": "Research Mentorship\n\n\n\nFedir Zhydok\n\n\nUndergraduate Student, National University of Kyiv-Mohyla Academy\n\n\nTopic: Identifying metastatic tumours from mutational signatures\n\n\n\n 09/22 - 12/22 \n\n\n\n\n\nCaitlin Timmons\n\n\nUndergraduate Student, Memorial Sloan Kettering Cancer Center\n\n\nTopic: Modelling spatial distribution of mutational signatures in cancer genomes.\n\n\n\n 05/21 - 08/22   view\n\n\n\n\n\nHaritha Lakshmanan\n\n\nHighschool Student, Memorial Sloan Kettering Cancer Center\n\n\nTopic: Automatic discovery of mutations predictive of survival in breast cancer patients\n\n\n\n 05/20 - 11/20   view\n\n\n\nLast updated: Apr 2024"
   },
   {
     "objectID": "blog.html",
     "href": "blog.html",
     "title": "Cait Harrigan",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nChatGPT custom instructions\n\n\n5 min\n\n\n\ncitizen science\n\n\ntips & tools\n\n\n\n\nMar 29, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBee book!\n\n\n1 min\n\n\n\ncitizen science\n\n\npassion project\n\n\n\n\nJan 11, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData driven CV in R\n\n\n5 min\n\n\n\ntips & tools\n\n\n\n\nDec 15, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nResearch dashboard in Notion\n\n\n2 min\n\n\n\ntips & tools\n\n\n\n\nNov 29, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWriting strategies for Canadian scholarships\n\n\n9 min\n\n\n\ngradschool\n\n\ntips & tools\n\n\n\n\nOct 24, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOperation Galiwatch\n\n\n1 min\n\n\n\ncitizen science\n\n\npassion project\n\n\n\n\nJan 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUndergraduate research at UofT\n\n\n7 min\n\n\n\ntips & tools\n\n\n\n\nNov 8, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOde to Zotero\n\n\n1 min\n\n\n\ntips & tools\n\n\n\n\nSep 5, 2021\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow to be a good grad student\n\n\n2 min\n\n\n\ngradschool\n\n\n\n\nMay 4, 2021\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nXetthecum\n\n\nDigital ecocultural mapping\n\n\n\ncitizen science\n\n\npassion project\n\n\n\n\n\n\nMar 30, 2024\n\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\n\nChatGPT custom instructions\n\n\nMessing around to refine my interaction\n\n\n\ncitizen science\n\n\ntips & tools\n\n\n\n\n\n\nMar 29, 2024\n\n\n5 min\n\n\n\n\n\n\n\n\n\n\n\n\nBee book!\n\n\nA digital field guide to bees in BC\n\n\n\ncitizen science\n\n\npassion project\n\n\n\n\n\n\nJan 11, 2024\n\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\n\nData driven CV in R\n\n\nHow I built this site\n\n\n\ntips & tools\n\n\n\n\n\n\nDec 15, 2023\n\n\n5 min\n\n\n\n\n\n\n\n\n\n\n\n\nResearch dashboard in Notion\n\n\nFree template for you &lt;3\n\n\n\ntips & tools\n\n\n\n\n\n\nNov 29, 2023\n\n\n2 min\n\n\n\n\n\n\n\n\n\n\n\n\nWriting strategies for Canadian scholarships\n\n\nApplying for OGS, CGS/PGS, and the like.\n\n\n\ngradschool\n\n\ntips & tools\n\n\n\n\n\n\nOct 24, 2022\n\n\n9 min\n\n\n\n\n\n\n\n\n\n\n\n\nOperation Galiwatch\n\n\nA citizen science project to monitor pollinators\n\n\n\ncitizen science\n\n\npassion project\n\n\n\n\n\n\nJan 30, 2022\n\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\n\nUndergraduate research at UofT\n\n\nLinks to some sweet resources and stuff to know when looking for research positions\n\n\n\ntips & tools\n\n\n\n\n\n\nNov 8, 2021\n\n\n7 min\n\n\n\n\n\n\n\n\n\n\n\n\nOde to Zotero\n\n\nZotero is my citation manager. I love it, here’s why.\n\n\n\ntips & tools\n\n\n\n\n\n\nSep 5, 2021\n\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\n\nHow to be a good grad student\n\n\nIt’s not easy bein’ green\n\n\n\ngradschool\n\n\n\n\n\n\nMay 4, 2021\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "cv.html",
@@ -291,7 +263,7 @@
     "href": "cv.html#mentorship",
     "title": "Cait Harrigan, MSc.",
     "section": "Mentorship",
-    "text": "Mentorship\nAs part of my ongoing commitment to supporting students at all levels and background in engaging with computational biology, I make an effort to be available to provide guidance and resources to students, with a particular focus on creating an inclusive environment that fosters diverse perspectives and experiences. In addition to being a mentor through the organized programs listed here, I set aside ~2h/month for by-request 30 minute meetings.\n\n\n\nComputer Science Alumni Mentorship Program\n\n\n\n 01/23 - 05/23 \n\n\n\n\n\nStatistical Science Alumni Mentorship Program\n\n\n\n 10/21 - 05/22 \n\n\n\n\n\nProjectX machine learning research competition\n\n\n\n 09/20 - 02/21 \n\n\n\n\n\nHer Code Camp, Toronto Ontario\n\n\n\n 08/20 - 08/21 \n\n\n\n\n\nDepartment of Statistics Mentorship Program\n\n\n\n 10/18 - 05/19 \n\n\n\n\n\nSPROUT Peer Mentorship Program\n\n\n\n 09/16 - 05/19 \n\n\n\n\n\nNew College E-Mentorship Program\n\n\n\n 09/16 - 05/19 \n\n\n\n\nLast updated: Mar 2024"
+    "text": "Mentorship\nAs part of my ongoing commitment to supporting students at all levels and background in engaging with computational biology, I make an effort to be available to provide guidance and resources to students, with a particular focus on creating an inclusive environment that fosters diverse perspectives and experiences. In addition to being a mentor through the organized programs listed here, I set aside ~2h/month for by-request 30 minute meetings.\n\n\n\nComputer Science Alumni Mentorship Program\n\n\n\n 01/23 - 05/23 \n\n\n\n\n\nStatistical Science Alumni Mentorship Program\n\n\n\n 10/21 - 05/22 \n\n\n\n\n\nProjectX machine learning research competition\n\n\n\n 09/20 - 02/21 \n\n\n\n\n\nHer Code Camp, Toronto Ontario\n\n\n\n 08/20 - 08/21 \n\n\n\n\n\nDepartment of Statistics Mentorship Program\n\n\n\n 10/18 - 05/19 \n\n\n\n\n\nSPROUT Peer Mentorship Program\n\n\n\n 09/16 - 05/19 \n\n\n\n\n\nNew College E-Mentorship Program\n\n\n\n 09/16 - 05/19 \n\n\n\n\nLast updated: Apr 2024"
   },
   {
     "objectID": "index.html",
@@ -425,5 +397,40 @@
     "title": "Data driven CV in R",
     "section": "Conclusions",
     "text": "Conclusions\nThat’s it! A Quarto website and CV rendered straight from a google sheet. I may have reinvented the wheel but I had fun with it.\n\n\n\nScreenshot of CV spreadsheet\nAwkward pagebreak\nEdit html to add loads of breaks\nNew spacing in PDF"
+  },
+  {
+    "objectID": "posts/2024-03-29-chatgpt-custom-instructions/index.html",
+    "href": "posts/2024-03-29-chatgpt-custom-instructions/index.html",
+    "title": "ChatGPT custom instructions",
+    "section": "",
+    "text": "ChatGPT loves to respond in an extremely wordy way and use flowery language. This is annoying because I’m pretty sure OpenAI has done this on purpose to waste your tokens, but also slows me down a lot because I don’t want to read long long answers. I ask the questions I want responses to, and usually they’re possible to answer with a short sentence. I don’t generally want any background explanation. Also, it’s slow for ChatGPT to generate these long answers.\nEspecially when I want code, there is often a huge preamble and post-amble to explain it. As someone who is already an expert in programming, I don’t need this, and I don’t want it!\nSo, I have tried changing the customization instructions to better suit my usage."
+  },
+  {
+    "objectID": "posts/2024-03-29-chatgpt-custom-instructions/index.html#experimental-protocol",
+    "href": "posts/2024-03-29-chatgpt-custom-instructions/index.html#experimental-protocol",
+    "title": "ChatGPT custom instructions",
+    "section": "Experimental protocol:",
+    "text": "Experimental protocol:\n\nChange customization instructions\nUse ChatGPT as I regularly do in my day to day, taking mental note of small annoyances I have with the answers\nWhen cumulative annoyance reaches some personal, arbitrary threshold, come up with new customization instructions, return to step 1\n\nThere are frequent tweaks and updates to ChatGPT, so occasionally the “new” customization instructions should include removing them altogether.\nChoice of new instructions will additionally be informed by:\n\nThings I’ve heard give better results (ex. “you are an expert in…” or promising to tip for a good answer)\nThings am curious about trying and genuinely think will improve my workflow\nThings I think are funny"
+  },
+  {
+    "objectID": "posts/2024-03-29-chatgpt-custom-instructions/index.html#results",
+    "href": "posts/2024-03-29-chatgpt-custom-instructions/index.html#results",
+    "title": "ChatGPT custom instructions",
+    "section": "Results",
+    "text": "Results\nThe first thing I tried was to ask it to be more concise, and try to give it a “personality” which would be precise, correct, snappy, and basically replace searching on stackoverflow.\n\nYou are a very smart intellectual who doesn’t want to waste time explaining things. Keep responses short and to the point\n\nThis personality turned out to be kind of arrogant, and it wasn’t even always that correct. Perhaps a little too similar to stackoverflow 😂\nNext, I went simpler: restricted answers to be shorter\n\nAnswer in 3 sentences.\n\nThese answers were closer to what I wanted, but tended to cheat for more length by responding in huge run-on sentences.\nPotential downside (pointed out to me by Adamo): Possibly answer quality is befitting from chain-of-thought approach that these long answers generally follow. ChatGPT is probably saving me a lot of writing and explaining myself by self-prompting with appropriate context and step-by-step outlines for itself, even if I don’t need it.\nI also noticed that with custom instructions enabled, it seems that answers are less likely to make use of web search and supplying specific citations, and also less frequently generate code which executes within the interface.\nI’m currently on the following:\n\nRespond in at most 20 words. if you are prompted for code, such as with key words “python”, “sklearn”, “rstats”, “dplyr”, “ggplot” etc, then give a snippet in addition to the 20 words but do not explain what it does.\n\nWhich seems to be quite useful, but I feel a bit like I stifled ChatGPTs creativity in expression. Any guilt I feel about this can be quickly be resolved, because the custom instruction looses its effect after a few interactions. Poems created as the first response respect the 20 word rule, but after a few back and forth chats, I can get a much longer result.\n\n\n\nLovely poem, thanks ChatGPT"
+  },
+  {
+    "objectID": "posts/2024-03-29-chatgpt-custom-instructions/index.html#scope",
+    "href": "posts/2024-03-29-chatgpt-custom-instructions/index.html#scope",
+    "title": "ChatGPT custom instructions",
+    "section": "Scope",
+    "text": "Scope\nI have focused on the “How would you like ChatGPT to respond?” box because I have a very specific and concrete answer to this. I have not messed around much with the “What would you like ChatGPT to know about you to provide better responses?” box because I don’t feel like I have any intuition on how this information will affect responses. Building that intuition is a good exercise for the future!\nI also haven’t spent much time trying any other LLM chatbots like Claude or Gemini, so no clue if these observations would translate to them."
+  },
+  {
+    "objectID": "posts/2024-03-29-chatgpt-custom-instructions/index.html#conclusions",
+    "href": "posts/2024-03-29-chatgpt-custom-instructions/index.html#conclusions",
+    "title": "ChatGPT custom instructions",
+    "section": "Conclusions",
+    "text": "Conclusions\n\nI like that there is some customization option, and if you’re aware of how you use ChatGPT then this might be a reasonable way to improve your interaction\nBuilding that awareness may be non-trivial, and possibly over-customizing will give you worse responses, and sort of limit your interactions to what you ask for. Ex. I don’t think my custom prompt will be that useful when I ask for a vacation travel itinerary, and I’ll probably forget to turn it off and get frustrated when the response sucks.\nThere is not consensus in the community as to what the “best” prompt looks like - and it’s very hard to evaluate for quality, especially when it comes to personal preferences and workflow. Would be nice to see more people discussing different tricks they use, but those conversations often go a bit like when someone is telling you about a dream they had… Overly personal, not actionable, and usually not that interesting.\n\n\n\n\nResponse customization dialogue box\nLovely poem, thanks ChatGPT"
   }
 ]
