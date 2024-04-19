@@ -50,7 +50,7 @@ I am a graduate student at the University of Toronto supervised by [Quaid Morris
 `r cv_entries %>% filter(type=='work') %>% print_section()`
 
 
-## Peer Reviewed Publications
+## Selected Publications
 
 \* Indicates equal contribution
 
@@ -73,10 +73,6 @@ sel <- ref_titles %in% sel_titles
 ```
 
 `r print_publications(refs[sel])`
-
-## Other Publications
-
-`r print_publications(refs[!sel])`
 
 ## Fellowships & Awards
 
