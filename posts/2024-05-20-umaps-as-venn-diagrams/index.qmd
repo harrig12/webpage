@@ -17,7 +17,7 @@ categories:
 ---
 
 
-Some computational biologists have strong feelings about UMAPs. Often, these are well justified strong feelings, but the reasoning behind them can get mathy quickly. I think UMAPs, like any other visualization tool may be used to support a data story - but you should use them with purpose.
+Some computational biologists have strong feelings about UMAPs. Often, these are well justified strong feelings, but the reasoning behind them can get mathy quickly. Like any other visualization tool, UMAPs may be used to support a data story - and you should use them with purpose.
 
 Here, I will explain some intuition behind where I think a UMAP belongs in a paper, and I'll do it with no math. 
 
@@ -32,7 +32,7 @@ Treat UMAPs like venn diagrams
 
 # What is a UMAP
 
-UMAP is an algorithm for dimensionality reduction. In other words, it's a way of spreading out your data in 2D. This is especially useful if your data has more than two dimensions (ie. most biological data)
+UMAP is an algorithm for dimensionality reduction. In other words, it's a way of spreading out your data in 2D. This is especially useful if your data has more than two dimensions (ie. most biological data).
 
 High dimensional data is challenging to intuit about, but I like to imagine only looking at two axes at a time, and we can spin the data around to get different views of it like a big cube. 
 
@@ -146,14 +146,14 @@ plot_grid(p1,p2)
 
 # How did it know!?
 
-UMAP in my analogy and is an algorithm to find a good angle to look from so that you can see in 2D see the placement of the orange points in 3D. Similar to what we're doing above when we drag around that 3D point cloud. 
+UMAP in my analogy is an algorithm to find a good angle to look from so that you can see in 2D the placement of the orange points in 3D. Similar to what we're doing above when we drag around that 3D point cloud. 
 
 However in order to accomplish this, it has to squish some things. This is why it's not distance preserving. If we have a cluster labeling, it might give us some idea of which are the overlapping clusters. 
 
 
 ::: {.callout-important}
 ## Important
-Do not do clustering on your UMAP embeddings. Assign cluster labels some other way. (PCA, marker genes, batch, simulation id, etc. may be appropriate choices)
+Do not do clustering on your UMAP embeddings. Assign cluster labels some other way. (PCA, marker genes, biological replicate, batch, simulation id, etc. may be appropriate choices)
 :::
 
 # Use UMAPs like a Venn diagram
@@ -176,13 +176,11 @@ In short, I see the risks of your reader over-interpreting a UMAP as outweighed 
 
 These are some beautiful examples, but I have come across many more cursed versions of the gigantic unruly venn diagram. Let's avoid making these if we can. 
 
-
-
 # Speedrun: making an attractive UMAP 
 
 ## Parameters
 
-There are two parameters which matter to me: `n_neighbors` and `min_dist`. In my head I think of these the “spreadiness” and the “squishiness” parameters respectively. Some UMAP packages call these parameters `a` and `b`. 
+There are two parameters which matter to me: `n_neighbors` and `min_dist`. In my head these are the “spreadiness” and the “squishiness” parameters respectively. Some UMAP packages call these parameters `a` and `b`. 
 
 Andy Coenen and Adam Pearce have [a fantastic demo](https://pair-code.github.io/understanding-umap/) illustrating how these parameters interact. More or less: `n_neighbors` determines how far away members of different clusters will fall and `min_dist` controls how dense points in the same or similar clusters appear. 
 
@@ -194,16 +192,16 @@ On the flip side, it's okay to choose a UMAP that appeals to you and supports th
 
 No matter what shape your data is, UMAP will try to make blobs. Is this a good representation of your data? *It doesn't matter, this is a Venn diagram*. 
 
-*Are you trying to visualize RNA velocity, pseudotime, or other methods which connect clusters together or have some sense of continuity between them?* I suggest you try [PHATE](https://phate.readthedocs.io/en/stable/). This method is similar to UMAP in some ways, but has a tendency to make lines and tree-shapes instead of blobs. If you have a reason to believe that your data is closer to a series of related datapoints, rather than a collection of semi-related clusters, then I think PHATE is a better match for that prior. 
+*Are you trying to visualize RNA velocity, pseudotime, cellular differentiation, or other methods which connect clusters together or have some sense of continuity between them?* I suggest you try [PHATE](https://phate.readthedocs.io/en/stable/). This method is similar to UMAP in some ways, but has a tendency to make lines and tree-shapes instead of blobs. If you have a reason to believe that your data is closer to a series of related datapoints, rather than a collection of semi-related clusters, then PHATE may be a better match for that prior. 
 
 
 # Conclusions
 
 A UMAP is great for giving a snapshot overview of your dataset, and makes it easy to overlay different information onto the same set of points. Your reader can become familiar with “the red cluster” and build an understanding of what kind of datapoints are in it, and how your other analyses relate to it. 
 
-UMAPs look nice, and have become a standard visual in computational biology, there's no way around this. Despite their limitations, I think we can use them conscientiously as a way to guide a reader through a narrative. At the end of the day, it's hard for most human brains to understand high-dimensional spaces and I think anything that helps us do that can be useful. 
+UMAPs look nice, and have become a standard visual in computational biology, there's no way around this. Despite their limitations, I think we can use them conscientiously as a way to guide a reader through a narrative. At the end of the day, it's hard for most human brains to understand high-dimensional spaces and anything that helps us do that can be useful. 
 
-I have suggested you should consider UMAPs like venn diagrams: although even this even this may be a questionable usage... see "Distortion of mixing patterns" in [Chari and Pacter 2023](https://doi.org/10.1371/journal.pcbi.1011288). 
+I have suggested you should consider UMAPs like venn diagrams: although even this may be a questionable usage... see "Distortion of mixing patterns" in [Chari and Pachter 2023](https://doi.org/10.1371/journal.pcbi.1011288). 
 
 For me, responsible usage involves making sure your claims are supported by data analysis an not only by a UMAP layout. They are good for communicating observations you have made about your data, but not for making said observations. 
 
