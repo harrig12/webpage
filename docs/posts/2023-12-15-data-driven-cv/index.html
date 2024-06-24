@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.5.47">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Cait Harrigan">
 <meta name="dcterms.date" content="2023-12-15">
 
-<title>Cait Harrigan - Data driven CV in R</title>
+<title>Data driven CV in R – Cait Harrigan</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -102,7 +102,7 @@ gtag('config', 'G-01XD03JCPM', { 'anonymize_ip': true});
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -131,7 +131,7 @@ gtag('config', 'G-01XD03JCPM', { 'anonymize_ip': true});
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
-          <div class="quarto-navbar-tools">
+            <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
@@ -246,7 +246,7 @@ The CV spreadsheet is an excellent tool.
 <p>The CV spreadsheet includes some checkboxes, so that each activity can be included or excluded from the different outputs I might want: my website homepage, my long form CV, my short form CV.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="preview.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1" title="Screenshot of CV spreadsheet"><img src="preview.png" class="img-fluid figure-img" alt="Screenshot of CV spreadsheet"></a></p>
+<p><a href="preview.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Screenshot of CV spreadsheet"><img src="preview.png" class="img-fluid figure-img" alt="Screenshot of CV spreadsheet"></a></p>
 <figcaption>Screenshot of CV spreadsheet</figcaption>
 </figure>
 </div>
@@ -279,7 +279,7 @@ The CV spreadsheet is an excellent tool.
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="print_bad.png" class="lightbox" data-gallery="quirks" data-glightbox="description: .lightbox-desc-2" title="Awkward pagebreak"><img src="print_bad.png" class="img-fluid figure-img" alt="Awkward pagebreak"></a></p>
+<p><a href="print_bad.png" class="lightbox" data-gallery="quirks" title="Awkward pagebreak"><img src="print_bad.png" class="img-fluid figure-img" alt="Awkward pagebreak"></a></p>
 <figcaption>Awkward pagebreak</figcaption>
 </figure>
 </div>
@@ -287,7 +287,7 @@ The CV spreadsheet is an excellent tool.
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="edit_html.png" class="lightbox" data-gallery="quirks" data-glightbox="description: .lightbox-desc-3" title="Edit html to add loads of breaks"><img src="edit_html.png" class="img-fluid figure-img" alt="Edit html to add loads of breaks"></a></p>
+<p><a href="edit_html.png" class="lightbox" data-gallery="quirks" title="Edit html to add loads of breaks"><img src="edit_html.png" class="img-fluid figure-img" alt="Edit html to add loads of breaks"></a></p>
 <figcaption>Edit html to add loads of breaks</figcaption>
 </figure>
 </div>
@@ -295,7 +295,7 @@ The CV spreadsheet is an excellent tool.
 <div class="quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="new_space.png" class="lightbox" data-gallery="quirks" data-glightbox="description: .lightbox-desc-4" title="New spacing in PDF"><img src="new_space.png" class="img-fluid figure-img" alt="New spacing in PDF"></a></p>
+<p><a href="new_space.png" class="lightbox" data-gallery="quirks" title="New spacing in PDF"><img src="new_space.png" class="img-fluid figure-img" alt="New spacing in PDF"></a></p>
 <figcaption>New spacing in PDF</figcaption>
 </figure>
 </div>
@@ -311,12 +311,6 @@ The CV spreadsheet is an excellent tool.
 <p>That’s it! A Quarto website and CV rendered straight from a google sheet. I may have reinvented the wheel but I had fun with it.</p>
 
 
-<div class="hidden" aria-hidden="true">
-<span class="glightbox-desc lightbox-desc-1">Screenshot of CV spreadsheet</span>
-<span class="glightbox-desc lightbox-desc-2">Awkward pagebreak</span>
-<span class="glightbox-desc lightbox-desc-3">Edit html to add loads of breaks</span>
-<span class="glightbox-desc lightbox-desc-4">New spacing in PDF</span>
-</div>
 </section>
 
 </main> <!-- /main -->
@@ -499,18 +493,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -542,7 +525,47 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -577,7 +600,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
@@ -852,30 +879,37 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","openEffect":"zoom","selector":".lightbox","descPosition":"bottom","loop":false});
-window.onload = () => {
-  lightboxQuarto.on('slide_before_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    const href = trigger.getAttribute('href');
-    if (href !== null) {
-      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
-      if (imgEl !== null) {
-        const srcAttr = imgEl.getAttribute("src");
-        if (srcAttr && srcAttr.startsWith("data:")) {
-          slideConfig.href = srcAttr;
-        }
-      }
-    } 
-  });
-
-  lightboxQuarto.on('slide_after_load', (data) => {
-    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
-    if (window.Quarto?.typesetMath) {
-      window.Quarto.typesetMath(slideNode);
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","selector":".lightbox","openEffect":"zoom","loop":false});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
     }
-  });
-
-};
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
           </script>
 
 
